@@ -13,7 +13,7 @@ const SavedTrip = () => {
 
   useEffect(() => {
     getMyTrips();
-  },[userTrips]);
+  },[]);
 
   return (
     <div className='mt-20 m-10'>

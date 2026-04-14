@@ -22,7 +22,7 @@ const Recommendation = () => {
 
  useEffect(() => {
    getAllTrips();
- },[allTrips])
+ },[])
 
   return (
     <div className='mt-20 m-10'>
