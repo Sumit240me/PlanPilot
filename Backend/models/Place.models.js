@@ -42,7 +42,7 @@ const placeSchema = new mongoose.Schema(
         },
         sourceApi: {
             type: String,
-            enum: ["foursquare", "openTripMap", "openstreetmap"],
+            enum: ["foursquare", "openTripMap", "openstreetmap", "curated"],
             required: true
         },
         coordinates: {

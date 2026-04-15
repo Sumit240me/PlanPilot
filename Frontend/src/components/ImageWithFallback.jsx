@@ -13,6 +13,7 @@ const ImageWithFallback = ({
   src, 
   alt = 'Trip image', 
   className = '', 
+  fallbackSeed: _fallbackSeed,
   ...props 
 }) => {
   const [imgSrc, setImgSrc] = useState(src);

@@ -15,7 +15,6 @@ const Trip = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-
     useEffect(() => {
         const fetchTrip = async () => {
             try {
@@ -57,10 +56,9 @@ const Trip = () => {
         </div>
     );
 
-    const selectedCardImage = location.state?.tripImage || userTrips?.find((trip) => trip?._id === id)?.image;
+    const selectedCardImage = tripData?.image;
 
-    const firstActivityWithPhoto = tripData.days?.[0]?.activities.find(a => a.photos?.length > 0);
-    const backgroundImage = selectedCardImage || tripData?.image || firstActivityWithPhoto?.photos[0] || "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=2000";
+    const backgroundImage = selectedCardImage 
 
     return (
         <div className="bg-gray-50 min-h-screen">

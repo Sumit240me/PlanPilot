@@ -44,7 +44,6 @@ async function seedPlaces() {
       // Mark as processing
       await City.findByIdAndUpdate(city._id, { status: "processing" });
 
-      // 🔥 IMPORTANT: your pipeline should now use OSM internally
       const summary = await runCityPipeline(city);
 
       const totalStored = summary.inserted + summary.updated;

@@ -9,17 +9,13 @@ const WEIGHTS = {
 };
 
 function shouldDisqualify(place, preferences) {
-    const { budget, companions } = preferences;
+    const { budget } = preferences;
 
     const budgetOrder = { budget: 1, "mid-range": 2, luxury: 3 };
     const userLevel = budgetOrder[budget] || 1;
     const placeLevel = budgetOrder[place.costLevel] || 1;
 
-    if (placeLevel > userLevel) return true;
-
-    if (place.companionMatch?.length > 0 && !place.companionMatch.includes(companions)) {
-        return true;
-    }
+    if (placeLevel - userLevel >= 2) return true;
 
     return false;
 }
@@ -94,7 +90,7 @@ function scoreSlotFit(place, slotName) {
 
 function applySkipPenalty(baseScore, place) {
     if (!place.skipCount || place.skipCount === 0) return baseScore;
-    const penalty = Math.min(place.skipCount * 2, 10);
+    const penalty = Math.min(place.skipCount * 1, 6);
     return Math.max(baseScore - penalty, 0);
 }
 

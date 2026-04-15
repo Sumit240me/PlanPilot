@@ -17,6 +17,8 @@ const PRIORITY_KINDS = [
   "religion",
   "sport",
   "amusements",
+  "foods",
+  "shops",
 ].join(",");
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -40,6 +42,23 @@ const PRIORITY_SUBKINDS = [
   "cultural",
   "natural",
   "religion",
+  // Food & dining
+  "restaurants",
+  "cafes",
+  "fast_food",
+  "pubs",
+  "bakeries",
+  // Parks, gardens, and leisure
+  "gardens_and_parks",
+  "urban_parks",
+  "theme_parks",
+  "water_parks",
+  "zoos",
+  // Adventure & nature
+  "climbing",
+  "diving",
+  "surfing",
+  "stadiums",
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

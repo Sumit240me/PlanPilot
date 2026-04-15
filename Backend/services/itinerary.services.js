@@ -110,6 +110,86 @@ function getSlotScore(place, slotName) {
     return baseScore + categoryBonus;
 }
 
+function hasPhotos(place) {
+    return Array.isArray(place.photos) && place.photos.length > 0;
+}
+
+function rankCandidatesForSlot(candidates, slotName, preferPhotos = false, requirePhotos = false) {
+    let pool = candidates;
+    if (requirePhotos) {
+        const withPhotos = candidates.filter(hasPhotos);
+        if (withPhotos.length > 0) {
+            pool = withPhotos;
+        }
+    }
+
+    return [...pool].sort((a, b) => {
+        const photoBonusA = preferPhotos && hasPhotos(a) ? 5 : 0;
+        const photoBonusB = preferPhotos && hasPhotos(b) ? 5 : 0;
+        const scoreA = (a._score?.total || 0) + getSlotScore(a, slotName) + photoBonusA;
+        const scoreB = (b._score?.total || 0) + getSlotScore(b, slotName) + photoBonusB;
+        return scoreB - scoreA;
+    });
+}
+
+function getCategoryCounts(activities = []) {
+    return activities.reduce((counts, activity) => {
+        if (counts[activity.category] !== undefined) {
+            counts[activity.category] += 1;
+        }
+        return counts;
+    }, { heritage: 0, food: 0, adventure: 0, other: 0 });
+}
+
+function getBalancedPreferredOrder(slotName, categoryCounts) {
+    const base = [...(SLOT_CATEGORY_PREFERENCE[slotName] || ALL_CATEGORIES)];
+    const heritageCount = categoryCounts.heritage || 0;
+    const nonHeritageCount = (categoryCounts.food || 0) + (categoryCounts.adventure || 0) + (categoryCounts.other || 0);
+
+    if (heritageCount > nonHeritageCount) {
+        return base.filter((cat) => cat !== "heritage").concat("heritage");
+    }
+
+    if (heritageCount < nonHeritageCount) {
+        return ["heritage", ...base.filter((cat) => cat !== "heritage")];
+    }
+
+    return base;
+}
+
+function pickCategoryForSlot(slotName, usedCategoriesInDay, categoryCounts, availableCategories) {
+    const preferredOrder = getBalancedPreferredOrder(slotName, categoryCounts);
+
+    for (const cat of preferredOrder) {
+        if (availableCategories.includes(cat) && !usedCategoriesInDay.has(cat)) {
+            return cat;
+        }
+    }
+
+    for (const cat of ALL_CATEGORIES) {
+        if (availableCategories.includes(cat) && !usedCategoriesInDay.has(cat)) {
+            return cat;
+        }
+    }
+
+    let selected = null;
+    let lowestCount = Infinity;
+    const candidateOrder = [
+        ...preferredOrder,
+        ...ALL_CATEGORIES.filter((cat) => !preferredOrder.includes(cat))
+    ];
+    for (const cat of candidateOrder) {
+        if (!availableCategories.includes(cat)) continue;
+        const count = categoryCounts[cat] || 0;
+        if (count < lowestCount) {
+            lowestCount = count;
+            selected = cat;
+        }
+    }
+
+    return selected;
+}
+
 async function loadPlacesByCategory(cityName, preference) {
     const placesByCategory = {};
 
@@ -178,15 +258,15 @@ function getAvailablePlace(pool, usedIds, preferredCategories = null) {
     return candidates[0];
 }
 
-function pickBestForCategory(pool, usedIds, category, preferredSlots = null) {
+function pickBestForCategory(pool, usedIds, category, slotName, preferPhotos = false, requirePhotos = false) {
     const available = pool.filter((p) => 
         !usedIds.has(p.placeId) && p.category === category
     );
     
     if (available.length === 0) return null;
 
-    available.sort((a, b) => (b._score?.total || 0) - (a._score?.total || 0));
-    return available[0];
+    const ranked = rankCandidatesForSlot(available, slotName, preferPhotos, requirePhotos);
+    return ranked[0];
 }
 
 function getCategoryForSlot(slotName, usedCategoriesInDay) {
@@ -207,25 +287,20 @@ function getCategoryForSlot(slotName, usedCategoriesInDay) {
     return null;
 }
 
-function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories) {
+function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories, options = {}) {
     const dayActivities = [];
     const daySlots = {};
     const usedCategoriesInDay = new Set();
-    const filledSlots = new Set();
-
-    for (const category of targetCategories) {
-        const place = pickBestForCategory(pool, usedIds, category);
-        if (place) {
-            usedIds.add(place.placeId);
-            usedCategoriesInDay.add(category);
-        }
-    }
+    const categoryCounts = getCategoryCounts();
+    const allowedCategories = new Set(
+        targetCategories && targetCategories.length > 0 ? targetCategories : ALL_CATEGORIES
+    );
 
     for (const slotName of slotOrder) {
         const startTime = SLOTS_PER_DAY[slotName].start;
         
         const availableForSlot = pool.filter((p) => 
-            !usedIds.has(p.placeId)
+            !usedIds.has(p.placeId) && allowedCategories.has(p.category)
         );
 
         if (availableForSlot.length === 0) {
@@ -239,22 +314,35 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
         }
 
         let chosenPlace = null;
-        const preferredCategory = getCategoryForSlot(slotName, usedCategoriesInDay);
+        const availableCategories = [...new Set(availableForSlot.map((p) => p.category))];
+        const preferredCategory = pickCategoryForSlot(
+            slotName,
+            usedCategoriesInDay,
+            categoryCounts,
+            availableCategories
+        );
+        const preferPhotos = options.dayNumber === 1;
+        const requirePhotos = options.dayNumber === 1 && slotName === "morning";
         
-        if (preferredCategory && !usedCategoriesInDay.has(preferredCategory)) {
-            chosenPlace = pickBestForCategory(pool, usedIds, preferredCategory);
-            if (chosenPlace) {
-                usedCategoriesInDay.add(preferredCategory);
-            }
+        if (preferredCategory) {
+            chosenPlace = pickBestForCategory(
+                pool,
+                usedIds,
+                preferredCategory,
+                slotName,
+                preferPhotos,
+                requirePhotos
+            );
         }
 
         if (!chosenPlace) {
-            availableForSlot.sort((a, b) => {
-                const scoreA = (a._score?.total || 0) + getSlotScore(a, slotName);
-                const scoreB = (b._score?.total || 0) + getSlotScore(b, slotName);
-                return scoreB - scoreA;
-            });
-            chosenPlace = availableForSlot[0];
+            const ranked = rankCandidatesForSlot(
+                availableForSlot,
+                slotName,
+                preferPhotos,
+                requirePhotos
+            );
+            chosenPlace = ranked[0];
         }
 
         if (chosenPlace) {
@@ -262,7 +350,10 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
             const activity = buildActivity(chosenPlace, slotName, startTime);
             dayActivities.push(activity);
             daySlots[slotName] = { label: slotName, startTime, activity };
-            filledSlots.add(slotName);
+            usedCategoriesInDay.add(chosenPlace.category);
+            if (categoryCounts[chosenPlace.category] !== undefined) {
+                categoryCounts[chosenPlace.category] += 1;
+            }
         } else {
             daySlots[slotName] = {
                 label: slotName,
@@ -284,29 +375,64 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
     };
 }
 
-function fillExtraSlots(pool, usedIds, dayActivities, slotOrder, neededPlaces) {
+function fillExtraSlots(pool, usedIds, dayActivities, slotOrder, neededPlaces, options = {}) {
     const filledActivities = [...dayActivities];
     const usedSlots = new Set(filledActivities.map(a => a.slot));
     const availableSlots = slotOrder.filter(s => !usedSlots.has(s));
+    const usedCategoriesInDay = new Set(filledActivities.map(a => a.category));
+    const categoryCounts = getCategoryCounts(filledActivities);
+    const allowedCategories = options.allowedCategories && options.allowedCategories.length > 0
+        ? new Set(options.allowedCategories)
+        : null;
 
     for (let i = 0; i < neededPlaces && availableSlots.length > 0; i++) {
         const slotName = availableSlots.shift();
         const startTime = SLOTS_PER_DAY[slotName].start;
         
-        const available = pool.filter((p) => !usedIds.has(p.placeId));
+        const available = pool.filter((p) => 
+            !usedIds.has(p.placeId) && (!allowedCategories || allowedCategories.has(p.category))
+        );
         if (available.length === 0) break;
 
-        available.sort((a, b) => {
-            const scoreA = (a._score?.total || 0) + getSlotScore(a, slotName);
-            const scoreB = (b._score?.total || 0) + getSlotScore(b, slotName);
-            return scoreB - scoreA;
-        });
+        const availableCategories = [...new Set(available.map((p) => p.category))];
+        const preferredCategory = pickCategoryForSlot(
+            slotName,
+            usedCategoriesInDay,
+            categoryCounts,
+            availableCategories
+        );
+        const preferPhotos = options.dayNumber === 1;
+        const requirePhotos = options.dayNumber === 1 && slotName === "morning";
+        let chosen = null;
 
-        const chosen = available[0];
+        if (preferredCategory) {
+            chosen = pickBestForCategory(
+                pool,
+                usedIds,
+                preferredCategory,
+                slotName,
+                preferPhotos,
+                requirePhotos
+            );
+        }
+
+        if (!chosen) {
+            const ranked = rankCandidatesForSlot(
+                available,
+                slotName,
+                preferPhotos,
+                requirePhotos
+            );
+            chosen = ranked[0];
+        }
         if (chosen) {
             usedIds.add(chosen.placeId);
             const activity = buildActivity(chosen, slotName, startTime);
             filledActivities.push(activity);
+            usedCategoriesInDay.add(chosen.category);
+            if (categoryCounts[chosen.category] !== undefined) {
+                categoryCounts[chosen.category] += 1;
+            }
         }
     }
 
@@ -417,7 +543,8 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
             currentPool,
             usedIds,
             slotOrder,
-            dayCategories
+            dayCategories,
+            { dayNumber: dayNum }
         );
 
         for (const activity of activities) {
@@ -435,7 +562,8 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
             usedIds,
             activities,
             slotOrder,
-            neededExtra
+            neededExtra,
+            { dayNumber: dayNum, allowedCategories: dayCategories }
         );
 
         for (const activity of filledActivities) {

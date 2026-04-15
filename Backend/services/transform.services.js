@@ -287,6 +287,8 @@ function transformPlace(raw, sourceApi, cityName, stateName, countryName) {
         rawCategory = Array.isArray(raw.categories) && raw.categories.length
             ? raw.categories[0].name || ""
             : raw.category_name || "";
+    } else if (sourceApi === "curated") {
+        rawCategory = raw.category_name || "";
     } else {
         rawCategory = raw.category_name || raw.type || "";
     }
@@ -310,6 +312,10 @@ function transformPlace(raw, sourceApi, cityName, stateName, countryName) {
         placeId = raw.place_id || `fsq_${raw.fsq_id}`;
     } else if (sourceApi === "openTripMap") {
         placeId = `otm_${raw.xid}`;
+    } else if (sourceApi === "curated") {
+        // Generate a unique ID for curated/API-discovered famous places
+        const slug = raw.name.toLowerCase().replace(/[^a-z0-9]+/g, '_').slice(0, 40);
+        placeId = raw.place_id || `famous_${slug}_${Date.now()}`;
     } else {
         placeId = raw.place_id || `osm_${raw.id || Date.now()}`;
     }
@@ -353,4 +359,4 @@ function transformPlace(raw, sourceApi, cityName, stateName, countryName) {
     }
 }
 
-export { transformPlace };
+export { transformPlace, resolveCategory };

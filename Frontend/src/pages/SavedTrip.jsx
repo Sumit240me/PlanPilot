@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 const SavedTrip = () => {
   const navigate = useNavigate();
   const { userTrips, getMyTrips } = useContext(TripContext);
-  //console.log(userTrips);
+  console.log("userTrips",userTrips);
 
   const token = localStorage.getItem("planpilot_token")
 
@@ -33,7 +33,7 @@ const SavedTrip = () => {
           <SavedCard
             key={index}
             id={data._id}
-            img={data.image || getRandomCityImageUrl(data.destination, data._id)}
+            img={data?.image}
             name={data.tripTitle}
             location={data.destination}
           />

@@ -254,7 +254,7 @@ const getMyTrips = async (req, res) => {
             .sort({ createdAt: -1 })
             .select(
                 "destination startDate endDate numberOfDays mood " +
-                "status tripTitle cities costEstimate overallRating createdAt days.activities.photos"
+                "status tripTitle cities costEstimate overallRating createdAt days.activities.photos image"
             )
             .lean();
        // console.log("trips: ", trips)

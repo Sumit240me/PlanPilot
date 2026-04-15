@@ -98,7 +98,7 @@ const Recommendation = () => {
         {/* // image, tripTitle,destination,grandTotal, tripIntro, id */}
       <div className='grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12'>
         {filteredTrips.map((destination,index) => (
-          <Card key={index} image={destination.days[0].activities[0].photos[0]} tripTitle={destination.tripTitle} destination={destination.destination} grandTotal={destination.costEstimate.grandTotal} tripIntro={destination.tripIntro} id={destination._id} />
+          <Card key={index} image={destination.image} tripTitle={destination.tripTitle} destination={destination.destination} grandTotal={destination.costEstimate.grandTotal} tripIntro={destination.tripIntro} id={destination._id} />
         ))}
         {filteredTrips.length === 0 && (
           <div className='col-span-full text-center text-gray-500 mt-10'>
