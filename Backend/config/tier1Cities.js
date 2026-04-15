@@ -5,6 +5,17 @@
 // Used by: seed/seedCities.js and cities.controller.js
 
 const tier1Cities = [
+  { name: "Berlin",        state: "Berlin",              country: "Germany",        coordinates: [13.4050, 52.5200],  tier: 1 },
+  { name: "Reykjavik",     state: "Capital Region",      country: "Iceland",        coordinates: [-21.8174, 64.1265], tier: 1 },
+  { name: "Venice",        state: "Veneto",              country: "Italy",          coordinates: [12.3155, 45.4408],  tier: 1 },
+  { name: "Cape Town",     state: "Western Cape",        country: "South Africa",   coordinates: [18.4241, -33.9249], tier: 1 },
+  { name: "Cairo",         state: "Cairo",               country: "Egypt",          coordinates: [31.2357, 30.0444],  tier: 1 },
+  { name: "Reykjanesbaer", state: "Southern Peninsula",  country: "Iceland",        coordinates: [-22.5610, 63.9998], tier: 1 },
+  { name: "San Francisco", state: "California",          country: "USA",            coordinates: [-122.4194, 37.7749],tier: 1 },
+  { name: "Vancouver",     state: "British Columbia",    country: "Canada",         coordinates: [-123.1207, 49.2827],tier: 1 },
+  { name: "Athens",        state: "Attica",              country: "Greece",         coordinates: [23.7275, 37.9838],  tier: 1 },
+  { name: "Prague",        state: "Prague",              country: "Czech Republic", coordinates: [14.4378, 50.0755],  tier: 1 },
+
   { name: "Ooty",          state: "Tamil Nadu",        country: "India", coordinates: [76.6950, 11.4102],  tier: 1 },
   { name: "Kodaikanal",    state: "Tamil Nadu",        country: "India", coordinates: [77.4892, 10.2381],  tier: 1 },
 

@@ -27,6 +27,7 @@ const TripContextProvider = (props) => {
     const [allCities, setAllCities] = useState([]);
     const [userTrips, setUserTrips] = useState([]);
     const [allTrips, setAllTrips] = useState([]);
+    const [user, setUser] = useState({});
 
     const getAuthToken = () => localStorage.getItem("planpilot_token");
 
@@ -182,10 +183,65 @@ const TripContextProvider = (props) => {
        }
     }
 
+    const getUser = async () => {
+        try {
+            const token = getAuthToken();
+            if(!token){
+                return null;
+            }
+            const response = await axios.get(`${BASE_URL}/api/user/me`, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            setUser(response.data);
+        } catch (err) {
+            console.log(err);
+            return null;
+        }
+    }
+
+    const updateUser = async (data) => {
+        try {
+            const token = getAuthToken();
+            if(!token){
+                return null;
+            }
+            const response = await axios.put(`${BASE_URL}/api/user/me`, data, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            setUser(response.data);
+        } catch (err) {
+            console.log(err);
+            return null;
+        }
+    }
+
+    const deleteUser = async () => {
+        try {
+            const token = getAuthToken();
+            if(!token){
+                return null;
+            }
+            const response = await axios.delete(`${BASE_URL}/api/user/me`, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            setUser({});
+        } catch (err) {
+            console.log(err);
+            return null;
+        }
+    }
+
     useEffect(() => {
         getAllCities();
         getAllTrips();
         getMyTrips();
+        getUser();
    
     }, []);
 
@@ -200,7 +256,11 @@ const TripContextProvider = (props) => {
         userTrips,
         getCityById,
         getAllTrips,
-        allTrips
+        allTrips,
+        user,
+        getUser,
+        updateUser,
+        deleteUser
     }
 
     return (
