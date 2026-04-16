@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='w-full border-t-0 mt-16 bg-slate-50'>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 max-w-7xl mx-auto text-center md:text-left'>
+      <div className='mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-12 text-center md:grid-cols-2 md:text-left lg:grid-cols-4'>
       <div className='flex flex-col gap-3'>
         <span className='text-lg font-bold text-slate-900' >PlanPilot</span>
         <p className='text-[0.75rem] text-slate-500'>Elevating travel planning to an art form. Seamless, serene, and sophisticated navigation for the modern explorer.</p>

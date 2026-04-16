@@ -65,7 +65,7 @@ const Profile = () => {
     }
 
     return (
-        <div className='p-10 bg-gray-100'>
+        <div className='bg-gray-100 p-4 sm:p-6 lg:p-10'>
             <div className='md:flex flex-row justify-between'>
 
                 <div className='flex flex-row'>
@@ -79,12 +79,12 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-row gap-10 mt-10'>
-                    <div className='p-4 bg-white rounded-4xl' >
+                <div className='mt-6 flex flex-wrap gap-4 sm:gap-6 md:mt-10'>
+                    <div className='rounded-4xl bg-white p-4' >
                         <h1 className='text-gray-600'>Total Trips</h1>
                         <p className='text-lg font-semibold text-blue-500'>{data?.totalTrips}</p>
                     </div>
-                    <div className='p-4 bg-white rounded-4xl'>
+                    <div className='rounded-4xl bg-white p-4'>
                         <h1 className='text-gray-600'>Avg Rating</h1>
                         <p className='text-lg font-semibold text-blue-500 flex items-center gap-2'>{data?.avgTripRating} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-star-fill" viewBox="0 0 16 16">
                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -93,7 +93,7 @@ const Profile = () => {
                 </div>
             </div>
 
-            <div className='md:flex flex-row mt-8 gap-10'>
+            <div className='mt-8 gap-10 md:flex md:flex-row'>
                 {/* left side bar */}
                 <div className='flex flex-col gap-3 text-gray-700 md:w-1/6 h-fit md:sticky top-32 self-start'>
                     <NavLink to='/profile' className={({ isActive }) => `flex items-center gap-3 p-1 rounded-2xl ${isActive ? 'font-semibold text-black bg-blue-500' : ''} hover:text-black`}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-fill shrink-0" viewBox="0 0 16 16">
@@ -115,9 +115,9 @@ const Profile = () => {
                             <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5" />
                         </svg>Delete Account</NavLink>
                     </div>
-                    <div className="mt-6 relative rounded-xl overflow-hidden aspect-[3/4] group">
+                    <div className="group relative mt-6 aspect-3/4 overflow-hidden rounded-xl">
                         <img alt="Scenic mountain landscape" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Beautiful turquoise lake in the Canadian Rockies surrounded by pine forests and snow-capped peaks under a bright sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfpEqdgjiElWuCyHN8Zo7oDlCnshNnBONABytQME73womYv6nQ-evKXWNJTx-dCjOgJLGNOOmciLGYjRggsuvAe_TwUM30Nc4zKREgoTtnXT2llPd7YoaOGGta0JmkWp404OpyfoDxzDPyHU31lbA6T4uex76akkHbTGJ3oMuXRYHY5viIvP8U1SYtGBxxQ9_peLRV99ZQk2ztEGV1WS4dTJ-HzyNvJGdS0aN1Tx3aLkq6pbJCNY6rkdFa4iRsBMssdvb19G79N-0" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-6">
+                        <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-primary/80 to-transparent p-6">
                             <p className="text-on-primary font-headline font-bold text-lg leading-tight text-white">Next Stop: Amalfi Coast?</p>
                             <p className="text-on-primary/80 text-xs mt-2 font-medium text-white">Personalized recommendations based on your 24 trips.</p>
                         </div>
@@ -125,12 +125,12 @@ const Profile = () => {
                 </div>
 
                 {/* right side */}
-                <div className='md:w-5/6'>
-                    <div className='flex flex-col md:flex-row justify-between h-fit gap-4 md:gap-8'>
-                        <form className='md:w-2/3 bg-white p-8 md:p-12 rounded-3xl shadow-sm' onSubmit={handleSubmit}>
+                <div className='w-full md:w-5/6'>
+                    <div className='flex flex-col md:flex-row justify-between h-fit gap-8'>
+                        <form className='md:w-2/3 bg-white p-4 md:p-12 rounded-3xl shadow-sm' onSubmit={handleSubmit}>
                             <div className='flex items-center justify-between mb-8'>
-                                <h1 className='text-2xl font-bold text-gray-800'>Basic Information</h1>
-                                <button type='submit' className='px-6 py-2 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors cursor-pointer'>
+                                <h1 className='text-xl md:text-2xl font-bold text-gray-800'>Basic Information</h1>
+                                <button type='submit' className='px-2 py-2 md:px-6 md:py-2 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors cursor-pointer'>
                                     Save Changes
                                 </button>
                             </div>
@@ -235,7 +235,7 @@ const Profile = () => {
                                 </div>
                             </div>
                         </form>
-                        <div className='w-1/3 p-12 rounded-4xl bg-blue-700 text-white'>
+                        <div className='md:w-1/3 p-4 md:p-12 rounded-2xl md:rounded-4xl bg-blue-700 text-white'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-shield-fill-check" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z" />
                             </svg>
@@ -245,8 +245,8 @@ const Profile = () => {
                         </div>
                     </div>
 
-                    <div className='flex flex-row gap-4 mt-8'>
-                        <div className='w-1/2 rounded-4xl bg-gray-200 p-12'>
+                    <div className='flex flex-col md:flex-row gap-4 mt-8'>
+                        <div className='w-full md:w-1/2 rounded-2xl md:rounded-4xl bg-gray-200 p-4 md:p-12'>
                             <h1 className='text-xl font-bold text-gray-700'>Travel Style</h1>
                             <div className='grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 justify-center items-center'>
                                 <p className='bg-white px-2 py-1 rounded-2xl text-sm font-semibold text-gray-600 justify-center items-center '>Luxury Boutique</p>
@@ -256,7 +256,7 @@ const Profile = () => {
                             </div>
                             <p className='mt-4 text-gray-500 text-sm'>"Always looking for the quietest sunrise spots and local artisan workshops."</p>
                         </div>
-                        <div className='w-1/2 rounded-4xl'><div className="col-span-6 md:col-span-3 relative rounded-4xl overflow-hidden min-h-[240px] group">
+                        <div className='w-full md:w-1/2 rounded-2xl md:rounded-4xl'><div className="group relative col-span-6 min-h-60 overflow-hidden rounded-4xl md:col-span-3">
                             <img alt="Italy trip" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 rounded-4xl" data-alt="Dreamy sunset over the colorful coastal houses of Positano, Italy, reflecting warm oranges and pinks in the calm sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6fca8R5XZjqr3AuWURnrLKcbFybXcdnat9uDc3Okb4YSdC48lLRu7VShCYB_01gEQf8531VOIBHmPzKcJfsD7WMi3RVm49h_JHD601py3lYaniRZDNa9cd8jvizzKXqUdx8SiwwAGYpuLUqlrfQPvEwohBUYoeOeyFGpSi8xws2ddYEykWaeuHP3s0YRTQ4izJnE2VUmIAwap3SE1KpTM8_PYDDicxBs6kFF5VS9sMThId6NvrJLD4nMwH3UxSOhESR2zNWOUnt4" />
                             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors"></div>
                             <div className="absolute bottom-6 left-6 right-6">
@@ -276,11 +276,11 @@ const Profile = () => {
                         </div></div>
                     </div>
 
-                    <div className='mt-8 rounded-4xl p-12 bg-red-100 border border-red-300'>
+                    <div className='mt-8 rounded-2xl border border-red-300 bg-red-100 p-4 md:rounded-4xl md:p-12'>
                         <p className='text-2xl md:text-4xl font-semibold md:font-bold text-red-500'>Danger Zone</p>
-                        <div className='flex flex-row justify-between'>
+                        <div className='flex flex-col md:flex-row justify-between'>
                             <p className='mt-2 text-lg text-gray-700'>Deleting your account will permanetly remove all your itineraries, travel history, and earned rewards.</p>
-                            <button onClick={handleDelete} className='px-4 py-1 bg-red-500 rounded-4xl cursor-pointer'>Proceed to Deletion</button>
+                            <button onClick={handleDelete} className='mt-4 cursor-pointer rounded-4xl bg-red-500 px-4 py-1 md:mt-0'>Proceed to Deletion</button>
                         </div>
                     </div>
 

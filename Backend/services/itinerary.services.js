@@ -1,6 +1,6 @@
 import { Place } from "../models/Place.models.js";
 import { City } from "../models/City.models.js";
-import { scorePlaces } from "./scoring.services.js";
+import { scorePlaces, isFamousPlace } from "./scoring.services.js";
 import {
     MIN_PLACES_PER_DAY,
     SLOTS_PER_DAY,
@@ -9,6 +9,7 @@ import {
 } from "../config/categoryDistribution.js";
 
 const ALL_CATEGORIES = ["heritage", "food", "adventure", "other"];
+const MIN_FOOD_PLACES_PER_TRIP = 2;
 
 const CATEGORY_LABELS = {
     heritage: "Heritage & Culture",
@@ -126,8 +127,12 @@ function rankCandidatesForSlot(candidates, slotName, preferPhotos = false, requi
     return [...pool].sort((a, b) => {
         const photoBonusA = preferPhotos && hasPhotos(a) ? 5 : 0;
         const photoBonusB = preferPhotos && hasPhotos(b) ? 5 : 0;
-        const scoreA = (a._score?.total || 0) + getSlotScore(a, slotName) + photoBonusA;
-        const scoreB = (b._score?.total || 0) + getSlotScore(b, slotName) + photoBonusB;
+        
+        const isFamousA = isFamousPlace(a) ? 50 : 0;
+        const isFamousB = isFamousPlace(b) ? 50 : 0;
+        
+        const scoreA = (a._score?.total || 0) + getSlotScore(a, slotName) + photoBonusA + isFamousA;
+        const scoreB = (b._score?.total || 0) + getSlotScore(b, slotName) + photoBonusB + isFamousB;
         return scoreB - scoreA;
     });
 }
@@ -296,10 +301,14 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
         targetCategories && targetCategories.length > 0 ? targetCategories : ALL_CATEGORIES
     );
 
+    const famousFirst = options.dayNumber <= 2;
+    const preferPhotos = options.dayNumber === 1;
+    const requirePhotos = options.dayNumber === 1 && slotOrder[0] === "morning";
+
     for (const slotName of slotOrder) {
         const startTime = SLOTS_PER_DAY[slotName].start;
         
-        const availableForSlot = pool.filter((p) => 
+        let availableForSlot = pool.filter((p) => 
             !usedIds.has(p.placeId) && allowedCategories.has(p.category)
         );
 
@@ -321,10 +330,18 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
             categoryCounts,
             availableCategories
         );
-        const preferPhotos = options.dayNumber === 1;
-        const requirePhotos = options.dayNumber === 1 && slotName === "morning";
-        
-        if (preferredCategory) {
+
+        if (famousFirst && availableForSlot.some(p => isFamousPlace(p))) {
+            const famousPlaces = availableForSlot.filter(p => isFamousPlace(p));
+            if (famousPlaces.length > 0) {
+                const rankedFamous = rankCandidatesForSlot(famousPlaces, slotName, preferPhotos, requirePhotos);
+                if (rankedFamous.length > 0) {
+                    chosenPlace = rankedFamous[0];
+                }
+            }
+        }
+
+        if (!chosenPlace && preferredCategory) {
             chosenPlace = pickBestForCategory(
                 pool,
                 usedIds,
@@ -447,6 +464,49 @@ function getTargetCategories(userPreferences = [], mood = "") {
         return userPreferences;
     }
     return ALL_CATEGORIES;
+}
+
+function ensureMinFoodPlacesForTrip(pool, usedIds, activities, slotOrder) {
+    const foodCount = activities.filter(a => a.category === "food").length;
+    
+    if (foodCount >= MIN_FOOD_PLACES_PER_TRIP) {
+        return activities;
+    }
+
+    const activitiesCopy = [...activities];
+    const neededFood = MIN_FOOD_PLACES_PER_TRIP - foodCount;
+    
+    const availableFood = pool.filter(p => 
+        !usedIds.has(p.placeId) && p.category === "food"
+    );
+    
+    if (availableFood.length === 0) return activitiesCopy;
+
+    const nonFoodIndices = activitiesCopy
+        .map((a, i) => ({ ...a, index: i }))
+        .filter(a => a.category !== "food")
+        .map(a => a.index);
+
+    let foodAdded = 0;
+    for (let i = 0; i < nonFoodIndices.length && foodAdded < neededFood; i++) {
+        const replaceIndex = nonFoodIndices[i];
+        const currentActivity = activitiesCopy[replaceIndex];
+        
+        const slotName = currentActivity.slot;
+        const startTime = SLOTS_PER_DAY[slotName].start;
+        
+        const rankedFood = rankCandidatesForSlot(availableFood, slotName, false, false);
+        if (rankedFood.length > 0) {
+            const newFoodPlace = rankedFood[0];
+            usedIds.add(newFoodPlace.placeId);
+            
+            const newActivity = buildActivity(newFoodPlace, slotName, startTime);
+            activitiesCopy[replaceIndex] = newActivity;
+            foodAdded++;
+        }
+    }
+
+    return activitiesCopy;
 }
 
 function validateCityHasAllCategories(placesByCategory, minPerCategory = 1) {
@@ -605,6 +665,41 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
                 filledActivities.some(act => act.category === cat)
             )
         });
+    }
+
+    const allActivitiesFlat = days.flatMap(d => d.activities);
+    ensureMinFoodPlacesForTrip(currentPool, usedIds, allActivitiesFlat, slotOrder);
+
+    let foodCount = 0;
+    for (const day of days) {
+        const updatedActivities = [];
+        for (const activity of day.activities) {
+            if (activity.category === "food") {
+                if (foodCount < MIN_FOOD_PLACES_PER_TRIP) {
+                    updatedActivities.push(activity);
+                    foodCount++;
+                } else {
+                    const availableNonFood = currentPool.filter(p => 
+                        !usedIds.has(p.placeId) && p.category !== "food"
+                    );
+                    if (availableNonFood.length > 0) {
+                        const replacement = rankCandidatesForSlot(availableNonFood, activity.slot, false, false)[0];
+                        if (replacement) {
+                            usedIds.add(replacement.placeId);
+                            const newActivity = buildActivity(replacement, activity.slot, SLOTS_PER_DAY[activity.slot].start);
+                            updatedActivities.push(newActivity);
+                        } else {
+                            updatedActivities.push(activity);
+                        }
+                    } else {
+                        updatedActivities.push(activity);
+                    }
+                }
+            } else {
+                updatedActivities.push(activity);
+            }
+        }
+        day.activities = updatedActivities;
     }
 
     const totalPlaces = [...usedIds].length;

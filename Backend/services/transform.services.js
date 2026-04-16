@@ -2,6 +2,62 @@ import { CATEGORY_CONFIG } from "../config/categoryDistribution.js"
 import { categoryToMood, keywordToMood, categoryToCompanion } from '../config/moodMap.js'
 import { categoryDuration, subCategoryDuration } from "../config/durationMap.js"
 
+function normalizePhotoUrl(url, targetWidth = 500) {
+    if (!url || typeof url !== "string") return null;
+    
+    url = url.trim();
+    if (!url) return null;
+    
+    if (url.includes("wikimedia.org")) {
+        if (url.includes("/thumb/")) {
+            return url.replace(/\/\d+px-/, `/${targetWidth}px-`);
+        }
+        if (!url.includes("/thumb/") && url.match(/\.(jpg|jpeg|png|webp)$/i)) {
+            const parts = url.split("/");
+            const filenameIndex = parts.length - 1;
+            const filename = parts[filenameIndex];
+            parts[filenameIndex] = `thumb/${filename}`;
+            parts.splice(filenameIndex, 0, `${targetWidth}px-${filename}`);
+            return parts.join("/");
+        }
+        return url;
+    }
+    
+    if (url.includes("foursquare.com") || url.includes("foursq.com")) {
+        if (url.includes("cloudinary")) {
+            return url.replace(/\/v\d+\//, `/w_${targetWidth},c_limit,q_auto:good/`);        }
+        return `${url}?width=${targetWidth}`;
+    }
+    
+    if (url.includes("googleusercontent.com") || url.includes("ggpht.com")) {
+        return url.replace(/=w\d+/, `=w${targetWidth}`);
+    }
+    
+    if (url.includes("opentripmap.com") || url.includes("otmmarket")) {
+        return url;
+    }
+    
+    if (url.startsWith("http://") || url.startsWith("https://")) {
+        if (!url.includes("?")) {
+            return `${url}?w=${targetWidth}`;
+        }
+        return url;
+    }
+    
+    return null;
+}
+
+function processPhotos(photos, sourceApi) {
+    if (!Array.isArray(photos)) return [];
+    
+    const targetWidth = 500;
+    
+    return photos
+        .slice(0, 3)
+        .map(url => normalizePhotoUrl(url, targetWidth))
+        .filter(Boolean);
+}
+
 function uniqueArray(arr) {
     return [...new Set(arr)];
 }
@@ -305,7 +361,7 @@ function transformPlace(raw, sourceApi, cityName, stateName, countryName) {
         raw.ratingCount || raw.user_ratings_total || 0
     );
     const indoorOutdoor = resolveIndoorOutdoor(category, subCategory, raw.name);
-    const bestTimeOfDay = resolveBestTimeOfDay(category, subCategory, raw.name);
+    const bestTimeOfDay = raw.bestTimeOfDay || resolveBestTimeOfDay(category, subCategory, raw.name);
 
     let placeId;
     if (sourceApi === "foursquare") {
@@ -320,11 +376,14 @@ function transformPlace(raw, sourceApi, cityName, stateName, countryName) {
         placeId = raw.place_id || `osm_${raw.id || Date.now()}`;
     }
 
-    const photos = sourceApi === "foursquare"
-        ? (raw.photos || []).slice(0, 3)
-        : raw.preview?.source
-            ? [raw.preview.source]
-            : raw.photos || [];
+    let rawPhotos = [];
+    if (sourceApi === "foursquare") {
+        rawPhotos = (raw.photos || []).map(p => p.prefix + p.name + p.suffix).filter(Boolean);
+    } else if (sourceApi === "openTripMap") {
+        rawPhotos = raw.preview?.source ? [raw.preview.source] : [];
+    } else {
+        rawPhotos = raw.photos || [];
+    }
 
     return {
         name: raw.name.trim(),
@@ -345,7 +404,7 @@ function transformPlace(raw, sourceApi, cityName, stateName, countryName) {
         typicalDurationHours: duration,
         bestTimeOfDay,
         bestMonthsToVisit: raw.bestMonths || [],
-        photos: photos.filter(Boolean),
+        photos: processPhotos(rawPhotos, sourceApi),
         description: raw.description || raw.wikipedia_extracts?.text || "",
         tags: raw.tags || [],
         avgRating: parseFloat(raw.rating || raw.rate || 0),

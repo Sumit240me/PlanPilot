@@ -31,14 +31,14 @@ const Signup = () => {
   }
 
   return (
-    <main className="h-screen w-screen flex items-center justify-center p-4 relative overflow-hidden bg-slate-50">
+    <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-slate-50 p-4">
 
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[60%] rounded-full bg-blue-600/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-5%] right-[-5%] w-[30%] h-[50%] rounded-full bg-violet-400/5 blur-[100px] pointer-events-none" />
 
-      <div className="w-full max-w-4xl h-full max-h-[96vh] grid grid-cols-1 md:grid-cols-2 bg-white rounded-2xl shadow-xl overflow-hidden relative z-10">
+      <div className="relative z-10 grid w-full max-w-4xl grid-cols-1 overflow-hidden rounded-2xl bg-white shadow-xl md:grid-cols-2 md:max-h-[96vh]">
 
-        <div className="hidden md:flex flex-col justify-between p-8 lg:p-10 bg-gradient-to-br from-blue-600 to-blue-800 text-white overflow-hidden">
+        <div className="hidden overflow-hidden bg-linear-to-br from-blue-600 to-blue-800 p-8 text-white md:flex md:flex-col md:justify-between lg:p-10">
           <div>
             <h1 className="text-2xl font-extrabold tracking-tight">PlanPilot</h1>
             <p className="text-2xl lg:text-3xl font-bold leading-tight opacity-90 mt-8">
@@ -51,7 +51,7 @@ const Signup = () => {
 
           <div className="mt-6">
             <div className="flex items-center gap-3 p-3 rounded-xl bg-white/10 backdrop-blur-sm">
-              <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/20">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
@@ -70,7 +70,7 @@ const Signup = () => {
           <div className="mb-6 text-center md:text-left">
             {error && (
               <div className="mb-4 bg-red-50 border-l-4 border-red-500 p-3 rounded shadow-sm flex items-center gap-3 w-full animate-in fade-in slide-in-from-top-2 duration-300">
-                <svg className="w-5 h-5 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="h-5 w-5 shrink-0 text-red-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                 </svg>
                 <p className="text-red-700 text-sm font-medium text-left">{error}</p>
@@ -108,7 +108,7 @@ const Signup = () => {
               />
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <div className="space-y-1">
                 <label className="block text-[10px] font-semibold text-slate-400 uppercase tracking-wider ml-1">
                   Password
@@ -154,18 +154,18 @@ const Signup = () => {
             <button
               onClick={handleRegister}
               type="button"
-              className="w-full py-3 rounded-xl bg-gradient-to-br from-blue-600 to-blue-800 text-white font-semibold text-sm shadow-lg shadow-blue-200 hover:scale-[1.02] active:scale-95 transition-all duration-200"
+              className="w-full rounded-xl bg-linear-to-br from-blue-600 to-blue-800 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-200 transition-all duration-200 hover:scale-[1.02] active:scale-95"
             >
               Create Account
             </button>
 
             {/* Divider */}
             <div className="relative flex items-center py-1">
-              <div className="flex-grow border-t border-slate-200" />
-              <span className="flex-shrink mx-3 text-[10px] font-medium text-slate-400 uppercase tracking-widest">
+              <div className="grow border-t border-slate-200" />
+              <span className="mx-3 shrink text-[10px] font-medium uppercase tracking-widest text-slate-400">
                 or sign up with
               </span>
-              <div className="flex-grow border-t border-slate-200" />
+              <div className="grow border-t border-slate-200" />
             </div>
 
             {/* Social buttons */}

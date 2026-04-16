@@ -6,7 +6,7 @@ import { getRandomCityImageUrl } from "../utils/imageFallback.js";
 
 export const TripContext = createContext();
 
-const BASE_URL = "https://plan-pilot-66o6.vercel.app";
+const BASE_URL = "http://localhost:3000"
 
 const getFirstPlaceImageFromTrip = (trip) => {
     if (!Array.isArray(trip?.days)) return null;
@@ -134,20 +134,16 @@ const TripContextProvider = (props) => {
             });
 
             const trips = Array.isArray(response.data) ? response.data : [];
-            const enrichedTrips = await Promise.all(
-                trips.map(async (trip) => {
-                    const cityName = trip?.cities?.[0]?.city || trip?.destination || "";
-                    const city = cityName ? await getCityById(null, cityName) : null;
-                    const firstPlaceImage = getFirstPlaceImageFromTrip(trip);
-                    const image = trip?.image || firstPlaceImage || getRandomCityImageUrl(cityName, trip?._id);
+            const enrichedTrips = trips.map((trip) => {
+                const cityName = trip?.cities?.[0]?.city || trip?.destination || "";
+                const firstPlaceImage = getFirstPlaceImageFromTrip(trip);
+                const image = trip?.image || firstPlaceImage || getRandomCityImageUrl(cityName, trip?._id);
 
-                    return {
-                        ...trip,
-                        city,
-                        image,
-                    };
-                })
-            );
+                return {
+                    ...trip,
+                    image,
+                };
+            });
            //console.log(enrichedTrips);
             setUserTrips(enrichedTrips);
             
@@ -162,20 +158,16 @@ const TripContextProvider = (props) => {
         const response = await axios.get(`${BASE_URL}/api/trips/getAllTrip`)
         console.log(response);
         const trips = Array.isArray(response.data) ? response.data : [];
-        const enrichedTrips = await Promise.all(
-            trips.map(async (trip) => {
-                const cityName = trip?.cities?.[0]?.city || trip?.destination || "";
-                const city = cityName ? await getCityById(null, cityName) : null;
-                const firstPlaceImage = getFirstPlaceImageFromTrip(trip);
-                const image = trip?.coverImage || trip?.image || firstPlaceImage || (city?.imageUrl) || getRandomCityImageUrl(cityName, trip?._id);
+        const enrichedTrips = trips.map((trip) => {
+            const cityName = trip?.cities?.[0]?.city || trip?.destination || "";
+            const firstPlaceImage = getFirstPlaceImageFromTrip(trip);
+            const image = trip?.coverImage || trip?.image || firstPlaceImage || getRandomCityImageUrl(cityName, trip?._id);
 
-                return {
-                    ...trip,
-                    city,
-                    image,
-                };
-            })
-        );
+            return {
+                ...trip,
+                image,
+            };
+        });
         setAllTrips(enrichedTrips);
         
        } catch (error) {

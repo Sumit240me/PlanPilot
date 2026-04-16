@@ -2,25 +2,25 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='mx-10'>
-      <div className='flex flex-row gap-12 justify-between items-center'>
-        <div className='p-8 w-1/2'>
+    <div className='px-4 sm:px-6 lg:px-10'>
+      <div className='flex flex-col md:flex-row gap-12 justify-between items-center'>
+        <div className='w-full p-4 sm:p-8 md:w-1/2'>
           <h1 className=' text-2xl md:text-5xl font-bold text-gray-800' >Your Journey,</h1>
-          <h1 className='text-2xl mt-2 md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent'>Guided by Intent.</h1>
+          <h1 className='mt-2 bg-linear-to-r from-blue-600 to-blue-400 bg-clip-text text-2xl font-bold text-transparent md:text-5xl'>Guided by Intent.</h1>
 
           <p className='mt-6 text-sm text-gray-600'>We believe travel should be more than a checklist. It's about curated moments, seamless flows, and experiences designed with your intuition in mind.</p>
 
-          <button className='text-white px-4 py-2 rounded-full mt-6 bg-gradient-to-r from-blue-600 to-blue-400 hover:scale-105 transition-all duration-300'>Explore Destination</button>
+          <button className='mt-6 rounded-full bg-linear-to-r from-blue-600 to-blue-400 px-4 py-2 text-white transition-all duration-300 hover:scale-105'>Explore Destination</button>
         </div>
 
-        <div className='px-8 w-1/2 h-full'>
-          <img className='ml-8 rounded-4xl md:w-3/4 md:h-fit' src="https://plus.unsplash.com/premium_photo-1722897351107-839479f0f12a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <div className='h-full w-full md:w-1/2 md:px-8'>
+          <img className='ml-0 w-full rounded-4xl md:ml-8 md:h-fit md:w-3/4' src="https://plus.unsplash.com/premium_photo-1722897351107-839479f0f12a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
         </div>
       </div>
 
-      <div className='mt-20 flex flex-col justify-center items-center p-8 bg-gray-100 rounded-4xl md:p-15'>
+      <div className='mt-20 flex flex-col items-center justify-center rounded-4xl bg-gray-100 p-6 sm:p-8 md:p-12'>
         <h1 className='text-2xl font-semibold text-gray-800'>Our Mission</h1>
-        <div className='mt-10 flex gap-10 md:gap-20 justify-center items-center md:px-20 md:w-250'>
+        <div className='mt-10 flex w-full flex-col items-center justify-center gap-10 md:max-w-5xl md:flex-row md:gap-20 md:px-6'>
           <div className='bg-white p-8 rounded-4xl'>
             {/* Icon */}
             <h1 className='mt-4 text-lg font-semibold text-gray-700' >Personalized intution</h1>
@@ -38,7 +38,7 @@ const About = () => {
         <h1 className='text-2xl font-bold'>How It Works</h1>
         <p className='mt-4 text-sm text-gray-700'>Three steps to your next meaningful memory</p>
 
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
           <div className='mt-10'>
             <div className='text-8xl text-gray-300 font-semibold'>01</div>
             <div className='mt-4 p-8 bg-gray-100 rounded-4xl'>
@@ -65,8 +65,8 @@ const About = () => {
       </div>
 
       {/* Founder Descriptions */}
-      <div className='flex flex-row p-10 gap-6 mt-20 rounded-4xl shadow-lg hover:scale-105 transition-all duration-300 md:gap-20'>
-        <div className='w-1/3'>
+      <div className='mt-20 flex flex-col gap-6 rounded-4xl p-5 shadow-lg transition-all duration-300 hover:scale-105 sm:p-8 md:flex-row md:gap-20 md:p-10'>
+        <div className='w-full md:w-1/3'>
           <h1 className='text-4xl font-bold text-gray-800'>Get In Touch</h1>
           <p className='mt-4 text-sm text-gray-700'>Have questions or want to collaborate? Out team is always here to help guide your journey.</p>
 
@@ -85,7 +85,7 @@ const About = () => {
             <p className='ml-2 text-sm text-gray-700'>Bhopal,India</p>
           </div>
         </div>
-        <div className='w-2/3'>
+        <div className='w-full md:w-2/3'>
           <form action="#" className="grid grid-cols-1 gap-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-1.5">
@@ -101,7 +101,7 @@ const About = () => {
               <label className="text-sm font-semibold text-on-surface-variant ml-1">Message</label>
               <textarea className="mt-2 w-full bg-surface-container-low border-none rounded-md px-6 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/50 bg-gray-100 " placeholder="How can we help your next adventure?" rows="5"></textarea>
             </div>
-            <button className="bg-gradient-to-br from-blue-600 to-blue-400 text-white font-bold py-2 rounded-4xl transition-all shadow-lg hover:shadow-primary/30" type="submit">Send Message</button>
+            <button className="bg-linear-to-br from-blue-600 to-blue-400 text-white font-bold py-2 rounded-4xl transition-all shadow-lg hover:shadow-primary/30" type="submit">Send Message</button>
           </form>
         </div>
       </div>

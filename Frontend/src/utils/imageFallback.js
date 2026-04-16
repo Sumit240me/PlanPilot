@@ -7,4 +7,23 @@ const getRandomCityImageUrl = (cityName = "travel", seedValue = "") => {
   return null;
 };
 
-export { hashStringToInt, getRandomCityImageUrl };
+const getAllImagesFromTrip = (trip) => {
+    if (!trip || !Array.isArray(trip.days)) return [];
+    
+    const allImages = [];
+    for (const day of trip.days) {
+        if (!Array.isArray(day?.activities)) continue;
+        for (const activity of day.activities) {
+            if (Array.isArray(activity?.photos)) {
+                activity.photos.forEach(photo => {
+                    if (photo && !allImages.includes(photo)) {
+                        allImages.push(photo);
+                    }
+                });
+            }
+        }
+    }
+    return allImages;
+};
+
+export { hashStringToInt, getRandomCityImageUrl, getAllImagesFromTrip };

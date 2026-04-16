@@ -5,8 +5,11 @@ const WEIGHTS = {
     rating: 20,
     popularity: 20,
     novelty: 15,
-    categoryFit: 15
+    categoryFit: 15,
+    famousBonus: 25
 };
+
+const MIN_FOOD_PLACES_PER_DAY = 2;
 
 function shouldDisqualify(place, preferences) {
     const { budget } = preferences;
@@ -94,6 +97,17 @@ function applySkipPenalty(baseScore, place) {
     return Math.max(baseScore - penalty, 0);
 }
 
+function scoreFamousBonus(place) {
+    if (place.isFamous || place.sourceApi === "curated") {
+        return WEIGHTS.famousBonus;
+    }
+    return 0;
+}
+
+export function isFamousPlace(place) {
+    return place.isFamous || place.sourceApi === "curated";
+}
+
 export function scorePlaces(places, preferences) {
     const { mood, budget, companions, visitedPlaceIds = [], categoryScores = {} } = preferences;
 
@@ -108,8 +122,9 @@ export function scorePlaces(places, preferences) {
         const noveltyScore = scoreNovelty(place, visitedPlaceIds);
         const categoryFitScore = scoreCategoryFit(place, mood);
         const categoryBonus = (categoryScores[place.category] || 0) / 5 * 10;
+        const famousBonusScore = scoreFamousBonus(place);
 
-        const rawScore = moodScore + ratingScore + popularityScore + noveltyScore + categoryFitScore + categoryBonus;
+        const rawScore = moodScore + ratingScore + popularityScore + noveltyScore + categoryFitScore + categoryBonus + famousBonusScore;
         const finalScore = applySkipPenalty(rawScore, place);
 
         return {
@@ -122,7 +137,8 @@ export function scorePlaces(places, preferences) {
                     popularity: Math.round(popularityScore),
                     novelty: Math.round(noveltyScore),
                     categoryFit: Math.round(categoryFitScore),
-                    bonus: Math.round(categoryBonus)
+                    bonus: Math.round(categoryBonus),
+                    famous: Math.round(famousBonusScore)
                 },
                 slotScore: {}
             }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import ImageWithFallback from './ImageWithFallback'
 
-const Card = ({ image, tripTitle, destination, grandTotal, tripIntro, id }) => {
+const Card = ({ image, tripTitle, destination, grandTotal, tripIntro, id, fallbackImages }) => {
     const navigate = useNavigate();
 
     return (
@@ -11,6 +11,7 @@ const Card = ({ image, tripTitle, destination, grandTotal, tripIntro, id }) => {
                 src={image} 
                 alt={destination} 
                 fallbackSeed={destination || 'travel'}
+                fallbackImages={fallbackImages}
                 className='w-full h-80 object-cover' 
             />
             <div className='p-4 flex-1'>

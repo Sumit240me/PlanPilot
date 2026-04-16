@@ -10,6 +10,7 @@
 //      - Zoos & aquariums
 //      - National parks & nature reserves
 //      - Parks & gardens
+//   3. Curated famous places from config/famousPlaces.js
 //
 // All results are flagged with isFamous: true so the pipeline always includes them.
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -17,6 +18,8 @@
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
+
+import FAMOUS_PLACES from "../config/famousPlaces.js";
 
 const OTM_BASE = "https://api.opentripmap.com/0.1/en/places";
 const OTM_KEY  = (process.env.OPENTRIPMAP_API_KEY || "").trim();
@@ -41,6 +44,10 @@ const FSQ_FAMOUS_CATEGORIES = {
     parks:          "16047",                 // Parks (FIXED — was 16032)
     gardens:        "16019",                 // Gardens
     national_parks: "16020",                 // Nature & Outdoors
+    // Water bodies
+    beaches:        "16003",                 // Beaches
+    rivers:         "16048",                 // Rivers
+    waterfalls:     "16052",                 // Waterfalls
     // Other
     landmarks:      "16000",                 // Landmarks & Outdoors
 };
@@ -170,7 +177,7 @@ async function fetchFSQByCategory(lat, lng, categories, limit = 3) {
             rating:             p.rating ? parseFloat((p.rating / 2).toFixed(1)) : null,
             user_ratings_total: p.stats?.total_ratings || 0,
             photos:             (p.photos || []).slice(0, 3).map(photo =>
-                                    `${photo.prefix}original${photo.suffix}`),
+                                    `${photo.prefix}500px${photo.suffix}`),
             category_name:      p.categories?.[0]?.name || "",
             formatted_address:  p.location?.formatted_address || "",
             description:        p.description || "",
@@ -232,9 +239,22 @@ export async function fetchFamousPlacesForCity(lat, lng, cityName) {
         2   // At least 2 nature/national parks
     );
     console.log(`[FamousPlaces] ✓ National parks & nature: ${nature.length}`);
+    await pause(300);
+
+    // 6. Water bodies (Beaches, Rivers, Waterfalls) (min 2)
+    // Best during morning or evening time
+    const waterbodies = await fetchFSQByCategory(lat, lng,
+        [FSQ_FAMOUS_CATEGORIES.beaches, FSQ_FAMOUS_CATEGORIES.rivers, FSQ_FAMOUS_CATEGORIES.waterfalls].join(","),
+        2
+    );
+    const waterbodiesWithTime = waterbodies.map(p => ({
+        ...p,
+        bestTimeOfDay: ["morning", "evening"]
+    }));
+    console.log(`[FamousPlaces] ✓ Beaches, Rivers & Waterfalls: ${waterbodies.length}`);
 
     // ── Merge & deduplicate ─────────────────────────────────────────────────
-    const allFamous = [...otmFamous, ...restaurants, ...wildlife, ...parks, ...nature];
+    const allFamous = [...otmFamous, ...restaurants, ...wildlife, ...parks, ...nature, ...waterbodiesWithTime];
 
     const seen = new Set();
     const unique = allFamous.filter(p => {
@@ -251,7 +271,53 @@ export async function fetchFamousPlacesForCity(lat, lng, cityName) {
     console.log(`[FamousPlaces]   Wildlife:     ${wildlife.length}`);
     console.log(`[FamousPlaces]   Parks:        ${parks.length}`);
     console.log(`[FamousPlaces]   Nature:       ${nature.length}`);
+    console.log(`[FamousPlaces]   Waterbodies:  ${waterbodies.length}`);
     console.log("");
 
     return unique;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 3. Get curated famous places from config/famousPlaces.js
+// Called by seedPlaces.js to pre-populate database with famous places
+// ─────────────────────────────────────────────────────────────────────────────
+export function getCuratedFamousPlacesForCity(cityName) {
+    const places = FAMOUS_PLACES[cityName];
+    
+    if (!places || !Array.isArray(places) || places.length === 0) {
+        return [];
+    }
+
+    console.log(`[FamousPlaces] Found ${places.length} curated places for ${cityName}`);
+
+    return places.map((place, index) => ({
+        ...place,
+        sourceApi: "curated",
+        isFamous: true,
+        ratingCount: place.user_ratings_total || 0,
+    }));
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Get all curated famous places for all cities
+// Returns array of { city, places } objects
+// ─────────────────────────────────────────────────────────────────────────────
+export function getAllCuratedFamousPlaces() {
+    const results = [];
+    
+    for (const [cityName, places] of Object.entries(FAMOUS_PLACES)) {
+        if (places && Array.isArray(places) && places.length > 0) {
+            const transformedPlaces = places.map(place => ({
+                ...place,
+                sourceApi: "curated",
+                isFamous: true,
+                ratingCount: place.user_ratings_total || 0,
+            }));
+            results.push({ city: cityName, places: transformedPlaces });
+            console.log(`[FamousPlaces] ${cityName}: ${transformedPlaces.length} places`);
+        }
+    }
+    
+    console.log(`[FamousPlaces] Total: ${results.length} cities with curated places\n`);
+    return results;
 }

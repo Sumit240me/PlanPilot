@@ -228,7 +228,7 @@ const getTripsByUser = async (req, res) => {
         const trips = await Trip
             .find({ userId: req.params.userId })
             .sort({ createdAt: -1 })
-            .select("destination startDate endDate numberOfDays mood status tripTitle")
+            .select("destination startDate endDate numberOfDays mood status tripTitle image tripIntro costEstimate days")
             .lean();
 
         return res.status(200).json({ count: trips.length, trips });
@@ -349,8 +349,7 @@ const updateTripStatus = async (req, res) => {
 
 const getAllTrips = async (req, res) => {
     try {
-        const response = await Trip.find();
-        console.log(response);
+        const response = await Trip.find().sort({ createdAt: -1 }).select("destination startDate endDate numberOfDays mood status tripTitle image tripIntro costEstimate days").lean();
 
         return res.status(200).json(response); // ✅ FIXED
     } catch (error) {

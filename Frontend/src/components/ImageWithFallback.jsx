@@ -14,19 +14,28 @@ const ImageWithFallback = ({
   alt = 'Trip image', 
   className = '', 
   fallbackSeed: _fallbackSeed,
+  fallbackImages = [],
   ...props 
 }) => {
   const [imgSrc, setImgSrc] = useState(src);
   const [hasError, setHasError] = useState(!src);
+  const [fallbackIndex, setFallbackIndex] = useState(0);
 
   useEffect(() => {
     // Reset state when the primary source changes
     setImgSrc(src);
     setHasError(!src);
+    setFallbackIndex(0);
   }, [src]);
 
   const handleError = () => {
-    setHasError(true);
+    if (fallbackImages && fallbackImages.length > fallbackIndex) {
+      setImgSrc(fallbackImages[fallbackIndex]);
+      setFallbackIndex(fallbackIndex + 1);
+      setHasError(false);
+    } else {
+      setHasError(true);
+    }
   };
 
   // If there's an error or no source, render the 'blank image card'

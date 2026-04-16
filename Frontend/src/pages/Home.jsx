@@ -97,14 +97,14 @@ const Home = () => {
   }
 
   return (
-    <div className='mt-20 m-10'>
-      <div className='md:flex flex-row justify-evenly'>
-        <div className='md:w-1/3'>
+    <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
+      <div className='flex flex-col gap-10 md:flex-row md:justify-evenly'>
+        <div className='w-full md:w-1/3'>
           <div className='flex flex-col '>
-            <h1 className='text-5xl font-bold bg-gradient-to-br from-gray-800 to-gray-600 text-transparent bg-clip-text'>Find your perfect trip</h1>
+            <h1 className='bg-linear-to-br from-gray-800 to-gray-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl'>Find your perfect trip</h1>
             <p className='text-gray-500 mt-5'>Experience the world through curated journeys designed for the serene traveler. Your next escape starts with a single choice.</p>
           </div>
-          <div className='bg-white p-8 mt-10 rounded-2xl shadow-sm border border-gray-100 flex flex-col gap-6'>
+          <div className='mt-8 flex flex-col gap-6 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:mt-10 sm:p-8'>
             <div className="border-b border-gray-50 pb-4">
               <h2 className="text-xl font-bold text-gray-800">Plan your escape</h2>
               <p className="text-xs text-gray-400">Everything you need for your next journey</p>
@@ -208,7 +208,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className='grid grid-cols-2 gap-6'>
+              <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
                 <div className='flex flex-col gap-2'>
                   <label className='flex items-center gap-2 text-[0.65rem] font-bold text-gray-400 uppercase tracking-widest px-1'>
                     <HiOutlineCalendarDays className="text-blue-500" /> DEPARTURE
@@ -249,7 +249,7 @@ const Home = () => {
                 <label className='flex items-center gap-2 text-[0.65rem] font-bold text-gray-400 uppercase tracking-widest px-1'>
                   <HiCollection className="text-blue-500" /> PREFERENCES (Select at least 1)
                 </label>
-                <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
+                <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4'>
                   {categoryOptions.map((cat) => {
                     const isSelected = formData.categories.includes(cat.id);
                     const Icon = cat.icon;
@@ -287,14 +287,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="md:w-2/3 relative lg:block h-[600px]">
-          <div className="absolute top-0 right-10 w-4/5 h-[450px] rounded-xl overflow-hidden shadow-2xl z-0 transform translate-x-12">
+        <div className="relative h-90 w-full md:h-150 md:w-2/3">
+          <div className="absolute right-2 top-0 z-0 h-60 w-[85%] overflow-hidden rounded-xl shadow-2xl sm:right-6 sm:h-80 md:right-10 md:h-112.5 md:w-4/5 md:translate-x-12">
             <img alt="Pristine white sand beach" className="w-full h-full object-cover" data-alt="Stunning aerial view of a turquoise tropical beach with white sand and palm tree shadows in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvus5PnzlF3WbYe_80CzOa_Ua3Fps0rkuRlcmcOOMOLsbLiXXPn5ZJ4ZSoDoeWgpTtTJAcEvmQl6b28LFn7tplv0hA1cGDM9r90hUx8lmFw0IZDtyxxOZgvFSo0k3fgjBcpT1ktaKZd0sBDMWgCE1H3ffnuvmcvLDYwqD33e4OIBlU2Ki8_ZnXa1Dn8XYjOfA8pj8-4d3mUOJOeeVAkQ_OfHjKKEyAoI4padoBBdhdSb7Kjp_x8_-0YVI6T1YS8IeDNm4Pm1uxDmI" />
           </div>
-          <div className="absolute bottom-0 left-20 w-3/5 h-[300px] rounded-xl overflow-hidden shadow-2xl z-10 border-4 border-white transform -translate-x-8">
+          <div className="absolute bottom-0 left-2 z-10 h-42.5 w-[70%] -translate-x-1 overflow-hidden rounded-xl border-4 border-white shadow-2xl sm:left-8 sm:h-55 md:left-20 md:h-75 md:w-3/5 md:-translate-x-8">
             <img alt="Snowy mountain peaks" className="w-full h-full object-cover" data-alt="Majestic snow-capped mountain peaks reflecting the warm pink and orange hues of a sunset with misty valleys below" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoG0Y7otZHWmztQZHpm1Ffvzk9m1F31pow3tb7TIbAUFXwTuuTR7gozKHc6sdcpBUvvyJuvdq6kaeE3AVXTwF6nOA6m7lhZ-pyl6FFRDR2jq0UpWww9ikkaCHyyHBCJTF8enHgGIfAeJAX8ct1S3qGnx0Eb3bax0rIQyq2wqTefIlG2hq6Oilqef9Wjo8KSS1pQwCIbyToMpMZra7GdYYWEyC9HIFRhqtXhKneYPCj9Ji3JwTBcIp33FwZVXR5zlQi9NqTTSJHYzI" />
           </div>
-          <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-primary-container/20 backdrop-blur-xl rounded-full z-20 flex items-center justify-center">
+          <div className="absolute right-4 top-1/2 z-20 flex h-24 w-24 items-center justify-center rounded-full bg-primary-container/20 backdrop-blur-xl sm:right-1/4 sm:h-32 sm:w-32">
             <div className="text-primary font-headline font-bold text-center leading-tight">
               500+<br /><span className="text-[0.6rem] uppercase tracking-widest opacity-80">Trips</span>
             </div>
@@ -303,16 +303,16 @@ const Home = () => {
       </div>
 
       {/* Popular Journeys */}
-      <div className='mt-20'>
+      <div className='mt-16 sm:mt-20'>
         <h1 className='text-xl font-bold text-gray-800'>Popular Journeys</h1>
-        <div className='flex justify-between'>
+        <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
           <p className='text-gray-500 text-sm mt-2'>Hand-picked destinations by our senoir travel experts</p>
           <button onClick={() => navigate('/recommendation')} className='text-blue-600 font-semibold text-sm cursor-pointer flex items-center'>View All<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" className="bi bi-arrow-right ml-1" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
           </svg></button>
         </div>
 
-        <div className='flex flex-row flex-nowrap gap-10 mt-8 overflow-x-auto no-scrollbar'>
+        <div className='mt-8 flex flex-col flex-nowrap gap-4 overflow-x-auto pb-2 no-scrollbar sm:gap-8 md:flex-row lg:gap-10'>
           {data.map((destination) => (
             <RecommendCard key={destination.id} {...destination} />
           ))}
@@ -321,19 +321,19 @@ const Home = () => {
 
       {/* Last card options */}
 
-      <section className="py-32 px-8 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-16 items-center">
-          <div className="lg:col-span-7 rounded-xl overflow-hidden h-[500px] relative">
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-8 sm:py-24 lg:py-32">
+        <div className="grid items-center gap-8 sm:gap-16 lg:grid-cols-12">
+          <div className="relative h-80 overflow-hidden rounded-xl sm:h-105 lg:col-span-7 lg:h-125">
             <img alt="Woman traveler on boat" className="w-full h-full object-cover" data-alt="A peaceful portrait of a woman looking out at a turquoise lake from a vintage wooden boat in a scenic mountain range" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1REI-CDvD_fiqs59HBb4ko67DeTKaOnCYe-oRXQAGlG4BWR8x7EhX8gBbzDkzSrzazzGKKdN0LWdXVpXwHMsHoYx6r1JLZ8vRp4WOLfyfrzig2jY_qHHXYbxPFHytNDkj-lAPxoGoDlHndyIPjN1Qg_lGp2o9oBRA26SzRYzFAWg72ojpsN77Gp5W-t6RkXJwJ8D00_7wUFa4H8UgfaDFRVLhBgm-IcdUiPs1VQbkZuFMyf1ugCwLOSO9b839dsjOL4Zufpm5ZPg" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-            <div className="absolute bottom-10 left-10 text-white max-w-xs">
+            <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 max-w-xs text-white sm:bottom-10 sm:left-10">
               <span className="text-xs font-bold uppercase tracking-[0.2em] mb-2 block">Our Philosophy</span>
               <h3 className="text-2xl font-headline font-bold">Journeys that breathe life into your soul.</h3>
             </div>
           </div>
           <div className="lg:col-span-5 space-y-8">
-            <p className='w-8 md:w-20 h-[4px] bg-blue-500 rounded-sm'></p>
-            <h2 className="text-4xl font-headline font-extrabold text-gray-700 leading-tight text-on-surface">Travel beyond the generic guidebooks.</h2>
+            <p className='h-1 w-8 rounded-sm bg-blue-500 md:w-20'></p>
+            <h2 className="text-3xl font-headline font-extrabold leading-tight text-gray-700 text-on-surface md:text-4xl">Travel beyond the generic guidebooks.</h2>
             <p className="text-sm text-gray-500 leading-relaxed">
               We believe in slow travel. Instead of ticking off boxes, we help you find the rhythm of a city, the silence of a mountain peak, and the true hospitality of local communities.
             </p>

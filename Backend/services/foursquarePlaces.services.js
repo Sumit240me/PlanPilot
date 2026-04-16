@@ -118,7 +118,7 @@ async function getPlaceDetails(fsqId) {
 
     const photos = (result.photos || [])
   .slice(0, 5)
-  .map((p) => `${p.prefix}500x300${p.suffix}`)
+  .map((p) => `${p.prefix}500px${p.suffix}`)
   .filter(Boolean);
 
     return {
@@ -190,7 +190,7 @@ function normaliseSearchResult(raw) {
   const primaryCategory = raw.categories?.[0];
   const photos = (raw.photos || [])
     .slice(0, 5)
-    .map((p) => `${p.prefix}500x300${p.suffix}`)
+    .map((p) => `${p.prefix}500px${p.suffix}`)
     .filter(Boolean);
 
   return {

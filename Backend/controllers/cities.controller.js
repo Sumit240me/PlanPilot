@@ -149,7 +149,7 @@ async function runCityPipeline(cityDoc) {
                 state: p.state,
                 rating: p.rating ? parseFloat((p.rating / 2).toFixed(1)) : null, // Convert from 10 to 5 scale
                 user_ratings_total: p.stats?.total_ratings || 0,
-                photos: (p.photos || []).slice(0, 3).map(photo => `${photo.prefix}500x300${photo.suffix}`),
+                photos: (p.photos || []).slice(0, 3).map(photo => `${photo.prefix}500px${photo.suffix}`),
                 category_name: p.categories?.[0]?.name,
                 formatted_address: p.location?.formatted_address || "",
                 description: p.description || ""
@@ -384,7 +384,7 @@ const getPlacesFromBothAPIs = async (req, res) => {
             lng: p.geocodes?.main?.longitude,
             rating: p.rating ? parseFloat((p.rating / 2).toFixed(1)) : null,
             user_ratings_total: p.stats?.total_ratings || 0,
-            photos: (p.photos || []).slice(0, 3).map(photo => `${photo.prefix}original${photo.suffix}`),
+            photos: (p.photos || []).slice(0, 3).map(photo => `${photo.prefix}500px${photo.suffix}`),
             category_name: p.categories?.[0]?.name,
             formatted_address: p.location?.formatted_address || "",
             description: p.description || ""
