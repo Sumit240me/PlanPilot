@@ -14,17 +14,17 @@ const tier1Cities = [
   { name: "Helsinki", state: "Uusimaa", country: "Finland", coordinates: [24.9384, 60.1699], tier: 1 },
   { name: "Reykjavik", state: "Capital Region", country: "Iceland", coordinates: [-21.8174, 64.1265], tier: 1 },
   // ho gaya
-  // { name: "Zurich", state: "Zurich", country: "Switzerland", coordinates: [8.5417, 47.3769], tier: 1 },
-  //{ name: "Geneva", state: "Geneva", country: "Switzerland", coordinates: [6.1432, 46.2044], tier: 1 },
-  //{ name: "Brussels", state: "Brussels", country: "Belgium", coordinates: [4.3517, 50.8503], tier: 1 },
-  // { name: "Edinburgh", state: "Scotland", country: "United Kingdom", coordinates: [-3.1883, 55.9533], tier: 1 },
+   { name: "Zurich", state: "Zurich", country: "Switzerland", coordinates: [8.5417, 47.3769], tier: 1 },
+  { name: "Geneva", state: "Geneva", country: "Switzerland", coordinates: [6.1432, 46.2044], tier: 1 },
+  { name: "Brussels", state: "Brussels", country: "Belgium", coordinates: [4.3517, 50.8503], tier: 1 },
+   { name: "Edinburgh", state: "Scotland", country: "United Kingdom", coordinates: [-3.1883, 55.9533], tier: 1 },
    // yaha se
-  //{ name: "Athens", state: "Attica", country: "Greece", coordinates: [23.7275, 37.9838], tier: 1 },
-  //{ name: "Santorini", state: "South Aegean", country: "Greece", coordinates: [25.4615, 36.3932], tier: 1 },
-  //{ name: "Mykonos", state: "South Aegean", country: "Greece", coordinates: [25.3289, 37.4467], tier: 1 },
+  { name: "Athens", state: "Attica", country: "Greece", coordinates: [23.7275, 37.9838], tier: 1 },
+  { name: "Santorini", state: "South Aegean", country: "Greece", coordinates: [25.4615, 36.3932], tier: 1 },
+  { name: "Mykonos", state: "South Aegean", country: "Greece", coordinates: [25.3289, 37.4467], tier: 1 },
 
-  //{ name: "Cairo", state: "Cairo", country: "Egypt", coordinates: [31.2357, 30.0444], tier: 1 },
-  //{ name: "Marrakech", state: "Marrakech-Safi", country: "Morocco", coordinates: [-7.9811, 31.6295], tier: 1 },
+  { name: "Cairo", state: "Cairo", country: "Egypt", coordinates: [31.2357, 30.0444], tier: 1 },
+  { name: "Marrakech", state: "Marrakech-Safi", country: "Morocco", coordinates: [-7.9811, 31.6295], tier: 1 },
   { name: "Cancun", state: "Quintana Roo", country: "Mexico", coordinates: [-86.8515, 21.1619], tier: 1 },
   { name: "Mexico City", state: "CDMX", country: "Mexico", coordinates: [-99.1332, 19.4326], tier: 1 },
 
@@ -32,8 +32,8 @@ const tier1Cities = [
   { name: "Miami", state: "Florida", country: "USA", coordinates: [-80.1918, 25.7617], tier: 1 },
   { name: "Chicago", state: "Illinois", country: "USA", coordinates: [-87.6298, 41.8781], tier: 1 },
 
-  // { name: "Beijing", state: "Beijing", country: "China", coordinates: [116.4074, 39.9042], tier: 1 },
-  // { name: "Shanghai", state: "Shanghai", country: "China", coordinates: [121.4737, 31.2304], tier: 1 },
+   { name: "Beijing", state: "Beijing", country: "China", coordinates: [116.4074, 39.9042], tier: 1 },
+   { name: "Shanghai", state: "Shanghai", country: "China", coordinates: [121.4737, 31.2304], tier: 1 },
 
    { name: "Bali", state: "Bali", country: "Indonesia", coordinates: [115.1889, -8.4095], tier: 1 },
    { name: "Jakarta", state: "Jakarta", country: "Indonesia", coordinates: [106.8456, -6.2088], tier: 1 },

@@ -6,7 +6,7 @@ const SavedCard = ({ img, name, location, id, fallbackImages }) => {
   const navigate = useNavigate();
 
   return (
-    <div className='flex flex-col shadow-md shadow-gray-200 rounded-4xl hover:shadow-lg hover:shadow-gray-300 transition-all cursor-pointer'>
+    <div className='flex flex-col shadow-md shadow-gray-200 rounded-4xl hover:shadow-lg hover:shadow-gray-300 transition-all cursor-pointer bg-white'>
       <div className='w-full h-50'>
         <ImageWithFallback 
           src={img} 
@@ -32,4 +32,4 @@ const SavedCard = ({ img, name, location, id, fallbackImages }) => {
   )
 }
 
-export default SavedCard
+export default SavedCard

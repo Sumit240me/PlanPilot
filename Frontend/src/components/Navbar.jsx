@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className='sticky top-0 z-50 flex items-center justify-between gap-3 bg-white px-4 py-4 sm:px-6 sm:py-6'>
-      <NavLink to='/' className='shrink-0 text-xl font-bold sm:text-2xl'>PlanPilot </NavLink>
+      <NavLink to='/' className='shrink-0 text-xl font-bold sm:text-2xl text-blue-700'>PlanPilot </NavLink>
 
       <div className='hidden flex-1 justify-center md:flex'>
         <NavLink to='/' className={({ isActive }) => `${navLinkClassName({ isActive })} mr-6`}>Home</NavLink>

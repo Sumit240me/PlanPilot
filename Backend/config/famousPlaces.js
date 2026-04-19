@@ -4602,7 +4602,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "food-hall", "swedish", "gourmet", "upscale"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ostermalm_Market.jpg/500px-Ostermalm_Market.jpghttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1N9639c0o0DtvAkuY28eR-YpvgrtadDz5lA&s"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1N9639c0o0DtvAkuY28eR-YpvgrtadDz5lA&s"]
     },
     {
       name: "Kajsanka",
@@ -4796,7 +4796,7 @@ const FAMOUS_PLACES = {
       tags: ["church", "unique", "rock", "architecture", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Temppeliaukio.jpg/500px-Temppeliaukio.jpg"]
+      photos: ["https://images.unsplash.com/photo-1713149019799-477ac308920f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Market Square",
@@ -4807,7 +4807,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "waterfront", "food", "local", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Market_Square.jpg/500px-Market_Square.jpg"]
+      photos: ["https://images.unsplash.com/photo-1740321781993-3c68c47552b3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Senate Square",
@@ -4818,7 +4818,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "cathedral", "historic", "architecture", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Senate_Square.jpg/500px-Senate_Square.jpg"]
+      photos: ["https://images.unsplash.com/photo-1620894818871-4ab3ddaf64d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Linnanmäki",
@@ -4829,7 +4829,7 @@ const FAMOUS_PLACES = {
       tags: ["amusement", "park", "coaster", "family", "fun"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Linnanmaki.jpg/500px-Linnanmaki.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC6Ie66YgjOXI1a6kj0cwnFANS1HuD8_snmA&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -4842,7 +4842,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "food-hall", "finnish", "delicatessen", "upscale"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Market_Hall.jpg/500px-Market_Hall.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWXZr3s7aJ4qHXd92v5H0Fz2mTGO5ImRmQtA&s"]
     },
     {
       name: "Korkeela",
@@ -4864,7 +4864,7 @@ const FAMOUS_PLACES = {
       tags: ["cafe", "music", "vegan", "cozy", "live-music"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Musiikkikappeli.jpg/500px-Musiikkikappeli.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv8A677iGvt-CT29fJZa88EsuhX7KyzkUQEA&s"]
     },
 
     // PARKS & NATURE
@@ -4877,7 +4877,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "lakes", "forest", "hiking", "skiing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Helsinki_Park.jpg/500px-Helsinki_Park.jpg"]
+      photos: ["https://stplattaprod.blob.core.windows.net/helfikuvaprod/styles/1.5_378w_252h/azure/haltiala_mira_lainiola.jpg?h=e5aec6c8&itok=_PbP1zXr"]
     },
     {
       name: "Suomenlahti Bay Beach",
@@ -4888,7 +4888,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "swimming", "summer", "urban", "accessible"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Helsinki_Beach.jpg/500px-Helsinki_Beach.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQMjw6bXm4uuhSCyJCX7IMTIW8pXO0XMjm9w&s"]
     },
   ],
 
@@ -4905,7 +4905,7 @@ const FAMOUS_PLACES = {
       tags: ["church", "iconic", "basalt", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hallgr%C3%ADmskirkja.jpg/500px-Hallgr%C3%ADmskirkja.jpg"]
+      photos: ["https://images.unsplash.com/photo-1591689594169-b750ecb0fde6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Sun Voyager",
@@ -4916,7 +4916,7 @@ const FAMOUS_PLACES = {
       tags: ["monument", "viking", "sea", "iconic", "symbol"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sun_Voyager.jpg/500px-Sun_Voyager.jpg"]
+      photos: ["https://images.unsplash.com/photo-1658237243601-002519d8ac14?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Harpa Concert Hall",
@@ -4927,7 +4927,7 @@ const FAMOUS_PLACES = {
       tags: ["concert", "glass", "architecture", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Harpa_Reykjavik.jpg/500px-Harpa_Reykjavik.jpg"]
+      photos: ["https://images.unsplash.com/photo-1586801516243-377252405175?q=80&w=2084&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Laugavegur",
@@ -4938,7 +4938,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "street", "boutiques", "cafes", "trendy"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Laugavegur.jpg/500px-Laugavegur.jpg"]
+      photos: ["https://framerusercontent.com/images/FRaITWifEvhqPTirkBYKb1WuMvQ.webp?width=627&height=465"]
     },
     {
       name: "Blue Lagoon",
@@ -4949,7 +4949,7 @@ const FAMOUS_PLACES = {
       tags: ["spa", "geothermal", "lava", "must-visit", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Blue_Lagoon.jpg/500px-Blue_Lagoon.jpg"]
+      photos: ["https://images.unsplash.com/photo-1587897241694-7f0a8d95593c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -4962,7 +4962,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "wool", "food", "flea-market", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kolaportid.jpg/500px-Kolaportid.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_G_YPFUmHT1lkkLFhC9MHysgOlxe7a0QKQ&s"]
     },
     {
       name: "Fish Market",
@@ -4984,7 +4984,7 @@ const FAMOUS_PLACES = {
       tags: ["hot-dog", "iconic", "street-food", "classic", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hot_Dog.jpg/500px-Hot_Dog.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZoYWZfHJJj-7AeWPcC3Xzv1VJYH-ejv-1w&s"]
     },
 
     // NATURE
@@ -4997,7 +4997,7 @@ const FAMOUS_PLACES = {
       tags: ["national-park", "unesco", "rift", "diving", "history"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Thingvellir.jpg/500px-Thingvellir.jpg"]
+      photos: ["https://images.unsplash.com/photo-1516470047996-b6dde636095f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Mount Esja",
@@ -5008,7 +5008,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "hiking", "views", "nature", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mount_Esja.jpg/500px-Mount_Esja.jpg"]
+      photos: ["https://images.unsplash.com/photo-1512525257540-dd546e7f2839?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -5025,7 +5025,7 @@ const FAMOUS_PLACES = {
       tags: ["bridge", "historic", "baroque", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Charles_Bridge.jpg/500px-Charles_Bridge.jpg"]
+      photos: ["https://images.unsplash.com/photo-1600623471616-8c1966c91ff6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Prague Castle",
@@ -5036,7 +5036,7 @@ const FAMOUS_PLACES = {
       tags: ["castle", "historic", "cathedral", "must-visit", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Prague_Castle.jpg/500px-Prague_Castle.jpg"]
+      photos: ["https://images.unsplash.com/photo-1616038242814-a6eac7845d88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Old Town Square",
@@ -5047,7 +5047,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "historic", "gothic", "clock", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Old_Town_Square.jpg/500px-Old_Town_Square.jpg"]
+      photos: ["https://images.unsplash.com/photo-1666687067593-a5a89fd99edd?q=80&w=2004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "St. Vitus Cathedral",
@@ -5058,7 +5058,7 @@ const FAMOUS_PLACES = {
       tags: ["cathedral", "gothic", "stained-glass", "royal", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/St_Vitus_Cathedral.jpg/500px-St_Vitus_Cathedral.jpg"]
+      photos: ["https://images.unsplash.com/photo-1598105774010-95521b7ad274?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Charles University",
@@ -5069,7 +5069,7 @@ const FAMOUS_PLACES = {
       tags: ["university", "historic", "education", "beautiful", "old"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Charles_University.jpg/500px-Charles_University.jpg"]
+      photos: ["https://images.unsplash.com/photo-1724426560921-c364a86aa0e9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -5082,7 +5082,7 @@ const FAMOUS_PLACES = {
       tags: ["indian", "tandoori", "curry", "popular", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Indian_Food.jpg/500px-Indian_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQR06oPP42e79gX7-4N5pUyNni5HLwuKf96g&s"]
     },
     {
       name: "Lobelius",
@@ -5093,7 +5093,7 @@ const FAMOUS_PLACES = {
       tags: ["czech", "traditional", "duck", "goulash", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Czech_Cuisine.jpg/500px-Czech_Cuisine.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSHFuCPqJW-oTgHlXBVgR-0f38-BiabBw7w&s"]
     },
     {
       name: "Havelská Market",
@@ -5104,7 +5104,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "crafts", "trdelnik", "medieval", "street-food"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Market.jpg/500px-Market.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/ef/d5/3e/beautiful.jpg?w=900&h=500&s=1"]
     },
 
     // PARKS & RIVER
@@ -5117,7 +5117,7 @@ const FAMOUS_PLACES = {
       tags: ["fortress", "views", "basilica", "historic", "panoramic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Vysehrad.jpg/500px-Vysehrad.jpg"]
+      photos: ["https://storyofprague.cz/wp-content/uploads/2023/12/vysehrad-prague.webp"]
     },
     {
       name: "Divoka Sarka",
@@ -5128,7 +5128,7 @@ const FAMOUS_PLACES = {
       tags: ["gorge", "hiking", "nature", "forests", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Divoka_Sarka.jpg/500px-Divoka_Sarka.jpg"]
+      photos: ["https://d3w13n53foase7.cloudfront.net/medium_41aa5931_2645_4774_9dba_cfbbf3835770_istock_926257788_0acbbbac22.jpg"]
     },
   ],
 
@@ -5145,7 +5145,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "baroque", "habsburg", "gardens", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sch%C3%B6nbrunn_Palace.jpg/500px-Sch%C3%B6nbrunn_Palace.jpg"]
+      photos: ["https://images.unsplash.com/photo-1615232867241-ebf770bc68b5?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "St. Stephen's Cathedral",
@@ -5156,7 +5156,7 @@ const FAMOUS_PLACES = {
       tags: ["cathedral", "gothic", "iconic", "tower-views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/St_Stephen.jpg/500px-St_Stephen.jpg"]
+      photos: ["https://images.unsplash.com/photo-1608322460360-009ddc765b99?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Hofburg",
@@ -5167,7 +5167,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "imperial", "museum", "history", "sisi"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Hofburg.jpg/500px-Hofburg.jpg"]
+      photos: ["https://images.unsplash.com/photo-1648398784315-ed594c0f7317?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Belvedere Palace",
@@ -5178,7 +5178,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "baroque", "art", "gardens", "gallery"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Belvedere.jpg/500px-Belvedere.jpg"]
+      photos: ["https://images.unsplash.com/photo-1567597435927-80055c207c1c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Danube Tower",
@@ -5189,7 +5189,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "views", "observation", "Danube", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Danube_Tower.jpg/500px-Danube_Tower.jpg"]
+      photos: ["https://images.unsplash.com/photo-1765053729163-2e7ec9519c8d?q=80&w=2121&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -5202,7 +5202,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "food", "wine", "international", "diverse"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Naschmarkt.jpg/500px-Naschmarkt.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd77coWJDixbigE3r8ZxTbg-xS2bzSR4WPDw&s"]
     },
     {
       name: "Figlmüller",
@@ -5213,7 +5213,7 @@ const FAMOUS_PLACES = {
       tags: ["schnitzel", "austrian", "famous", "must-visit", "traditional"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Schnitzel.jpg/500px-Schnitzel.jpg"]
+      photos: ["https://thumbs.dreamstime.com/b/zum-figlm-ller-figlmuller-restaurant-downtown-historic-vienna-austria-vienna-austria-january-zum-figlm-ller-figlmuller-307142621.jpg"]
     },
     {
       name: "Café Central",
@@ -5224,7 +5224,7 @@ const FAMOUS_PLACES = {
       tags: ["cafe", "historic", "coffee", "architecture", "tradition"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Caf%C3%A9_Central.jpg/500px-Caf%C3%A9_Central.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3GdnOYLlnbuWI28yz-wuB4So92KN9ZhUDdw&s"]
     },
 
     // PARKS & RIVER
@@ -5237,7 +5237,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "ferris-wheel", "large", "green", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Prater.jpg/500px-Prater.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtloV0ojeWv6-JYAUSFkB4ZsouScRWVAaYg&s"]
     },
     {
       name: "Danube Island",
@@ -5248,7 +5248,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "beach", "party", "summer", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Danube_Island.jpg/500px-Danube_Island.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwKsBh6LRASC2un0EOnz6Bma5B61MFWBOYRQ&s"]
     },
   ],
 
@@ -5265,7 +5265,7 @@ const FAMOUS_PLACES = {
       tags: ["parliament", "gothic", "iconic", "must-visit", "night-view"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Parliament_Budapest.jpg/500px-Parliament_Budapest.jpg"]
+      photos: ["https://images.unsplash.com/photo-1616432902940-b7a1acbc60b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Chain Bridge",
@@ -5276,7 +5276,7 @@ const FAMOUS_PLACES = {
       tags: ["bridge", "iconic", "suspension", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Chain_Bridge.jpg/500px-Chain_Bridge.jpg"]
+      photos: ["https://images.unsplash.com/photo-1520986840182-5b15f734c85c?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Buda Castle",
@@ -5287,7 +5287,7 @@ const FAMOUS_PLACES = {
       tags: ["castle", "museum", "panoramic", "history", "royal"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Buda_Castle.jpg/500px-Buda_Castle.jpg"]
+      photos: ["https://images.unsplash.com/photo-1652001786521-4bb8429eb9eb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Thermal Baths",
@@ -5298,7 +5298,7 @@ const FAMOUS_PLACES = {
       tags: ["spa", "thermal", "turkish", "art-nouveau", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Thermal_Baths.jpg/500px-Thermal_Baths.jpg"]
+      photos: ["https://images.unsplash.com/photo-1561113277-aef41b98040f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Fisherman's Bastion",
@@ -5309,7 +5309,7 @@ const FAMOUS_PLACES = {
       tags: ["bastion", "views", "panoramic", "romanesque", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Fisherman_Bastion.jpg/500px-Fisherman_Bastion.jpg"]
+      photos: ["https://budacastlebudapest.com/wp-content/uploads/2019/01/Budapest-Fishermans-Bastion-Robert-Muller.png"]
     },
 
     // RESTAURANTS & FOOD
@@ -5322,7 +5322,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "goulash", "paprika", "souvenirs", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Central_Market.jpg/500px-Central_Market.jpg"]
+      photos: ["https://upload.wikimedia.org/wikipedia/commons/a/a7/VasarcsarnokFotoThalerTamas.JPG"]
     },
     {
       name: "Goulash Restaurant",
@@ -5333,7 +5333,7 @@ const FAMOUS_PLACES = {
       tags: ["goulash", "hungarian", "traditional", "stew", "wine"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Goulash.jpg/500px-Goulash.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5SDHLQU7XvfktRo34NpXElWC1Xs2e1rrtyA&s"]
     },
     {
       name: "Ruin Bar",
@@ -5344,7 +5344,7 @@ const FAMOUS_PLACES = {
       tags: ["bar", "ruin-bars", "unique", "street-art", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ruin_Bar.jpg/500px-Ruin_Bar.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjz32xZ_1aYWPMQuH10xsBleCmjmV_leEpZA&s"]
     },
 
     // PARKS & RIVER
@@ -5357,7 +5357,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "gardens", "jogging", "ruins", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Margaret_Island.jpg/500px-Margaret_Island.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW76Nk5aPDFo3nCwxEYqiYDKKZndXZtI98HA&s"]
     },
     {
       name: "Buda Hills",
@@ -5368,7 +5368,7 @@ const FAMOUS_PLACES = {
       tags: ["hills", "hiking", "funicular", "nature", "views"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Buda_Hills.jpg/500px-Buda_Hills.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqMg-b8JnmODIU_jDM5xCQ6xCR6uBUZ3VSTg&s"]
     },
   ],
 
@@ -5385,7 +5385,7 @@ const FAMOUS_PLACES = {
       tags: ["iconic", "historic", "unification", "must-visit", "symbol"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Brandenburg_Gate.jpg/500px-Brandenburg_Gate.jpg"]
+      photos: ["https://images.unsplash.com/photo-1559564484-e48b3e040ff4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "East Side Gallery",
@@ -5396,7 +5396,7 @@ const FAMOUS_PLACES = {
       tags: ["wall", "murals", "art", "historic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/East_Side_Gallery.jpg/500px-East_Side_Gallery.jpg"]
+      photos: ["https://images.unsplash.com/photo-1581505438518-7d8c07ef0d1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Reichstag",
@@ -5407,7 +5407,7 @@ const FAMOUS_PLACES = {
       tags: ["parliament", "dome", "history", "glass", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Reichstag.jpg/500px-Reichstag.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1694475270589-6c0823831e5d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Memorial to Murdered Jews",
@@ -5418,7 +5418,7 @@ const FAMOUS_PLACES = {
       tags: ["memorial", "holocaust", "concrete", "emotional", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Holocaust_Memorial.jpg/500px-Holocaust_Memorial.jpg"]
+      photos: ["https://images.unsplash.com/photo-1723210443369-fc841cf78156?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Checkpoint Charlie",
@@ -5429,7 +5429,7 @@ const FAMOUS_PLACES = {
       tags: ["checkpoint", "cold-war", "historic", "wall", "tourist"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Checkpoint_Charlie.jpg/500px-Checkpoint_Charlie.jpg"]
+      photos: ["https://images.unsplash.com/photo-1660643064018-c038a62e6610?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -5442,7 +5442,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "street-food", "hipster", "kreuzberg", "diverse"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Markthalle.jpg/500px-Markthalle.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYaP8MTtOlCidHPUvVaiPyb_A99beiPqDGJQ&s"]
     },
     {
       name: "Currywurst",
@@ -5464,7 +5464,7 @@ const FAMOUS_PLACES = {
       tags: ["german", "michelin", "fine-dining", "celebration"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/German_Cuisine.jpg/500px-German_Cuisine.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShHuMhRBbblOsTSn1KaBu1-T6nBEQ4PxVo6A&s"]
     },
 
     // PARKS & NATURE
@@ -5477,7 +5477,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "biking", "beer-garden", "memorials", "green"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Tiergarten.jpg/500px-Tiergarten.jpg"]
+      photos: ["https://images.unsplash.com/photo-1552553302-9211bf7f7053?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Müggelsee",
@@ -5488,7 +5488,7 @@ const FAMOUS_PLACES = {
       tags: ["lake", "swimming", "beer-garden", "summer", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/M%C3%BCggelsee.jpg/500px-M%C3%BCggelsee.jpg"]
+      photos: ["https://images.unsplash.com/photo-1714940234321-0afe5ab27ebf?q=80&w=2149&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -5505,7 +5505,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "royal", "largest", "gardens", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Royal_Palace_Madrid.jpg/500px-Royal_Palace_Madrid.jpg"]
+      photos: ["https://images.unsplash.com/photo-1658922184330-001b78430070?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Prado Museum",
@@ -5516,7 +5516,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "art", "goya", "velazquez", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Prado_Museum.jpg/500px-Prado_Museum.jpg"]
+      photos: ["https://images.unsplash.com/photo-1651902519299-9eaf6548b364?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Puerta del Sol",
@@ -5527,7 +5527,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "central", "km-zero", "iconic", "tourist"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Puerta_del_Sol.jpg/500px-Puerta_del_Sol.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1vGdbUK5pm9ire_HmvNDsFil7jJndrcDCw&s"]
     },
     {
       name: "Retiro Park",
@@ -5538,7 +5538,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "lake", "garden", "rose-garden", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wwikipedia/commons/thumb/b/bd/Retiro_Park.jpg/500px-Retiro_Park.jpg"]
+      photos: ["https://images.unsplash.com/photo-1564565946561-e738711bdbd1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Gran Vía",
@@ -5549,7 +5549,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "street", "architecture", "theater", "entertainment"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Gran_Via.jpg/500px-Gran_Via.jpg"]
+      photos: ["https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -5562,7 +5562,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "tapas", "gourmet", "spanish", "wine"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mercado_San_Miguel.jpg/500px-Mercado_San_Miguel.jpg"]
+      photos: ["https://images.unsplash.com/photo-1664695407561-72d0d171e44e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Sobrino de Botín",
@@ -5573,7 +5573,7 @@ const FAMOUS_PLACES = {
       tags: ["oldest", "restaurant", "cochinillo", "historic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Botin.jpg/500px-Botin.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTaSQuRUD7_gE5q9YExXyrnGZtjJdAc42tFA&s"]
     },
     {
       name: "Churriana",
@@ -5584,7 +5584,7 @@ const FAMOUS_PLACES = {
       tags: ["spanish", "tavern", "tapas", "local", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tapas.jpg/500px-Tapas.jpg"]
+      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Churriana_vista_a%C3%A9rea_%28cropped%29.jpg/330px-Churriana_vista_a%C3%A9rea_%28cropped%29.jpg"]
     },
 
     // PARKS & NATURE
@@ -5597,7 +5597,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "cable-car", "zoo", "large", "hiking"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Casa_de_Campo.jpg/500px-Casa_de_Campo.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTloHWyNwC1ngqymjl_JoI7HQC7BO1N5NML8w&s"]
     },
     {
       name: "Rio Madrid",
@@ -5608,7 +5608,7 @@ const FAMOUS_PLACES = {
       tags: ["river", "beach", "kayaking", "urban", "summer"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Rio_Madrid.jpg/500px-Rio_Madrid.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQU4_pBWt944OFXS5J5hmELvbkESop7eQfOQ&s"]
     },
   ],
 
@@ -5625,7 +5625,7 @@ const FAMOUS_PLACES = {
       tags: ["duomo", "dome", "brunelleschi", "must-visit", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Brunelleschi%27s_dome.jpg/500px-Brunelleschi%27s_dome.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXEivIDcZaoXfgq69miSpR2RLbMmrI5g2AyQ&s"]
     },
     {
       name: "Uffizi Gallery",
@@ -5636,7 +5636,7 @@ const FAMOUS_PLACES = {
       tags: ["gallery", "art", "botticelli", "must-visit", "renaissance"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Uffizi_Gallery.jpg/500px-Uffizi_Gallery.jpg"]
+      photos: ["https://images.unsplash.com/photo-1608263090541-9d50f4152804?q=80&w=2009&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Piazzale Michelangelo",
@@ -5647,7 +5647,7 @@ const FAMOUS_PLACES = {
       tags: ["views", "panoramic", "sunset", "david", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Piazzale_Michelangelo.jpg/500px-Piazzale_Michelangelo.jpg"]
+      photos: ["https://images.unsplash.com/photo-1691319683214-d5166f2cb14b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ponte Vecchio",
@@ -5658,7 +5658,7 @@ const FAMOUS_PLACES = {
       tags: ["bridge", "shops", "historic", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ponte_Vecchio.jpg/500px-Ponte_Vecchio.jpg"]
+      photos: ["https://images.unsplash.com/photo-1601195576601-346d58e024c0?q=80&w=2097&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Accademia Gallery",
@@ -5669,7 +5669,7 @@ const FAMOUS_PLACES = {
       tags: ["gallery", "david", "michelangelo", "must-visit", "statue"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/David_by_Michelangelo.jpg/500px-David_by_Michelangelo.jpg"]
+      photos: ["https://images.unsplash.com/photo-1653340313648-04f47e3757a2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -5682,7 +5682,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "fresh", "truffles", "pasta", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mercato.jpg/500px-Mercato.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fu4eaD50eRt6-ukZNZ-i9Gtmo-fPpZ6_ug&s"]
     },
     {
       name: "Trattoria Zazà",
@@ -5693,7 +5693,7 @@ const FAMOUS_PLACES = {
       tags: ["trattoria", "ribollita", "soup", "popular", "traditional"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Italian_Food.jpg/500px-Italian_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvrSZOwyp63vKmtYmrLn7NyVMEF5g6UtFhg&s"]
     },
     {
       name: "All'Antonio",
@@ -5704,7 +5704,7 @@ const FAMOUS_PLACES = {
       tags: ["steak", "bistecca", "fiorentina", "famous", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bistecca.jpg/500px-Bistecca.jpg"]
+      photos: ["https://thumbs.dreamstime.com/z/all-antico-vinaio-florence-italy-february-best-national-street-food-venue-historic-winery-93427193.jpg"]
     },
 
     // PARKS & NATURE
@@ -5717,7 +5717,7 @@ const FAMOUS_PLACES = {
       tags: ["gardens", "statues", "renaissance", "palace", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Boboli_Gardens.jpg/500px-Boboli_Gardens.jpg"]
+      photos: ["https://images.unsplash.com/photo-1576921186598-34dd8fa95c6c?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Fiesole",
@@ -5728,7 +5728,7 @@ const FAMOUS_PLACES = {
       tags: ["town", "views", "roman", "dinner", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Fiesole.jpg/500px-Fiesole.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZehCnBaXN18mgKNHU1sVOUvONByWYxa-CNg&s"]
     },
   ],
 
@@ -5745,7 +5745,7 @@ const FAMOUS_PLACES = {
       tags: ["basilica", "byzantine", "mosaics", "must-visit", "gold"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/St_Mark%27s_Basilica.jpg/500px-St_Mark%27s_Basilica.jpg"]
+      photos: ["https://images.unsplash.com/photo-1660149661083-bf8cbf82ea0d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Doge's Palace",
@@ -5756,7 +5756,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "gothic", "prison", "bridge-of-sighs", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Doge_Palace.jpg/500px-Doge_Palace.jpg"]
+      photos: ["https://images.unsplash.com/photo-1501413993417-48a2d962ed54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Grand Canal",
@@ -5767,7 +5767,7 @@ const FAMOUS_PLACES = {
       tags: ["canal", "vaporetto", "palazzi", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Grand_Canal.jpg/500px-Grand_Canal.jpg"]
+      photos: ["https://images.unsplash.com/photo-1558271736-cd043ef2e855?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Rialto Bridge",
@@ -5778,7 +5778,7 @@ const FAMOUS_PLACES = {
       tags: ["bridge", "market", "historic", "iconic", "sunset"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rialto_Bridge.jpg/500px-Rialto_Bridge.jpg"]
+      photos: ["https://images.unsplash.com/photo-1660801576025-c87d2e5ff9c4?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "St. Mark's Campanile",
@@ -5789,7 +5789,7 @@ const FAMOUS_PLACES = {
       tags: ["campanile", "tower", "views", "iconic", "lift"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Campanile.jpg/500px-Campanile.jpg"]
+      photos: ["https://images.unsplash.com/photo-1620887118689-a548eb0fe691?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -5802,7 +5802,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "fish", "produce", "fruit", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Rialto_Market.jpg/500px-Rialto_Market.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHF-wPhqgP6xKxxYiaHYqLWYVa2_cvBFzihw&s"]
     },
     {
       name: "Da Marisa",
@@ -5813,18 +5813,18 @@ const FAMOUS_PLACES = {
       tags: ["restaurant", "family", "historic", "famous", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Venice_Food.jpg/500px-Venice_Food.jpg"]
+      photos: ["https://www.elizabethminchilli.com/wp-content/uploads/2015/07/Dalla_Marisa_Venice_Elizabeth_Minchilli-7.jpg"]
     },
     {
       name: "Cantina do Spade",
       lat: 45.4424, lng: 12.3199,
-      category_name: "bacaro",
+      category_name: "food",
       rating: 4.3, user_ratings_total: 8000,
       description: "Wine bar with cicheti. Venetian tapas tradition.",
       tags: ["wine", "cicheti", "bacaro", "tapas", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cicheti.jpg/500px-Cicheti.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRkGAbtTefm0evbrwuVJdncA67k6WQh88ZQ&s"]
     },
 
     // CANALS & ISLANDS
@@ -5837,7 +5837,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "colorful", "lace", "photography", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Burano.jpg/500px-Burano.jpg"]
+      photos: ["https://images.unsplash.com/photo-1610573759936-5eed92944a05?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Lido Beach",
@@ -5848,7 +5848,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "sand", "summer", "resort", "accessible"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lido_Beach.jpg/500px-Lido_Beach.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPfWsXwEiEp_vaXmK-Jw0UVazwma3jCOkV5g&s"]
     },
   ],
 
@@ -5865,7 +5865,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "cable-car", "views", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Table_Mountain.jpg/500px-Table_Mountain.jpg"]
+      photos: ["https://images.unsplash.com/photo-1604763655221-b98ebdac6ddf?q=80&w=2001&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Robben Island",
@@ -5876,7 +5876,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "mandela", "history", "museum", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Robben_Island.jpg/500px-Robben_Island.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a4/f2/14/robben-islandhas-been.jpg?w=1200&h=1200&s=1"]
     },
     {
       name: "Camps Bay",
@@ -5887,7 +5887,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "trendy", "restaurants", "sunset", "mountain"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Camps_Bay.jpg/500px-Camps_Bay.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR45gWUpkkk-7UHgVQVG7xpD8bbDjFqdG8FeA&s"]
     },
     {
       name: "V&A Waterfront",
@@ -5898,7 +5898,7 @@ const FAMOUS_PLACES = {
       tags: ["harbor", "shopping", "aquarium", "restaurants", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Waterfront.jpg/500px-Waterfront.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1697730063821-76cab3c6202f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Kirstenbosch",
@@ -5909,7 +5909,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "botanical", "mountain", "concerts", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kirstenbosch.jpg/500px-Kirstenbosch.jpg"]
+      photos: ["https://images.unsplash.com/photo-1709483969373-f355f4b80f85?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -5922,7 +5922,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "crafts", "art", "souvenirs", "african"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Greenmarket.jpg/500px-Greenmarket.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROt8EQ1sQe7xouMTJmtaNmVl6LWEtZwPKFxg&s"]
     },
     {
       name: "The Bay",
@@ -5933,7 +5933,7 @@ const FAMOUS_PLACES = {
       tags: ["seafood", "views", "mountain", "romantic", "dining"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Cape_Town_Food.jpg/500px-Cape_Town_Food.jpg"]
+      photos: ["https://b-cdn.springnest.com/media/img/m8/camps_bay_view_cape_town_south_africa_cape_town_to3aaa6ff.png?aspect_ratio=1200%3A630&width=1200"]
     },
     {
       name: "Bree Street",
@@ -5944,7 +5944,7 @@ const FAMOUS_PLACES = {
       tags: ["street", "trendy", "breweries", "coffee", "food"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bree_Street.jpg/500px-Bree_Street.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrMJhJ1t0Rx6rS_PE_CHIBkqmElGEAS4Y94Q&s"]
     },
 
     // BEACHES & NATURE
@@ -5957,7 +5957,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "penguins", "wildlife", "family", "unique"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Boulders_Beach.jpg/500px-Boulders_Beach.jpg"]
+      photos: ["https://images.unsplash.com/photo-1586960805232-9ad00a8c0faf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Constantia Wine Farm",
@@ -5968,7 +5968,7 @@ const FAMOUS_PLACES = {
       tags: ["wine", "winery", "historic", "tasting", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Wine_Farm.jpg/500px-Wine_Farm.jpg"]
+      photos: ["https://images.unsplash.com/photo-1638012858969-fac36ad2ea32?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -5985,7 +5985,7 @@ const FAMOUS_PLACES = {
       tags: ["statue", "iconic", "wonder", "must-visit", "panoramic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Christ_the_Redeemer.jpg/500px-Christ_the_Redeemer.jpg"]
+      photos: ["https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Copacabana Beach",
@@ -5996,7 +5996,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "iconic", "promenade", "volleyball", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Copacabana.jpg/500px-Copacabana.jpg"]
+      photos: ["https://images.unsplash.com/photo-1630410139620-15d3a0791a5b?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Sugarloaf Mountain",
@@ -6007,7 +6007,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "cable-car", "views", "sunset", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Sugarloaf.jpg/500px-Sugarloaf.jpg"]
+      photos: ["https://images.unsplash.com/photo-1544989164-22f292ae11b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ipanema Beach",
@@ -6018,7 +6018,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "chic", "shopping", "sunset", "trendy"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ipanema.jpg/500px-Ipanema.jpg"]
+      photos: ["https://images.unsplash.com/photo-1710378481474-b15055551004?q=80&w=1992&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Maracanã Stadium",
@@ -6029,7 +6029,7 @@ const FAMOUS_PLACES = {
       tags: ["stadium", "football", "tour", "historic", "sports"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Maracana.jpg/500px-Maracana.jpg"]
+      photos: ["https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/13CE5/production/_93352118_034360287-1.jpg"]
     },
 
     // RESTAURANTS & FOOD
@@ -6042,7 +6042,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "feijoada", "churrasco", "brazilian", "food"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mercadao.jpg/500px-Mercadao.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/53/8c/12/photo1jpg.jpg?w=500&h=500&s=1"]
     },
     {
       name: "Feijoada Restaurant",
@@ -6053,7 +6053,7 @@ const FAMOUS_PLACES = {
       tags: ["feijoada", "brazilian", "traditional", "stew", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Feijoada.jpg/500px-Feijoada.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtKw6D1DOkxPKJR883UyEJoYGGaHHnh6oTQ&s"]
     },
     {
       name: "Brazilian Bar",
@@ -6064,7 +6064,7 @@ const FAMOUS_PLACES = {
       tags: ["bar", "samba", "music", "caipirinha", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Brazilian_Bar.jpg/500px-Brazilian_Bar.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQySfwPZy7xH0vf_gdoBiE7U986pJXqXBS8pg&s"]
     },
 
     // BEACHES & NATURE
@@ -6077,7 +6077,7 @@ const FAMOUS_PLACES = {
       tags: ["forest", "hiking", "waterfalls", "nature", "urban"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tijuca_Forest.jpg/500px-Tijuca_Forest.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST77KG0wumu-W9yKWiIxYYcKRX7du-fML9FQ&s"]
     },
     {
       name: "Botanical Garden",
@@ -6088,7 +6088,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "botanical", "nature", "monkeys", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Botanical_Garden_Rio.jpg/500px-Botanical_Garden_Rio.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVCwW2vQui9HTW99iKpnyCEMzXa_owJ9kVA&s"]
     },
   ],
 
@@ -6105,7 +6105,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "iconic", "glass-floor", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/CN_Tower.jpg/500px-CN_Tower.jpg"]
+      photos: ["https://images.unsplash.com/photo-1509118796018-30cc4ce216f1?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Royal Ontario Museum",
@@ -6116,7 +6116,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "dinosaurs", "art", "culture", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/ROM.jpg/500px-ROM.jpg"]
+      photos: ["https://images.unsplash.com/photo-1709251509047-5207b09eadbd?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "St. Lawrence Market",
@@ -6127,7 +6127,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "historic", "food", "bacon", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/St_Lawrence.jpg/500px-St_Lawrence.jpg"]
+      photos: ["https://images.unsplash.com/photo-1665544940846-149d275c1ea5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Distillery District",
@@ -6138,7 +6138,7 @@ const FAMOUS_PLACES = {
       tags: ["village", "galleries", "christmas", "art", "walkable"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Distillery.jpg/500px-Distillery.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS37PSQxay25UoVZspiySSC7Y9SxlhO4rDsRg&s"]
     },
     {
       name: "High Park",
@@ -6149,7 +6149,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "zoo", "cherry-blossom", "nature", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/High_Park.jpg/500px-High_Park.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1733342405121-03519145940b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -6162,7 +6162,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "vintage", "global", "eclectic", "food"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kensington.jpg/500px-Kensington.jpg"]
+      photos: ["https://media.tacdn.com/media/attractions-splice-spp-674x446/07/b7/20/34.jpg"]
     },
     {
       name: "Pai Northern Thai",
@@ -6173,7 +6173,7 @@ const FAMOUS_PLACES = {
       tags: ["thai", "popular", "curry", "pad-thai", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Thai_Food.jpg/500px-Thai_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmacwKibZdCOTQwDIlFWx-Z0OAT-lLob4XxQ&s"]
     },
     {
       name: "St. Lawrence Market Food Hall",
@@ -6184,7 +6184,7 @@ const FAMOUS_PLACES = {
       tags: ["food-hall", "lamb", "sausage", "historic", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/St_Lawrence_Food.jpg/500px-St_Lawrence_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSmADOpBvz1C1lr8hqMfP0QiCBNQ7Gf3A7vg&s"]
     },
 
     // PARKS & ISLAND
@@ -6197,7 +6197,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "beach", "ferry", "cycling", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Toronto_Islands.jpg/500px-Toronto_Islands.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqECQEdRQpPvk0RnQBXewS9VCj9Ncj_Yknww&s"]
     },
     {
       name: "Rouge Park",
@@ -6208,7 +6208,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "hiking", "wildlife", "nature", "urban-wilderness"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Rouge_Park.jpg/500px-Rouge_Park.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2EFaoEAWYV-7o2lBAkvXabxQ4swsFQnEqTw&s"]
     },
   ],
 
@@ -6225,7 +6225,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "seawall", "totem-poles", "beach", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Stanley_Park.jpg/500px-Stanley_Park.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1729541944538-9eb2fbad0e28?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Granville Island",
@@ -6236,7 +6236,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "market", "crafts", "breweries", "art"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Granville_Island.jpg/500px-Granville_Island.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQS4SlN5GOpThiq1vE4BKaYk8moSQCvtUk4w&s"]
     },
     {
       name: "Capilano Suspension Bridge",
@@ -6247,7 +6247,7 @@ const FAMOUS_PLACES = {
       tags: ["bridge", "rainforest", "adventure", "nature", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Capilano.jpg/500px-Capilano.jpg"]
+      photos: ["https://images.unsplash.com/photo-1579946674450-86acd413adde?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Gastown",
@@ -6258,7 +6258,7 @@ const FAMOUS_PLACES = {
       tags: ["neighborhood", "historic", "steam-clock", "boutiques", "pubs"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gastown.jpg/500px-Gastown.jpg"]
+      photos: ["https://images.unsplash.com/photo-1709330707257-abcd1a86bcfa?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Grouse Mountain",
@@ -6269,7 +6269,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "skiing", "skyride", "hiking", "views"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Grouse_Mountain.jpg/500px-Grouse_Mountain.jpg"]
+      photos: ["https://images.unsplash.com/photo-1592838918087-5d4d31e32204?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -6282,7 +6282,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "asian", "night", "street-food", "karaoke"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Night_Market.jpg/500px-Night_Market.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNrfjRlPysVFQrKboed_VL84lZzAxlmlJuiw&s"]
     },
     {
       name: "Japadog",
@@ -6293,7 +6293,7 @@ const FAMOUS_PLACES = {
       tags: ["hot-dog", "japanese", "street-food", "trendy", "fusion"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Japadog.jpg/500px-Japadog.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZOKTRmmir8j_qy5S__LGXaVTBu7ArwKDwA&s"]
     },
     {
       name: "Vancouver Art Gallery Cafe",
@@ -6304,7 +6304,7 @@ const FAMOUS_PLACES = {
       tags: ["cafe", "gallery", "patio", "lunch", "coffee"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Vancouver_Cafe.jpg/500px-Vancouver_Cafe.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwITGssFHI1LLj4UoF2knOrfUbsnNyka7cvg&s"]
     },
 
     // BEACHES & NATURE
@@ -6317,7 +6317,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "pool", "mountain-views", "summer", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Kitsilano_Beach.jpg/500px-Kitsilano_Beach.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgfPx2vVACSw1QP9rNwjycAu56Evz62jpfA&s"]
     },
     {
       name: "Lynn Canyon",
@@ -6328,7 +6328,7 @@ const FAMOUS_PLACES = {
       tags: ["canyon", "hiking", "waterfalls", "nature", "free"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Lynn_Canyon.jpg/500px-Lynn_Canyon.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/4e/d3/c6/photo0jpg.jpg?w=900&h=500&s=1"]
     },
   ],
 
@@ -6345,7 +6345,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "hanbok", "historical", "must-visit", "korean"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gyeongbokgung.jpg/500px-Gyeongbokgung.jpg"]
+      photos: ["https://images.unsplash.com/photo-1556966346-0215efedf4d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Bukchon Hanok",
@@ -6356,7 +6356,7 @@ const FAMOUS_PLACES = {
       tags: ["hanok", "traditional", "walking", "village", "culture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Bukchon.jpg/500px-Bukchon.jpg"]
+      photos: ["https://images.unsplash.com/photo-1703825864792-5880081beaaf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Myeongdong",
@@ -6367,7 +6367,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "makeup", "fashion", "street-food", "trendy"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Myeongdong.jpg/500px-Myeongdong.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjTDj7Zf23FQNHQiMeAuxnSUKrNuUPIQGvQ&s"]
     },
     {
       name: "N Seoul Tower",
@@ -6378,7 +6378,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "views", "lock-bridge", "romantic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/N_Seoul_Tower.jpg/500px-N_Seoul_Tower.jpg"]
+      photos: ["https://images.unsplash.com/photo-1635686692794-b0ce6337386b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Cheonggyecheon",
@@ -6389,7 +6389,7 @@ const FAMOUS_PLACES = {
       tags: ["stream", "fountains", "walking", "relaxing", "urban"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Cheonggyecheon.jpg/500px-Cheonggyecheon.jpg"]
+      photos: ["https://images.unsplash.com/photo-1631176206492-f03b80b3e854?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -6402,7 +6402,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "mandu", "kimbap", "traditional", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gwangjang.jpg/500px-Gwangjang.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUc42n_MupK9_p-MuwK4OsrE6pQbbA14H2oA&s"]
     },
     {
       name: "Myeongdong Kyoja",
@@ -6413,7 +6413,7 @@ const FAMOUS_PLACES = {
       tags: ["kalguksu", "noodles", "famous", "must-visit", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kalguksu.jpg/500px-Kalguksu.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg4d_wUA9FiHl2veAKlH5agUsghFtBmQiFrQ&s"]
     },
     {
       name: "Insadong",
@@ -6424,7 +6424,7 @@ const FAMOUS_PLACES = {
       tags: ["crafts", "tea", "art", "traditional", "galleries"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Insadong.jpg/500px-Insadong.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqeH-KnYTSXOzORBiXo1TSkFuIW0mNkVGPQ&s"]
     },
 
     // PARKS & MOUNTAIN
@@ -6437,7 +6437,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "trails", "wall", "hiking", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bukaksan.jpg/500px-Bukaksan.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv--p-1-rpZq4FRElzwbL1ColBGJHGKeQvMQ&s"]
     },
     {
       name: "Hangang River Park",
@@ -6448,7 +6448,7 @@ const FAMOUS_PLACES = {
       tags: ["river", "park", "cycling", "picnic", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Hangang.jpg/500px-Hangang.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHcLVfTEsS-AsHVx9cSMuzvEneCCqunym3g&s"]
     },
   ],
 
@@ -6465,7 +6465,7 @@ const FAMOUS_PLACES = {
       tags: ["shrine", "torii", "gates", "hiking", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fushimi_Inari.jpg/500px-Fushimi_Inari.jpg"]
+      photos: ["https://images.unsplash.com/photo-1571754687353-1d9e07f478d9?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Arashiyama Bamboo Grove",
@@ -6476,7 +6476,7 @@ const FAMOUS_PLACES = {
       tags: ["bamboo", "forest", "river", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Bamboo_Grove.jpg/500px-Bamboo_Grove.jpg"]
+      photos: ["https://images.unsplash.com/photo-1632923754832-60642c12a7ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Kinkaku-ji",
@@ -6487,7 +6487,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "golden", "pond", "world-heritage", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Kinkakuji.jpg/500px-Kinkakuji.jpg"]
+      photos: ["https://images.unsplash.com/flagged/photo-1575356680811-2b6602c597aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Gion District",
@@ -6498,7 +6498,7 @@ const FAMOUS_PLACES = {
       tags: ["geisha", "traditional", "tea-houses", "walk", "culture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gion.jpg/500px-Gion.jpg"]
+      photos: ["https://images.unsplash.com/photo-1717649389730-ba6d16053b43?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Philosopher's Path",
@@ -6509,7 +6509,7 @@ const FAMOUS_PLACES = {
       tags: ["path", "cherry-blossom", "canal", "temples", "romantic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Philosophers_Path.jpg/500px-Philosophers_Path.jpg"]
+      photos: ["https://images.unsplash.com/photo-1734427842895-23133354d945?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -6522,7 +6522,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "pickles", "fish", "kitchen", "traditional"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Nishiki_Market.jpg/500px-Nishiki_Market.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/cc/8a/fe/caption.jpg?w=900&h=500&s=1"]
     },
     {
       name: "Kifuku Tei",
@@ -6533,7 +6533,7 @@ const FAMOUS_PLACES = {
       tags: ["kaiseki", "tofu", "traditional", "kyoto-cuisine", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Kaiseki.jpg/500px-Kaiseki.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ijFTMSCXS6oJM8Mo7uyh6Dy3yVNHtJaZug&s"]
     },
     {
       name: "Gion Nanba",
@@ -6544,7 +6544,7 @@ const FAMOUS_PLACES = {
       tags: ["tofu", "vegetarian", "buddhist", "traditional", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Kyoto_Tofu.jpg/500px-Kyoto_Tofu.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/a5/c8/47/gion-nanba.jpg?w=900&h=500&s=1"]
     },
 
     // TEMPLES & GARDENS
@@ -6557,7 +6557,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "rock-garden", "zen", "meditation", "unique"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Ryoanji.jpg/500px-Ryoanji.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFF7hzlx3ZzQFumxcqOzTQ8dhYmCRWCN0-YA&s"]
     },
     {
       name: "Daigo-ji",
@@ -6568,7 +6568,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "pagoda", "mountain", "cherry-blossom", "scenic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Daigoji.jpg/500px-Daigoji.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgh287mtJs2otiDCT9lDZvOwhXRgtet8KYpw&s"]
     },
   ],
 
@@ -6585,7 +6585,7 @@ const FAMOUS_PLACES = {
       tags: ["buddha", "monument", "views", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Big_Buddha_Phuket.jpg/500px-Big_Buddha_Phuket.jpg"]
+      photos: ["https://images.unsplash.com/photo-1586820672103-2272d8490ade?q=80&w=1947&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Patong Beach",
@@ -6596,7 +6596,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "nightlife", "water-sports", "party", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Patong_Beach.jpg/500px-Patong_Beach.jpg"]
+      photos: ["https://images.unsplash.com/photo-1737515994519-37d83e469902?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Old Phuket Town",
@@ -6607,7 +6607,7 @@ const FAMOUS_PLACES = {
       tags: ["architecture", "portuguese", "cafes", "murals", "heritage"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Old_Phuket_Town.jpg/500px-Old_Phuket_Town.jpg"]
+      photos: ["https://images.unsplash.com/photo-1678418642428-c2c4857bcf40?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Phi Phi Islands",
@@ -6618,7 +6618,7 @@ const FAMOUS_PLACES = {
       tags: ["islands", "diving", "maya-bay", "beaches", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Phi_Phi.jpg/500px-Phi_Phi.jpg"]
+      photos: ["https://images.unsplash.com/photo-1673627114937-ca220aad736d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Wat Chalong",
@@ -6629,7 +6629,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "buddhist", "shrine", "culture", "historical"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Wat_Chalong.jpg/500px-Wat_Chalong.jpg"]
+      photos: ["https://images.unsplash.com/photo-1591891779249-afdf6370244f?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -6642,7 +6642,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "night", "food", "souvenirs", "fruit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Phuket_Market.jpg/500px-Phuket_Market.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI4BuN-lv05egZoQDdhMjrYegZYs_SjEAhAA&s"]
     },
     {
       name: "Mee Sap",
@@ -6653,7 +6653,7 @@ const FAMOUS_PLACES = {
       tags: ["noodles", "local", "hokkien", "famous", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Noodles.jpg/500px-Noodles.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdRbDavuihRIiAw2T9xdxi80sn1jYQ4PWfQ&s"]
     },
     {
       name: "Raya Restaurant",
@@ -6664,7 +6664,7 @@ const FAMOUS_PLACES = {
       tags: ["seafood", "beach", "fresh", "thai", "dining"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Phuket_Seafood.jpg/500px-Phuket_Seafood.jpg"]
+      photos: ["https://static.wixstatic.com/media/e271da_1228b86e6f4c47b18abbbdf5b1a6d100~mv2.jpg/v1/fill/w_347,h_231,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8914_JPG.jpg"]
     },
 
     // BEACHES & ISLANDS
@@ -6677,7 +6677,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "family", "surfing", " relaxed", "resorts"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Kata_Beach.jpg/500px-Kata_Beach.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqd1htDovKmQJqn6xpR3RRy1K1gfzniE2pZA&s"]
     },
     {
       name: "James Bond Island",
@@ -6688,7 +6688,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "limestone", "film", "tour", "scenic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/James_Bond_Island.jpg/500px-James_Bond_Island.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/4d/d5/ee/caption.jpg?w=1200&h=-1&s=1"]
     },
   ],
 
@@ -6705,7 +6705,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "carved", "teak", "unique", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sanctuary_of_Truth.jpg/500px-Sanctuary_of_Truth.jpg"]
+      photos: ["https://images.unsplash.com/photo-1671597728617-32d19c352c4d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Walking Street",
@@ -6716,7 +6716,7 @@ const FAMOUS_PLACES = {
       tags: ["street", "nightlife", "entertainment", "night", "party"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Walking_Street.jpg/500px-Walking_Street.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphF3Yj0L6tkEEjCiKYwFi7W-21GQzpUmdzA&s"]
     },
     {
       name: "Nong Noche Village",
@@ -6727,7 +6727,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "orchids", "shows", "cultural", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Nong_Noche.jpg/500px-Nong_Noche.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROpDpbC4-KWqTkUM491GRHw3nqiZYZFQOhpA&s"]
     },
     {
       name: "Floating Market",
@@ -6738,7 +6738,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "floating", "souvenirs", "food", "thai"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Floating_Market.jpg/500px-Floating_Market.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bzLdWBFmqzTcVljH_YA8Mk0pCUkLsxTajg&s"]
     },
     {
       name: "Viewpoint",
@@ -6749,7 +6749,7 @@ const FAMOUS_PLACES = {
       tags: ["viewpoint", "buddha", "views", "panoramic", "photo-op"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pattaya_Viewpoint.jpg/500px-Pattaya_Viewpoint.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8Wipz7dzUokH8xxmO8eSDgo9ugU5w1yDTg&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -6762,7 +6762,7 @@ const FAMOUS_PLACES = {
       tags: ["mall", "shopping", "restaurants", "cinema", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Central_Festival.jpg/500px-Central_Festival.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvSZ0zToHfE3D1sWHdIwZLNBxKpfd-gH8tA&s"]
     },
     {
       name: "Moom Aroi",
@@ -6773,7 +6773,7 @@ const FAMOUS_PLACES = {
       tags: ["seafood", "thai", "beachfront", "popular", "dining"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Seafood_Restaurant.jpg/500px-Seafood_Restaurant.jpg"]
+      photos: ["https://d3hwaim9vs2gfj.cloudfront.net/596-2618093313.jpg"]
     },
     {
       name: "Sister Restaurant",
@@ -6784,7 +6784,7 @@ const FAMOUS_PLACES = {
       tags: ["thai", "outdoor", "local", "budget-friendly", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Thai_Cuisine_Pattaya.jpg/500px-Thai_Cuisine_Pattaya.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/75/84/3b/main-dining-room.jpg?w=900&h=500&s=1"]
     },
 
     // BEACHES
@@ -6797,7 +6797,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "relaxed", "water-sports", "family", "quieter"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Jomtien_Beach.jpg/500px-Jomtien_Beach.jpg"]
+      photos: ["https://static.toiimg.com/thumb/msid-54328253,width=1200,height=900/54328253.jpg"]
     },
     {
       name: "Coral Island",
@@ -6808,7 +6808,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "diving", "speedboats", "beach", "excursion"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Coral_Island.jpg/500px-Coral_Island.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5HYdXpdKNGhVQoQ39FkWvtKdic8UpwBKxCA&s"]
     },
   ],
 
@@ -6825,7 +6825,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "sunset", "sea", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tanah_Lot.jpg/500px-Tanah_Lot.jpg"]
+      photos: ["https://images.unsplash.com/photo-1724568834710-d5db3faab7e8?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ubud Rice Terraces",
@@ -6836,7 +6836,7 @@ const FAMOUS_PLACES = {
       tags: ["terrace", "nature", "instagram", "scenic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ubud_Terraces.jpg/500px-Ubud_Terraces.jpg"]
+      photos: ["https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Kuta Beach",
@@ -6847,7 +6847,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "surf", "sunset", "party", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Kuta_Beach.jpg/500px-Kuta_Beach.jpg"]
+      photos: ["https://images.unsplash.com/photo-1663060096249-6097ca302389?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Uluwatu Temple",
@@ -6858,7 +6858,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "cliff", "kecak", "sunset", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Uluwatu.jpg/500px-Uluwatu.jpg"]
+      photos: ["https://images.unsplash.com/photo-1604842937136-1648761a6256?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Seminyak",
@@ -6869,7 +6869,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "clubs", "sunset", "trendy", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Seminyak.jpg/500px-Seminyak.jpg"]
+      photos: ["https://images.unsplash.com/photo-1624033332671-136eedd571a8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -6882,7 +6882,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "warung", "local", "food", "traditional"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ubud_Market.jpg/500px-Ubud_Market.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPV6dnVX_oGtcjuaKzvZWbqvV8et4wbTd5w&s"]
     },
     {
       name: "Made's Warung",
@@ -6893,7 +6893,7 @@ const FAMOUS_PLACES = {
       tags: ["nasi-goreng", "warung", "traditional", "famous", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Bali_Food.jpg/500px-Bali_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVbRo-h7rshLZe18Xmty4I8nNzZJPZAio4g&s"]
     },
     {
       name: "Cafe Moka",
@@ -6904,7 +6904,7 @@ const FAMOUS_PLACES = {
       tags: ["cafe", "brunch", "european", "popular", "cozy"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cafe.jpg/500px-Cafe.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0z-NRNl7cX5JcGh7CNZ1w0IX8VSYaU62QlA&s"]
     },
 
     // BEACHES & TEMPLES
@@ -6917,7 +6917,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "holy-water", "purification", "spiritual", "culture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Tirta_Empul.jpg/500px-Tirta_Empul.jpg"]
+      photos: ["https://images.unsplash.com/photo-1704253411849-099f8bff9e4d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Nusa Islands",
@@ -6928,7 +6928,7 @@ const FAMOUS_PLACES = {
       tags: ["islands", "beach", "surfing", "diving", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nusa_Dua.jpg/500px-Nusa_Dua.jpg"]
+      photos: ["https://images.unsplash.com/photo-1738780356869-4264dc858c60?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -6945,7 +6945,7 @@ const FAMOUS_PLACES = {
       tags: ["monument", "views", "landmark", "history", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Monas.jpg/500px-Monas.jpg"]
+      photos: ["https://images.unsplash.com/photo-1590930754517-64d5fffa06ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Kota Tua",
@@ -6956,7 +6956,7 @@ const FAMOUS_PLACES = {
       tags: ["old-town", "dutch", "museum", "heritage", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kota_Tua.jpg/500px-Kota_Tua.jpg"]
+      photos: ["https://images.unsplash.com/photo-1663504993665-41da73fd1f5c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Grand Indonesia",
@@ -6967,7 +6967,7 @@ const FAMOUS_PLACES = {
       tags: ["mall", "shopping", "cinema", "dining", "luxury"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Grand_Indonesia.jpg/500px-Grand_Indonesia.jpg"]
+      photos: ["https://images.unsplash.com/photo-1555043722-4523972f07ee?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Jakarta Cathedral",
@@ -6978,7 +6978,7 @@ const FAMOUS_PLACES = {
       tags: ["cathedral", "gothic", "church", "historic", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Cathedral.jpg/500px-Cathedral.jpg"]
+      photos: ["https://images.unsplash.com/photo-1593012430611-d48e56925e35?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ragunan Zoo",
@@ -6989,7 +6989,7 @@ const FAMOUS_PLACES = {
       tags: ["zoo", "pandas", "family", "animals", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Ragunan_Zoo.jpg/500px-Ragunan_Zoo.jpg"]
+      photos: ["https://hblimg.mmtcdn.com/content/hubble/img/ttd_img/mmt/activities/m_Jakarta_Ragunan_Zoo_4_l_508_900.jpg"]
     },
 
     // RESTAURANTS & FOOD
@@ -7002,7 +7002,7 @@ const FAMOUS_PLACES = {
       tags: ["laksa", "noodles", "betawi", "traditional", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Laksa.jpg/500px-Laksa.jpg"]
+      photos: ["https://whattocooktoday.com/wp-content/uploads/2020/04/laksa-ayam-betawi-13.jpg"]
     },
     {
       name: "Sate Khas Senen",
@@ -7013,7 +7013,7 @@ const FAMOUS_PLACES = {
       tags: ["satay", "peanut-sauce", "indonesian", "street-food", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Satay.jpg/500px-Satay.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvggv3OCH0SJumQyncwjP0SQkvshL_J3FJOw&s"]
     },
     {
       name: "Menteng",
@@ -7024,7 +7024,7 @@ const FAMOUS_PLACES = {
       tags: ["colonial", "cafes", "heritage", "walk", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Menteng.jpg/500px-Menteng.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK8mziSbQmieyBV2k4Liqh2ieC8E5ipRpfJg&s"]
     },
 
     // PARKS & MALLS
@@ -7037,7 +7037,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "miniature", "culture", "family", "indonesian"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Taman_Mini.jpg/500px-Taman_Mini.jpg"]
+      photos: ["https://images.unsplash.com/photo-1657214668331-3dbd21c41be6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ancol Beach",
@@ -7048,7 +7048,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "resort", "theme-park", "family", "entertainment"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ancol.jpg/500px-Ancol.jpg"]
+      photos: ["https://images.unsplash.com/photo-1661478621254-0e880ff2046b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -7065,7 +7065,7 @@ const FAMOUS_PLACES = {
       tags: ["fort", "spanish", "walled-city", "historic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Intramuros.jpg/500px-Intramuros.jpg"]
+      photos: ["https://images.unsplash.com/photo-1613686224427-29b757c04e0d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Rizal Park",
@@ -7076,7 +7076,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "lakeside", "historic", "hero", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rizal_Park.jpg/500px-Rizal_Park.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0jzy38BJWbmDfwRsMYhXLCvvVTBRjB0pYsA&s"]
     },
     {
       name: "Binondo",
@@ -7087,7 +7087,7 @@ const FAMOUS_PLACES = {
       tags: ["chinatown", "food", "historic", "dim-sum", "cultural"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Binondo.jpg/500px-Binondo.jpg"]
+      photos: ["https://hblimg.mmtcdn.com/content/hubble/img/maniladestimages/mmt/activities/m_Binondo_1_l_667_1000.jpg"]
     },
     {
       name: "San Agustin Church",
@@ -7098,7 +7098,7 @@ const FAMOUS_PLACES = {
       tags: ["church", "baroque", "unesco", "music", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/San_Agustin.jpg/500px-San_Agustin.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs6Cm0WoyG3fIT74n7PuahU9VaFbKQ4E-8ew&s"]
     },
     {
       name: "Makati",
@@ -7109,7 +7109,7 @@ const FAMOUS_PLACES = {
       tags: ["business", "malls", "nightlife", "dining", "modern"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Makati.jpg/500px-Makati.jpg"]
+      photos: ["https://cdn.britannica.com/12/150512-050-A7324788/Skyline-Makati-Philippines.jpg"]
     },
 
     // RESTAURANTS & FOOD
@@ -7122,7 +7122,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "fruits", "shopping", "bargain", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Divisoria.jpg/500px-Divisoria.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVLVk7G0snETRkiiRl_k1KVXG-0avcvd-oOA&s"]
     },
     {
       name: "Carenderia",
@@ -7133,7 +7133,7 @@ const FAMOUS_PLACES = {
       tags: ["filipino", "sinigang", "adobo", "local", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Filipino_Food.jpg/500px-Filipino_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuTXu1isv_1RVc-UjNb_9m5Ryj2fVYoOzqnw&s"]
     },
     {
       name: "Aristocrat Restaurant",
@@ -7144,7 +7144,7 @@ const FAMOUS_PLACES = {
       tags: ["chicken", "filipino", "historic", "famous", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Aristocrat.jpg/500px-Aristocrat.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKkg52o6f1kTiL8RAXnH0E3__KyZm8K9vYeg&s"]
     },
 
     // PARKS & BAY
@@ -7157,7 +7157,7 @@ const FAMOUS_PLACES = {
       tags: ["bay", "sunset", "views", "street-food", "romantic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Manila_Bay.jpg/500px-Manila_Bay.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz2DWaRW9PzXmMFhvh1cGCN9C9VdvA7qYv4Q&s"]
     },
     {
       name: "Tagaytay",
@@ -7168,7 +7168,7 @@ const FAMOUS_PLACES = {
       tags: ["tagaytay", "volcano", "view", "weekend", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tagaytay.jpg/500px-Tagaytay.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxCDxuxMGHSR-f9vIqdenBvtbSBYIJTwtPg&s"]
     },
   ],
 
@@ -7185,7 +7185,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "war", "history", "communist", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Reunification_Palace.jpg/500px-Reunification_Palace.jpg"]
+      photos: ["https://images.unsplash.com/photo-1581412606853-05562c2297a7?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ben Thanh Market",
@@ -7196,7 +7196,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "souvenirs", "food", "shopping", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ben_Thanh.jpg/500px-Ben_Thanh.jpg"]
+      photos: ["https://images.unsplash.com/photo-1714013582580-2985fe55578d?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Notre Dame Cathedral",
@@ -7207,7 +7207,7 @@ const FAMOUS_PLACES = {
       tags: ["cathedral", "church", "french", "colonial", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Notre_Dame_Saigon.jpg/500px-Notre_Dame_Saigon.jpg"]
+      photos: ["https://images.unsplash.com/photo-1583943349419-6ce221d3734a?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "War Museum",
@@ -7218,7 +7218,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "war", "history", "emotional", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/War_Museum.jpg/500px-War_Museum.jpg"]
+      photos: ["https://images.unsplash.com/photo-1747714055016-59328ea655f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Bitexco Tower",
@@ -7229,7 +7229,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "views", "skyscraper", "observation", "landmark"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bitexco.jpg/500px-Bitexco.jpg"]
+      photos: ["https://images.unsplash.com/photo-1665880751135-16ce93f9d9b9?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -7242,7 +7242,7 @@ const FAMOUS_PLACES = {
       tags: ["pho", "noodles", "famous", "beef", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pho.jpg/500px-Pho.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/00/a6/b5/20180520-092714-largejpg.jpg?w=900&h=500&s=1"]
     },
     {
       name: "Banh Mi",
@@ -7253,7 +7253,7 @@ const FAMOUS_PLACES = {
       tags: ["banh-mi", "sandwich", "street-food", "famous", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Banh_Mi.jpg/500px-Banh_Mi.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/f6/ba/f0/v-i-tu-i-d-i-35-nam-g.jpg?w=900&h=500&s=1"]
     },
     {
       name: "Chinatown",
@@ -7264,7 +7264,7 @@ const FAMOUS_PLACES = {
       tags: ["chinatown", "herbs", "incense", "traditional", "culture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chinatown_HCMC.jpg/500px-Chinatown_HCMC.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReVxfbxMJJCOIDTI28oYI6q6fk1MK8aqKgeA&s"]
     },
 
     // RIVER & CUISINE
@@ -7277,7 +7277,7 @@ const FAMOUS_PLACES = {
       tags: ["river", "cruise", "dinner", "skyline", "romantic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Saigon_River.jpg/500px-Saigon_River.jpg"]
+      photos: ["https://vietnamdiscovery.com/wp-content/uploads/2020/11/Ho-Chi-Minh-Sunset-Cruise-Tour-christina.vn_.jpg"]
     },
     {
       name: "Cu Chi Tunnels",
@@ -7288,7 +7288,7 @@ const FAMOUS_PLACES = {
       tags: ["tunnels", "war", "history", "tour", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cu_Chi.jpg/500px-Cu_Chi.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7TJcooYGoHukVRKJJwmC-dAGZBAyIEaRVg&s"]
     },
   ],
 
@@ -7305,7 +7305,7 @@ const FAMOUS_PLACES = {
       tags: ["mausoleum", "ho-chi-minh", "memorial", "must-visit", "history"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mausoleum.jpg/500px-Mausoleum.jpg"]
+      photos: ["https://images.unsplash.com/photo-1692872031424-e194e437b9fb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Old Quarter",
@@ -7316,7 +7316,7 @@ const FAMOUS_PLACES = {
       tags: ["old-quarter", "street-food", "historic", "crafts", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Old_Quarter.jpg/500px-Old_Quarter.jpg"]
+      photos: ["https://images.unsplash.com/photo-1679562078540-09ae866ef4bf?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Hoan Kiem Lake",
@@ -7327,7 +7327,7 @@ const FAMOUS_PLACES = {
       tags: ["lake", "turtle", "temple", "morning", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Hoan_Kiem.jpg/500px-Hoan_Kiem.jpg"]
+      photos: ["https://images.unsplash.com/photo-1715943335714-9557043cb2cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "One Pillar Pagoda",
@@ -7338,7 +7338,7 @@ const FAMOUS_PLACES = {
       tags: ["pagoda", "buddhist", "unique", "historic", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/One_Pillar.jpg/500px-One_Pillar.jpg"]
+      photos: ["https://images.unsplash.com/photo-1712432144397-aa3da9dede31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Water Puppet Show",
@@ -7349,7 +7349,7 @@ const FAMOUS_PLACES = {
       tags: ["puppet", "theater", "traditional", "culture", "must-see"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Water_Puppet.jpg/500px-Water_Puppet.jpg"]
+      photos: ["https://images.unsplash.com/photo-1764448473153-963e176d25a6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -7362,7 +7362,7 @@ const FAMOUS_PLACES = {
       tags: ["bun-cha", "grilled-pork", "famous", "must-try", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Bun_Cha.jpg/500px-Bun_Cha.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8liSad9hbwCPAkwYPz1-p8RDNNwmgulQeWQ&s"]
     },
     {
       name: "Pho 10",
@@ -7373,7 +7373,7 @@ const FAMOUS_PLACES = {
       tags: ["pho", "beef", "noodles", "famous", "popular"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Hanoi_Pho.jpg/500px-Hanoi_Pho.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/c7/36/33/caption.jpg?w=700&h=700&s=1"]
     },
     {
       name: "Egg Coffee",
@@ -7384,7 +7384,7 @@ const FAMOUS_PLACES = {
       tags: ["coffee", "egg", "vietnamese", "unique", "caffeine"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Egg_Coffee.jpg/500px-Egg_Coffee.jpg"]
+      photos: ["https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0f/99/c6/81.jpg"]
     },
 
     // PARKS & TEMPLES
@@ -7397,7 +7397,7 @@ const FAMOUS_PLACES = {
       tags: ["lake", "largest", "tranquil", "cycling", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/West_Lake.jpg/500px-West_Lake.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/3d/cd/85/caption.jpg?w=900&h=500&s=1"]
     },
     {
       name: "Bach Ma Temple",
@@ -7408,7 +7408,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "oldest", "buddhist", "history", "heritage"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bach_Ma.jpg/500px-Bach_Ma.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVGDzmTPvqfs4wAm0jMRSPVdJP5dK8p_9J4A&s"]
     },
   ],
 
@@ -7425,7 +7425,7 @@ const FAMOUS_PLACES = {
       tags: ["ruins", "church", "iconic", "must-visit", "portuguese"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/St_Pauls_Ruins.jpg/500px-St_Pauls_Ruins.jpg"]
+      photos: ["https://images.unsplash.com/photo-1656351714795-a181a9c83c38?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: " Senado Square",
@@ -7436,7 +7436,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "portuguese", "cobblestone", "historic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Senado_Square.jpg/500px-Senado_Square.jpg"]
+      photos: ["https://images.unsplash.com/photo-1709537587841-cf660f796771?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Casinos of Cotai",
@@ -7447,7 +7447,7 @@ const FAMOUS_PLACES = {
       tags: ["casino", "cotai", "luxury", "gambling", "entertainment"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cotai_Casinos.jpg/500px-Cotai_Casinos.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiTx32YamXiJwzK_LuwtMavddShoKHIZHBEg&s"]
     },
     {
       name: "A-Ma Temple",
@@ -7458,7 +7458,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "oldest", "godess", "culture", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/A_Ma_Temple.jpg/500px-A_Ma_Temple.jpg"]
+      photos: ["https://images.unsplash.com/photo-1589369125429-cad824743af3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Macau Tower",
@@ -7469,7 +7469,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "skywalk", "bungee", "views", "adventure"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Macau_Tower.jpg/500px-Macau_Tower.jpg"]
+      photos: ["https://images.unsplash.com/photo-1500245345695-05324f941713?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -7482,7 +7482,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "egg-tarts", "food", "portuguese", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Macau_Food.jpg/500px-Macau_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLeSxpxR4_E5tUT3mntcqQOQUcChFbfEn1Bw&s"]
     },
     {
       name: "Lord Stow's Bakery",
@@ -7493,7 +7493,7 @@ const FAMOUS_PLACES = {
       tags: ["egg-tart", "bakery", "portuguese", "famous", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Egg_Tart.jpg/500px-Egg_Tart.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuFugWPn48yKGQePz6hxRmozghQt-xAJO6w&s"]
     },
     {
       name: "Portuguese Cuisine",
@@ -7504,7 +7504,7 @@ const FAMOUS_PLACES = {
       tags: ["portuguese", "bacalhau", "curry", "colonial", "dining"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Portuguese_Dishes.jpg/500px-Portuguese_Dishes.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjjTO4OirbS1cL3A03tUyJmp36D0Rd-osroQ&s"]
     },
 
     // PARKS & BEACHES
@@ -7517,7 +7517,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "beach", "entertainment", "resort", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Cotai_Strip.jpg/500px-Cotai_Strip.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WVUfZn2T2uoNfcKT3Tz2muPR9D5Og53kdw&s"]
     },
     {
       name: "Ruins of St. Paul's",
@@ -7528,7 +7528,7 @@ const FAMOUS_PLACES = {
       tags: ["ruins", "church", "iconic", "must-visit", "portuguese"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/St_Pauls_Ruins.jpg/500px-St_Pauls_Ruins.jpg"]
+      photos: ["https://www.china-roads.fr/wp-content/uploads/2019/04/ruines-st-paul-macao.jpg"]
     },
   ],
 
@@ -7545,7 +7545,7 @@ const FAMOUS_PLACES = {
       tags: ["mosque", "kaaba", "largest", "islamic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Masjid_al-Haram.jpg/500px-Masjid_al-Haram.jpg"]
+      photos: ["https://images.unsplash.com/photo-1605553378313-22d0dc541393?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Kaaba",
@@ -7556,7 +7556,7 @@ const FAMOUS_PLACES = {
       tags: ["kaaba", "shrine", "sacred", "islam", "pilgrimage"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Kaaba.jpg/500px-Kaaba.jpg"]
+      photos: ["https://images.unsplash.com/photo-1592326871020-04f58c1a52f3?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Mount Arafat",
@@ -7567,7 +7567,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "pilgrimage", "prophet", "sacred", "islam"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mount_Arafat.jpg/500px-Mount_Arafat.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0J0eKsgNCvdPmi3JzE154kawshGqSaYqAtQ&s"]
     },
     {
       name: "Mina",
@@ -7578,7 +7578,7 @@ const FAMOUS_PLACES = {
       tags: ["valley", "pilgrimage", "rituals", "islam", "sacred"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Mina.jpg/500px-Mina.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1678459928650-1a7de7c90206?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Abraj Al Bait",
@@ -7589,7 +7589,7 @@ const FAMOUS_PLACES = {
       tags: ["building", "clock-tower", "skyscraper", "landmark", "modern"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Abraj_Al_Bait.jpg/500px-Abraj_Al_Bait.jpg"]
+      photos: ["https://images.unsplash.com/photo-1624171156512-077b7a150e6c?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // FOOD & SERVICES
@@ -7602,7 +7602,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "prayer", "dates", "souvenirs", "shopping"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mecca_Market.jpg/500px-Mecca_Market.jpg"]
+      photos: ["https://www.shutterstock.com/image-photo/mecca-kingdom-saudi-arabia-april-260nw-2323830305.jpg"]
     },
     {
       name: "Local Restaurants",
@@ -7613,7 +7613,7 @@ const FAMOUS_PLACES = {
       tags: ["restaurant", "local", "traditional", "dates", "hummus"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Mecca_Food.jpg/500px-Mecca_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjw3zYT93i4idcK2zIF0CpR5YXrltd96jqw&s"]
     },
     {
       name: "Hotel Cafes",
@@ -7624,7 +7624,7 @@ const FAMOUS_PLACES = {
       tags: ["cafe", "hotel", "coffee", "dates", "luxury"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Hotel_Cafe.jpg/500px-Hotel_Cafe.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36sTHQTZWXP2gv3Egrr0eUjHpzwrq9LqCjg&s"]
     },
 
     // PILGRIMAGE
@@ -7637,7 +7637,7 @@ const FAMOUS_PLACES = {
       tags: ["hill", "pilgrimage", "ritual", "sacred", "islam"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Safa_Marwa.jpg/500px-Safa_Marwa.jpg"]
+      photos: ["https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Hira Cave",
@@ -7648,7 +7648,7 @@ const FAMOUS_PLACES = {
       tags: ["cave", "quran", "prophet", "pilgrimage", "sacred"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hira_Cave.jpg/500px-Hira_Cave.jpg"]
+      photos: ["https://images.unsplash.com/photo-1674313505558-206662f3de03?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -7665,7 +7665,7 @@ const FAMOUS_PLACES = {
       tags: ["old-town", "harbor", "ottomon", "historic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Kaleici.jpg/500px-Kaleici.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQutKstOekSDCs6TgBW_xDTGccU6yicLYPL9g&s"]
     },
     {
       name: "Düden Waterfalls",
@@ -7676,7 +7676,7 @@ const FAMOUS_PLACES = {
       tags: ["waterfall", "nature", "green", "scenic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Duden_Waterfalls.jpg/500px-Duden_Waterfalls.jpg"]
+      photos: ["https://images.unsplash.com/photo-1716217793527-f9182b62faac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Konyaalti Beach",
@@ -7687,7 +7687,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "blue-flag", "promenade", "sunset", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Konyaalti_Beach.jpg/500px-Konyaalti_Beach.jpg"]
+      photos: ["https://images.unsplash.com/photo-1672593657366-8219c888c243?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Perge Ancient City",
@@ -7698,7 +7698,7 @@ const FAMOUS_PLACES = {
       tags: ["ruins", "greek", "roman", "stadium", "history"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Perge.jpg/500px-Perge.jpg"]
+      photos: ["https://images.unsplash.com/photo-1659349785086-810ca137d2c0?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Aspendos Theater",
@@ -7709,7 +7709,7 @@ const FAMOUS_PLACES = {
       tags: ["theater", "roman", "opera", "preserved", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Aspendos.jpg/500px-Aspendos.jpg"]
+      photos: ["https://images.unsplash.com/photo-1641763278572-326dcc22e9e0?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -7722,7 +7722,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "crafts", "spices", "souvenirs", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Antalya_Market.jpg/500px-Antalya_Market.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/e2/b2/ac/antalya-bazaar.jpg?w=1200&h=-1&s=1"]
     },
     {
       name: "Pide House",
@@ -7733,7 +7733,7 @@ const FAMOUS_PLACES = {
       tags: ["pide", "turkish", "bread", "famous", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pide.jpg/500px-Pide.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/b2/9b/8c/caption.jpg?w=900&h=500&s=1"]
     },
     {
       name: "Meyhane",
@@ -7744,7 +7744,7 @@ const FAMOUS_PLACES = {
       tags: ["meyhane", "raki", "meze", "traditional", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Meyhane.jpg/500px-Meyhane.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/5b/e1/1e/we-are-waiting-for-you.jpg?w=900&h=-1&s=1"]
     },
 
     // BEACHES & RUINS
@@ -7757,7 +7757,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "sandy", "luxury", "resorts", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Lara_Beach.jpg/500px-Lara_Beach.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1668723712092-c9a5bca04743?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Kemer Beach",
@@ -7768,7 +7768,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "mountains", "yacht", "tour", "scenic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Kemer.jpg/500px-Kemer.jpg"]
+      photos: ["https://images.unsplash.com/photo-1667416476011-eba2d0f854c8?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -7785,7 +7785,7 @@ const FAMOUS_PLACES = {
       tags: ["ruins", "mayan", "pyramid", "wonder", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Chichen_Itza.jpg/500px-Chichen_Itza.jpg"]
+      photos: ["https://images.unsplash.com/photo-1676291763547-28280fe179e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Isla Mujeres",
@@ -7796,7 +7796,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "beach", "turtles", "ferry", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Isla_Mujeres.jpg/500px-Isla_Mujeres.jpg"]
+      photos: ["https://images.unsplash.com/photo-1733253871002-b9eec0c4e0e9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Cancun Beach",
@@ -7807,7 +7807,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "white-sand", "resorts", "turquoise", "party"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cancun_Beach.jpg/500px-Cancun_Beach.jpg"]
+      photos: ["https://images.unsplash.com/photo-1602088113235-229c19758e9f?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Xcaret Park",
@@ -7818,7 +7818,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "ecotourism", "shows", "swimming", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Xcaret.jpg/500px-Xcaret.jpg"]
+      photos: ["https://images.unsplash.com/photo-1700162912767-7fae1db2f062?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Playa Delfines",
@@ -7829,7 +7829,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "instagram", "sign", "less-crowded", "photo-op"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Playa_Delfines.jpg/500px-Playa_Delfines.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj-7ks6LDbK8DhcAjt6KB6Shrj4WksNHSVmQ&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -7842,7 +7842,7 @@ const FAMOUS_PLACES = {
       tags: ["mexican", "seafood", "ocean-view", "romantic", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mexican_Food.jpg/500px-Mexican_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsWFrzkXf4a6wD1uE7cqg-_GlKxTIURcHhw&s"]
     },
     {
       name: "La Parrilla",
@@ -7853,7 +7853,7 @@ const FAMOUS_PLACES = {
       tags: ["mexican", "traditional", "live-music", "dining", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Cancun_Food.jpg/500px-Cancun_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmznjPye5cC3szT4DL_MXMy6I8Sk8JWHgWKw&s"]
     },
     {
       name: "Market 28",
@@ -7864,7 +7864,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "crafts", "souvenirs", "bargain", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Market_28.jpg/500px-Market_28.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvQHp3gnKUccRkj9qapCpgZ2U0vV0JZ_wwQ&s"]
     },
 
     // RUINS & BEACHES
@@ -7877,7 +7877,7 @@ const FAMOUS_PLACES = {
       tags: ["ruins", "mayan", "beach", "cliffs", "scenic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tulum_Ruins.jpg/500px-Tulum_Ruins.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1694475051986-b0384b4205ea?q=80&w=2078&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Cozumel",
@@ -7888,7 +7888,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "diving", "snorkeling", "beaches", "ferry"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Cozumel.jpg/500px-Cozumel.jpg"]
+      photos: ["https://images.unsplash.com/photo-1560358564-2ffa75ea3a6d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -7905,7 +7905,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "cathedral", "historic", "capital", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Zocalo.jpg/500px-Zocalo.jpg"]
+      photos: ["https://images.unsplash.com/photo-1657772990151-b0b9a2b77f83?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Chapultepec Castle",
@@ -7916,7 +7916,7 @@ const FAMOUS_PLACES = {
       tags: ["castle", "park", "museum", "views", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chapultepec_Castle.jpg/500px-Chapultepec_Castle.jpg"]
+      photos: ["https://images.unsplash.com/photo-1694399768467-5ec884fc0231?q=80&w=2145&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Frida Kahlo Museum",
@@ -7927,7 +7927,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "frida-kahlo", "art", "blue-house", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Frida_Kahlo.jpg/500px-Frida_Kahlo.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1691030924687-79c8b91020be?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Roma Neighborhood",
@@ -7938,7 +7938,7 @@ const FAMOUS_PLACES = {
       tags: ["neighborhood", "trendy", "cafes", "art", "galleries"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Roma.jpg/500px-Roma.jpg"]
+      photos: ["https://mymexicotrip.com/wp-content/uploads/2023/05/roma-norte.jpg"]
     },
     {
       name: "Basilica of Guadalupe",
@@ -7949,7 +7949,7 @@ const FAMOUS_PLACES = {
       tags: ["basilica", "religious", "pilgrimage", "sacred", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Basilica.jpg/500px-Basilica.jpg"]
+      photos: ["https://images.unsplash.com/photo-1653067383743-8e098b3f604a?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -7962,7 +7962,7 @@ const FAMOUS_PLACES = {
       tags: ["tortas", "sandwich", "mexican", "street-food", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tortas.jpg/500px-Tortas.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYk7UdqRxk8cMYYcpl6AbHxKGByEczI8Fs4Q&s"]
     },
     {
       name: "Pujol",
@@ -7973,7 +7973,7 @@ const FAMOUS_PLACES = {
       tags: ["mexican", "fine-dining", "michelin", "molecular", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Pujol.jpg/500px-Pujol.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBi3p9uIRgFFb73rTRaq_4UQb2lWiTPYp1w&s"]
     },
     {
       name: "Cantina",
@@ -7984,7 +7984,7 @@ const FAMOUS_PLACES = {
       tags: ["cantina", "mezcal", "traditional", "music", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Mezcal.jpg/500px-Mezcal.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa4OOiYweEC3jp-jQgzZ-_ue7L2XYx5LEL1A&s"]
     },
 
     // PARKS & LAKES
@@ -7997,7 +7997,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "castle", "zoo", "museums", "large"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chapultepec_Park.jpg/500px-Chapultepec_Park.jpg"]
+      photos: ["https://images.unsplash.com/photo-1601251521418-ac764a6ad71a?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Xochimilco",
@@ -8008,7 +8008,7 @@ const FAMOUS_PLACES = {
       tags: ["floating-gardens", "trajinera", "colorful", "cultural", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xochimilco.jpg/500px-Xochimilco.jpg"]
+      photos: ["https://images.unsplash.com/photo-1675183511660-aa9cd57e5ea5?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -8025,7 +8025,7 @@ const FAMOUS_PLACES = {
       tags: ["disney", "theme-park", "magic", "family", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Disney_World.jpg/500px-Disney_World.jpg"]
+      photos: ["https://images.unsplash.com/photo-1578318099746-8701bb066ceb?q=80&w=2089&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Universal Studios",
@@ -8036,7 +8036,7 @@ const FAMOUS_PLACES = {
       tags: ["universal", "harry-potter", "theme-park", "movies", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Universal_Studios.jpg/500px-Universal_Studios.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMkgbb0NP4D9kNI4JZimd5tqtUzQzc5wsccA&s"]
     },
     {
       name: "SeaWorld",
@@ -8047,7 +8047,7 @@ const FAMOUS_PLACES = {
       tags: ["seaworld", "marine", "shows", "roller-coaster", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/SeaWorld.jpg/500px-SeaWorld.jpg"]
+      photos: ["https://images.unsplash.com/photo-1721141877645-4404b8b241f8?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Kenndey Space Center",
@@ -8058,7 +8058,7 @@ const FAMOUS_PLACES = {
       tags: ["nasa", "space", "museum", "history", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Space_Center.jpg/500px-Space_Center.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGxSYmtyG2DMT_iDzn_fYlqW-AnWG2iXo_Q&s"]
     },
     {
       name: "ICON Park",
@@ -8069,7 +8069,7 @@ const FAMOUS_PLACES = {
       tags: ["wheel", "entertainment", "restaurants", "nightlife", "view"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ICON_Park.jpg/500px-ICON_Park.jpg"]
+      photos: ["https://images.unsplash.com/photo-1617409123168-8fb039dd3b39?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -8082,7 +8082,7 @@ const FAMOUS_PLACES = {
       tags: ["disney", "shopping", "dining", "entertainment", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Disney_Springs.jpg/500px-Disney_Springs.jpg"]
+      photos: ["https://images.unsplash.com/photo-1600621970775-38c67111f5b5?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Universal CityWalk",
@@ -8093,7 +8093,7 @@ const FAMOUS_PLACES = {
       tags: ["universal", "restaurants", "cinema", "clubs", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/CityWalk.jpg/500px-CityWalk.jpg"]
+      photos: ["https://images.unsplash.com/photo-1561383841-2cf676d37aaa?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Florida Mall",
@@ -8104,7 +8104,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "mall", "hundreds", "stores", "dining"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Florida_Mall.jpg/500px-Florida_Mall.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHj4P6F9WbQNp2NXGbDKWdh648v5DCnW4M8w&s"]
     },
 
     // NATURE & PARKS
@@ -8117,7 +8117,7 @@ const FAMOUS_PLACES = {
       tags: ["spring", "swimming", "kayaking", "nature", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Wekiwa.jpg/500px-Wekiwa.jpg"]
+      photos: ["https://www.floridastateparks.org/sites/default/files/styles/card/public/media/image/L1008754FullRes.jpg?itok=cGqTk_r4"]
     },
     {
       name: "Gatorland",
@@ -8128,7 +8128,7 @@ const FAMOUS_PLACES = {
       tags: ["alligator", "swamp", "shows", "family", "fun"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Gatorland.jpg/500px-Gatorland.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNgOBrpriRwsOsPApHitMCzfgm0vnDJ5HocA&s"]
     },
   ],
 
@@ -8145,7 +8145,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "art-deco", "party", "celebrities", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/South_Beach.jpg/500px-South_Beach.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1697730215093-baeae8060bfe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Little Havana",
@@ -8156,7 +8156,7 @@ const FAMOUS_PLACES = {
       tags: ["cuban", "neighborhood", "dominoes", "music", "culture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Little_Havana.jpg/500px-Little_Havana.jpg"]
+      photos: ["https://media.tacdn.com/media/attractions-splice-spp-674x446/16/2c/1f/fc.jpg"]
     },
     {
       name: "Wynwood Walls",
@@ -8167,7 +8167,7 @@ const FAMOUS_PLACES = {
       tags: ["street-art", "murals", "galleries", "instagram", "trendy"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Wynwood.jpg/500px-Wynwood.jpg"]
+      photos: ["https://images.unsplash.com/photo-1560319469-77fc0e9c39c9?q=80&w=1941&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Vizcaya Museum",
@@ -8178,7 +8178,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "villa", "gardens", "italian", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vizcaya.jpg/500px-Vizcaya.jpg"]
+      photos: ["https://images.unsplash.com/photo-1722815986745-589c71963ec2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ocean Drive",
@@ -8189,7 +8189,7 @@ const FAMOUS_PLACES = {
       tags: ["street", "art-deco", "clubs", "neon", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ocean_Drive.jpg/500px-Ocean_Drive.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/9e/82/27/apartment-with-the-most.jpg?w=900&h=500&s=1"]
     },
 
     // RESTAURANTS & FOOD
@@ -8202,7 +8202,7 @@ const FAMOUS_PLACES = {
       tags: ["stone-crab", "famous", "seafood", "beach", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Joes_Stone_Crab.jpg/500px-Joes_Stone_Crab.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJY2umxEaTKlhj1nToETa58EBlW_UeI75jA&s"]
     },
     {
       name: "Versailles Restaurant",
@@ -8213,7 +8213,7 @@ const FAMOUS_PLACES = {
       tags: ["cuban", "coffee", "sandwiches", "historic", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Cuban_Food.jpg/500px-Cuban_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-CiU5w97UoEgBBbf-up0RBG1yrACixH3NHg&s"]
     },
     {
       name: "Lincoln Road",
@@ -8224,7 +8224,7 @@ const FAMOUS_PLACES = {
       tags: ["mall", "shops", "restaurants", "art", "walking"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Lincoln_Road.jpg/500px-Lincoln_Road.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaGH33SovkXW_9i6toHyqv1vK3_LjDbbJGCQ&s"]
     },
 
     // BEACHES & PARKS
@@ -8237,7 +8237,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "beach", "park", "family", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Key_Biscayne.jpg/500px-Key_Biscayne.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9X8VYWRsdVkLr6e-WECrceoVVRWGlODkr_Q&s"]
     },
     {
       name: "Everglades",
@@ -8248,7 +8248,7 @@ const FAMOUS_PLACES = {
       tags: ["wetland", "alligators", "airboat", "nature", "tour"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Everglades.jpg/500px-Everglades.jpg"]
+      photos: ["https://media.tacdn.com/media/attractions-splice-spp-674x446/16/46/56/17.jpg"]
     },
   ],
 
@@ -8265,7 +8265,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "skydeck", "glass-floor", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Willis_Tower.jpg/500px-Willis_Tower.jpg"]
+      photos: ["https://images.unsplash.com/photo-1564442422235-7142537c10a9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Millennium Park",
@@ -8276,7 +8276,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "bean", "cloud-gate", "concerts", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Millennium_Park.jpg/500px-Millennium_Park.jpg"]
+      photos: ["https://images.unsplash.com/photo-1745042357368-5b849a1aafd7?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Navy Pier",
@@ -8287,7 +8287,7 @@ const FAMOUS_PLACES = {
       tags: ["pier", "rides", "fireworks", "family", "entertainment"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Navy_Pier.jpg/500px-Navy_Pier.jpg"]
+      photos: ["https://images.unsplash.com/photo-1708577615952-8d5a83a4e6a1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Museum Campus",
@@ -8298,7 +8298,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "field-museum", "shedd", "aquarium", "family"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Museum_Campus.jpg/500px-Museum_Campus.jpg"]
+      photos: ["https://images.unsplash.com/photo-1682978030506-3401f1113679?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Magnificent Mile",
@@ -8309,7 +8309,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "michigan-avenue", "hotels", "dining", "luxury"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Magnificent_Mile.jpg/500px-Magnificent_Mile.jpg"]
+      photos: ["https://images.unsplash.com/photo-1565709736796-96a4d2fb91e6?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -8322,7 +8322,7 @@ const FAMOUS_PLACES = {
       tags: ["hot-dog", "chicago-style", "street-food", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chicago_Hot_Dog.jpg/500px-Chicago_Hot_Dog.jpg"]
+      photos: ["https://images.unsplash.com/photo-1658024163275-7b872afc478e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Pizzeria Uno",
@@ -8333,7 +8333,7 @@ const FAMOUS_PLACES = {
       tags: ["pizza", "deep-dish", "invented", "famous", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Deep_Dish_Pizza.jpg/500px-Deep_Dish_Pizza.jpg"]
+      photos: ["https://images.unsplash.com/photo-1622180404297-562da4b3f0b7?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Giordano's",
@@ -8344,7 +8344,7 @@ const FAMOUS_PLACES = {
       tags: ["pizza", "stuffed", "famous", "must-visit", "lines"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Giardanos.jpg/500px-Giardanos.jpg"]
+      photos: ["https://images.unsplash.com/photo-1536515963142-5b1f7d54b57e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // PARKS & LAKE
@@ -8357,7 +8357,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "zoo", "lakeside", "running", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lincoln_Park.jpg/500px-Lincoln_Park.jpg"]
+      photos: ["https://images.unsplash.com/photo-1592252566776-c680fa586020?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Lakefront Trail",
@@ -8368,7 +8368,7 @@ const FAMOUS_PLACES = {
       tags: ["trail", "lake", "cycling", "skating", "views"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Lakefront_Trail.jpg/500px-Lakefront_Trail.jpg"]
+      photos: ["https://images.unsplash.com/photo-1640718511343-24f33e2c7db0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -8385,7 +8385,7 @@ const FAMOUS_PLACES = {
       tags: ["great-wall", "monument", "ancient", "must-visit", "wonder"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Great_Wall.jpg/500px-Great_Wall.jpg"]
+      photos: ["https://images.unsplash.com/photo-1582895516735-25a974f11f2c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Forbidden City",
@@ -8396,7 +8396,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "imperial", "museum", "history", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Forbidden_City.jpg/500px-Forbidden_City.jpg"]
+      photos: ["https://images.unsplash.com/photo-1603120527222-33f28c2ce89e?q=80&w=1954&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Tiananmen Square",
@@ -8407,7 +8407,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "largest", "monument", "historic", "tourist"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tiananmen.jpg/500px-Tiananmen.jpg"]
+      photos: ["https://images.unsplash.com/photo-1586784444981-ac96e335555c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Temple of Heaven",
@@ -8418,7 +8418,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "circular-hall", "park", "cultural", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Temple_of_Heaven.jpg/500px-Temple_of_Heaven.jpg"]
+      photos: ["https://images.unsplash.com/photo-1719997794492-b51b453a162e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "798 Art District",
@@ -8429,7 +8429,7 @@ const FAMOUS_PLACES = {
       tags: ["art", "gallery", "contemporary", "trendy", "culture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/798_Art_District.jpg/500px-798_Art_District.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCNkFIRDvfmeThZPGLq4QrHWoqH8DVnNnpw&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -8442,7 +8442,7 @@ const FAMOUS_PLACES = {
       tags: ["peking-duck", "roasted", "signature", "must-try", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Peking_Duck.jpg/500px-Peking_Duck.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9D8iNz9V9M5kKJouq1sr9gR9com9RZdGHw&s"]
     },
     {
       name: "Wangfujing Street",
@@ -8453,7 +8453,7 @@ const FAMOUS_PLACES = {
       tags: ["street", "shopping", "night-market", "snacks", "shopping"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Wangfujing.jpg/500px-Wangfujing.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBC_7Aga8cVqQZngHGTTUFoL7Liy5g7h_LLA&s"]
     },
     {
       name: "Nanluoguxiang",
@@ -8464,7 +8464,7 @@ const FAMOUS_PLACES = {
       tags: ["hutong", "cafes", "traditional", "trendy", "walk"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nanluoguxiang.jpg/500px-Nanluoguxiang.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQs3AQnrnDPhTY9ackciauS-r4jDfIcLJ5tA&s"]
     },
 
     // PARKS & PALACES
@@ -8477,7 +8477,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "garden", "lake", "boating", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Summer_Palace.jpg/500px-Summer_Palace.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1661886323367-fc6579695eba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Beihai Park",
@@ -8488,7 +8488,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "lake", "temple", "gardens", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Beihai_Park.jpg/500px-Beihai_Park.jpg"]
+      photos: ["https://images.unsplash.com/photo-1663859454065-0b5650775708?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -8505,7 +8505,7 @@ const FAMOUS_PLACES = {
       tags: ["bund", "colonial", "night-lights", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_Bund.jpg/500px-The_Bund.jpg"]
+      photos: ["https://images.unsplash.com/photo-1612756336279-b9eb5b6b71d9?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Pearl Tower",
@@ -8516,7 +8516,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "observation", "futuristic", "views", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Pearl_Tower.jpg/500px-Pearl_Tower.jpg"]
+      photos: ["https://images.unsplash.com/photo-1715905437623-76e104fa32ff?q=80&w=1923&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Yu Garden",
@@ -8527,7 +8527,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "ming", "pavilion", "classic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Yu_Garden.jpg/500px-Yu_Garden.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1661878773825-3d9da3cb90be?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "French Concession",
@@ -8538,7 +8538,7 @@ const FAMOUS_PLACES = {
       tags: ["french", "colonial", "tree-lined", "cafes", "walkable"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/French_Concession.jpg/500px-French_Concession.jpg"]
+      photos: ["https://images.unsplash.com/photo-1574504500022-de9a6309a501?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Nanjing Road",
@@ -8549,7 +8549,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "street", "luxury", "pedestrian", "electronics"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nanjing_Road.jpg/500px-Nanjing_Road.jpg"]
+      photos: ["https://images.unsplash.com/photo-1506158278516-d720e72406fc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -8562,7 +8562,7 @@ const FAMOUS_PLACES = {
       tags: ["shikumen", "clubs", "restaurants", "modern", "trendy"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Xintiandi.jpg/500px-Xintiandi.jpg"]
+      photos: ["https://images.unsplash.com/photo-1638528782362-148876f6c573?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Dynasty",
@@ -8573,7 +8573,7 @@ const FAMOUS_PLACES = {
       tags: ["dim-sum", "soup-dumplings", "famous", "popular", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Dim_Sum.jpg/500px-Dim_Sum.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUbz0c5PwvF30yCL3V73SNVefsblsP3RvVA&s"]
     },
     {
       name: "Jing'an Temple",
@@ -8584,7 +8584,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "old", "peaceful", "business-district", "historical"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jingan_Temple.jpg/500px-Jingan_Temple.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfRxHZipPrjzyfDEKjM3u7I46JQVLo95-UfA&s"]
     },
 
     // RIVER & SKYLINE
@@ -8597,7 +8597,7 @@ const FAMOUS_PLACES = {
       tags: ["river", "cruise", "skyline", "night", "romantic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Huangpu_River.jpg/500px-Huangpu_River.jpg"]
+      photos: ["https://images.unsplash.com/photo-1556489583-50cdc937d90b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Lujiazui",
@@ -8608,7 +8608,7 @@ const FAMOUS_PLACES = {
       tags: ["district", "skyscrapers", "jIn-mao", "modern", "skyline"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lujiazui.jpg/500px-Lujiazui.jpg"]
+      photos: ["https://www.travelchinaguide.com/images/photogallery/2015/lujiazui-shanghai.jpg"]
     },
   ],
 
@@ -8625,7 +8625,7 @@ const FAMOUS_PLACES = {
       tags: ["acropolis", "parthenon", "ancient", "unesco", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Acropolis.jpg/500px-Acropolis.jpg"]
+      photos: ["https://images.unsplash.com/photo-1629639057315-410edca4fa89?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Parthenon",
@@ -8636,7 +8636,7 @@ const FAMOUS_PLACES = {
       tags: ["parthenon", "temple", "athena", "ancient", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Parthenon.jpg/500px-Parthenon.jpg"]
+      photos: ["https://images.unsplash.com/photo-1559751023-89510c95ae2f?q=80&w=1987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Plaka Neighborhood",
@@ -8647,7 +8647,7 @@ const FAMOUS_PLACES = {
       tags: ["neighborhood", "plaka", "cafes", "historic", "walkable"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Plaka.jpg/500px-Plaka.jpg"]
+      photos: ["https://images.unsplash.com/photo-1684196922832-f1caa34e6a14?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ancient Agora",
@@ -8658,7 +8658,7 @@ const FAMOUS_PLACES = {
       tags: ["agora", "ruins", "socrates", "ancient", "history"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ancient_Agora.jpg/500px-Ancient_Agora.jpg"]
+      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Tower_of_the_Winds_-_panoramio_-_Robert_Freeman_%281%29.jpg/1280px-Tower_of_the_Winds_-_panoramio_-_Robert_Freeman_%281%29.jpg"]
     },
     {
       name: "Mount Lycabettus",
@@ -8669,7 +8669,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "views", "funicular", "panoramic", "sunset"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Lycabettus.jpg/500px-Lycabettus.jpg"]
+      photos: ["https://images.unsplash.com/photo-1590068643027-9ba2ca0702ef?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -8682,7 +8682,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "tavernas", "street-food", "nightlife", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Monastiraki.jpg/500px-Monastiraki.jpg"]
+      photos: ["https://thefoundrysuitesathens.com/wp-content/uploads/36-650x433.png"]
     },
     {
       name: "Souvlaki",
@@ -8693,7 +8693,7 @@ const FAMOUS_PLACES = {
       tags: ["souvlaki", "street-food", "pita", "greek", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Souvlaki.jpg/500px-Souvlaki.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQydTKcovRkvtTO3Nmns0K-EwXHrOTe0gy-w&s"]
     },
     {
       name: "Moustache",
@@ -8717,7 +8717,7 @@ const FAMOUS_PLACES = {
       tags: ["temple", "poseidon", "sunset", "day-trip", "coastal"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Poseidon_Temple.jpg/500px-Poseidon_Temple.jpg"]
+      photos: ["https://images.unsplash.com/photo-1557094692-0a39333c1025?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Glyfada Beach",
@@ -8728,7 +8728,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "clubs", "summer", "nightlife", "suburb"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Glyfada.jpg/500px-Glyfada.jpg"]
+      photos: ["https://images.unsplash.com/photo-1620030482036-3a3f23836f03?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -8745,7 +8745,7 @@ const FAMOUS_PLACES = {
       tags: ["oia", "blue-domes", "sunset", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Oia.jpg/500px-Oia.jpg"]
+      photos: ["https://images.unsplash.com/photo-1669203408570-4140ee21f211?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Fira Town",
@@ -8756,7 +8756,7 @@ const FAMOUS_PLACES = {
       tags: ["town", "white-buildings", "caldera", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Fira.jpg/500px-Fira.jpg"]
+      photos: ["https://images.unsplash.com/photo-1568632182996-e445c07c7097?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Red Beach",
@@ -8767,7 +8767,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "red-cliffs", "volcanic", "unique", "photography"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Red_Beach.jpg/500px-Red_Beach.jpg"]
+      photos: ["https://images.unsplash.com/photo-1758829421372-e32405b6a707?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Ancient Akrotiri",
@@ -8778,7 +8778,7 @@ const FAMOUS_PLACES = {
       tags: ["ruins", "minoan", "ancient", "preserved", "archaeological"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Akrotiri.jpg/500px-Akrotiri.jpg"]
+      photos: ["https://images.unsplash.com/photo-1722581193658-1b0fe796d422?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Caldera Boat Tour",
@@ -8789,7 +8789,7 @@ const FAMOUS_PLACES = {
       tags: ["caldera", "boat", "hot-springs", "tour", "volcanic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Caldera.jpg/500px-Caldera.jpg"]
+      photos: ["https://images.unsplash.com/photo-1631261472826-f6531096a6ff?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -8802,7 +8802,7 @@ const FAMOUS_PLACES = {
       tags: ["winery", "wine", "views", "volcanic", "tasting"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Santo_Wines.jpg/500px-Santo_Wines.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBHa4_kFXwewOpbIppzB8MDnWQp6rB56tm7A&s"]
     },
     {
       name: "Seafood Restaurants",
@@ -8813,7 +8813,7 @@ const FAMOUS_PLACES = {
       tags: ["seafood", "fish", "caldera", "dining", "fresh"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Santorini_Food.jpg/500px-Santorini_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7M1ju3LF_wnuC6a7ssCBLPWDmRxaM_JAkcw&s"]
     },
     {
       name: "Fira Food Scene",
@@ -8824,7 +8824,7 @@ const FAMOUS_PLACES = {
       tags: ["greek", "fine-dining", "views", "local", "romantic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Greek_Dining.jpg/500px-Greek_Dining.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF77HD3xjYTaJoxufWZnDyHHnccfCWoZzEkA&s"]
     },
 
     // BEACHES
@@ -8837,7 +8837,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "black-sand", "bars", "tavernas", "summer"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Perissa.jpg/500px-Perissa.jpg"]
+      photos: ["https://images.unsplash.com/photo-1656194405863-5730900c6a9b?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Vlychada Beach",
@@ -8848,7 +8848,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "lunar", "quiet", "unique", "photography"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Vlychada.jpg/500px-Vlychada.jpg"]
+      photos: ["https://images.unsplash.com/photo-1632570654873-a910aa46cf2e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -8865,7 +8865,7 @@ const FAMOUS_PLACES = {
       tags: ["town", "windmills", "white", "party", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mykonos_Town.jpg/500px-Mykonos_Town.jpg"]
+      photos: ["https://images.unsplash.com/photo-1716394730345-ff40d2f3079b?q=80&w=1946&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Paradise Beach",
@@ -8876,7 +8876,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "party", "clubs", "DJs", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Paradise_Beach.jpg/500px-Paradise_Beach.jpg"]
+      photos: ["https://images.unsplash.com/photo-1627243014832-c1c8bbbafff5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Little Venice",
@@ -8887,7 +8887,7 @@ const FAMOUS_PLACES = {
       tags: ["neighborhood", "colorful", "sunset", "sea", "romantic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Little_Venice.jpg/500px-Little_Venice.jpg"]
+      photos: ["https://images.unsplash.com/photo-1602584386319-fa8eb4361c2c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Windmills",
@@ -8898,7 +8898,7 @@ const FAMOUS_PLACES = {
       tags: ["windmills", "iconic", "photos", "sunset", "landmark"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mykonos_Windmills.jpg/500px-Mykonos_Windmills.jpg"]
+      photos: ["https://images.unsplash.com/photo-1700420242966-7e201c7283eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Delos Island",
@@ -8909,7 +8909,7 @@ const FAMOUS_PLACES = {
       tags: ["island", "ruins", "apollo", "ancient", "history"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Delos.jpg/500px-Delos.jpg"]
+      photos: ["https://images.unsplash.com/photo-1683463170507-9f02767bae18?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -8922,7 +8922,7 @@ const FAMOUS_PLACES = {
       tags: ["street", "dining", "tavernas", "boutiques", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Matoyianni.jpg/500px-Matoyianni.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0yKOS0DR9kp6M7HkYSK4advFi3M561RXMg&s"]
     },
     {
       name: "Seafood Tavernas",
@@ -8933,7 +8933,7 @@ const FAMOUS_PLACES = {
       tags: ["seafood", "lobster", "fish", "tavernas", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mykonos_Food.jpg/500px-Mykonos_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgzkvgZxTQeN0tNvsUqbnsRac7RQlSVsbFkg&s"]
     },
     {
       name: "Cavo Paradiso",
@@ -8944,7 +8944,7 @@ const FAMOUS_PLACES = {
       tags: ["club", "DJs", "party", "cliff", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Cavo_Paradiso.jpg/500px-Cavo_Paradiso.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6hU5aHycftObTmJOXcsIX_ZbmonaFOFrqZw&s"]
     },
 
     // BEACHES
@@ -8957,7 +8957,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "party", "LGBT", "clubs", "famous"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Super_Paradise.jpg/500px-Super_Paradise.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUPz81onAP_MB9E2RyRfI-2jltiAT2D0LzwA&s"]
     },
     {
       name: "Ornos Beach",
@@ -8968,7 +8968,7 @@ const FAMOUS_PLACES = {
       tags: ["beach", "family", "restaurants", "calm", "accessible"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Ornos.jpg/500px-Ornos.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/cc/75/d5/ornos.jpg?w=1200&h=700&s=1"]
     },
   ],
 
@@ -8985,7 +8985,7 @@ const FAMOUS_PLACES = {
       tags: ["pyramids", "sphinx", "ancient", "wonder", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Giza_Pyramids.jpg/500px-Giza_Pyramids.jpg"]
+      photos: ["https://images.unsplash.com/photo-1544815521-80841127c00f?q=80&w=2109&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Egyptian Museum",
@@ -8996,7 +8996,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "tutankhamun", "mummies", "treasures", "history"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Egyptian_Museum.jpg/500px-Egyptian_Museum.jpg"]
+      photos: ["https://images.unsplash.com/photo-1553835568-c48d3b90ed70?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Khan el-Khalili",
@@ -9007,7 +9007,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "bazaar", "spices", "souvenirs", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Khan_el_Khalili.jpg/500px-Khan_el_Khalili.jpg"]
+      photos: ["https://images.unsplash.com/photo-1710211288826-b7df3ab71588?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Islamic Cairo",
@@ -9018,7 +9018,7 @@ const FAMOUS_PLACES = {
       tags: ["islamic", "mosques", "historic", "architecture", "heritage"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Islamic_Cairo.jpg/500px-Islamic_Cairo.jpg"]
+      photos: ["https://images.unsplash.com/photo-1640956641338-5a07e5811ca6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Cairo Tower",
@@ -9029,7 +9029,7 @@ const FAMOUS_PLACES = {
       tags: ["tower", "views", "panoramic", "observation", "landmark"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Cairo_Tower.jpg/500px-Cairo_Tower.jpg"]
+      photos: ["https://images.unsplash.com/photo-1701714581061-43f365d5e9b8?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -9042,7 +9042,7 @@ const FAMOUS_PLACES = {
       tags: ["koshary", "street-food", "vegetarian", "budget-friendly", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Koshary.jpg/500px-Koshary.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNRI-49jpoCdrkvBy0lhoR_tUZ7F_mTGUSmA&s"]
     },
     {
       name: "Falafel",
@@ -9053,7 +9053,7 @@ const FAMOUS_PLACES = {
       tags: ["falafel", "street-food", "fast-food", "vegetarian", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Falafel.jpg/500px-Falafel.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReK3DCfTTVkGB4LtDKiNayDvQn8MJ_v6NnWA&s"]
     },
     {
       name: "Naguib Mahfouz",
@@ -9064,7 +9064,7 @@ const FAMOUS_PLACES = {
       tags: ["restaurant", "traditional", "historic", "khan-el-khalili", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Egyptian_Food.jpg/500px-Egyptian_Food.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jvv_4DZf6qLFNz1v6VDYP3quYzEqNuw2eA&s"]
     },
 
     // PYRAMIDS & NILE
@@ -9077,7 +9077,7 @@ const FAMOUS_PLACES = {
       tags: ["nile", "cruise", "dinner", "belly-dancing", "romantic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Nile_Cruise.jpg/500px-Nile_Cruise.jpg"]
+      photos: ["https://images.unsplash.com/photo-1674724545219-29637e41ae04?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Saqqara",
@@ -9088,7 +9088,7 @@ const FAMOUS_PLACES = {
       tags: ["pyramid", "saqqara", "djoser", "ancient", "day-trip"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Saqqara.jpg/500px-Saqqara.jpg"]
+      photos: ["https://images.unsplash.com/photo-1738512154323-3b24c3b15d0c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -9105,7 +9105,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "storytellers", "snake-charmers", "must-visit", "atmosphere"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Jemaa_el_Fnaa.jpg/500px-Jemaa_el_Fnaa.jpg"]
+      photos: ["https://images.unsplash.com/photo-1664346288114-ee72907d2c52?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Bahia Palace",
@@ -9116,7 +9116,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "gardens", "moroccan", "architecture", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Bahia_Palace.jpg/500px-Bahia_Palace.jpg"]
+      photos: ["https://plus.unsplash.com/premium_photo-1699555731212-89243b33a3b7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Majorelle Garden",
@@ -9127,7 +9127,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "majorelle", "blue", "yves-saint-laurent", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Majorelle_Garden.jpg/500px-Majorelle_Garden.jpg"]
+      photos: ["https://images.unsplash.com/photo-1641237855524-c66704303914?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Medina Souks",
@@ -9138,7 +9138,7 @@ const FAMOUS_PLACES = {
       tags: ["souks", "market", "spices", "crafts", "shopping"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Marrakech_Souks.jpg/500px-Marrakech_Souks.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Uc3Tr-PMdkmKZ8AcCEa1OA2Npfmu92Pxaw&s"]
     },
     {
       name: "Saadian Tombs",
@@ -9149,7 +9149,7 @@ const FAMOUS_PLACES = {
       tags: ["tombs", "royal", "mosaic", "historic", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Saadian_Tombs.jpg/500px-Saadian_Tombs.jpg"]
+      photos: ["https://images.unsplash.com/photo-1569440703809-b6dc9ec25ed2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -9162,7 +9162,7 @@ const FAMOUS_PLACES = {
       tags: ["rooftop", "views", "moroccan", "dining", "atmosphere"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Marrakech_Food.jpg/500px-Marrakech_Food.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/84/9f/b6/the-view-over-the-old.jpg?w=500&h=-1&s=1"]
     },
     {
       name: "Tagine",
@@ -9173,7 +9173,7 @@ const FAMOUS_PLACES = {
       tags: ["tagine", "stew", "lamb", "traditional", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tagine.jpg/500px-Tagine.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrz4cgyvmIO93t1AyvMJFeSes5sf_y06B65A&s"]
     },
     {
       name: "Mint Tea",
@@ -9184,7 +9184,7 @@ const FAMOUS_PLACES = {
       tags: ["mint-tea", "tea", "traditional", "relaxing", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mint_Tea.jpg/500px-Mint_Tea.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHqfijgar6poK0BGCRAdzyNvruV44RSaJ-Q&s"]
     },
 
     // PALACES & GARDENS
@@ -9197,7 +9197,7 @@ const FAMOUS_PLACES = {
       tags: ["gardens", "pavilion", "olive", "views", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Menara_Gardens.jpg/500px-Menara_Gardens.jpg"]
+      photos: ["https://images.unsplash.com/photo-1760541428473-e2021d08e686?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Agafay Desert",
@@ -9208,7 +9208,7 @@ const FAMOUS_PLACES = {
       tags: ["desert", "camel", "sunset", "day-trip", "adventure"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Agafay.jpg/500px-Agafay.jpg"]
+      photos: ["https://images.unsplash.com/photo-1714557192697-7ab78a4644df?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -9226,7 +9226,7 @@ const FAMOUS_PLACES = {
       tags: ["lake", "swimming", "boats", "views", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Zurich_lake.jpg/500px-Zurich_lake.jpg"]
+      photos: ["https://images.unsplash.com/photo-1643981670720-eef07ebdb179?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Old Town (Altstadt)",
@@ -9237,7 +9237,7 @@ const FAMOUS_PLACES = {
       tags: ["historic", "medieval", "walks", "shopping", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Zurich_Altstadt.jpg/500px-Zurich_Altstadt.jpg"]
+      photos: ["https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Bahnhofstrasse",
@@ -9248,7 +9248,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "luxury", "banks", "upscale", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bahnhofstrasse.jpg/500px-Bahnhofstrasse.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRplxxj9kkl3OYiGiudfKG_2RgpzV5H1ugEoQ&s"]
     },
     {
       name: "Frauenmünster Church",
@@ -9259,7 +9259,7 @@ const FAMOUS_PLACES = {
       tags: ["church", "chagall", "windows", "historic", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Frauenmuenster.jpg/500px-Frauenmuenster.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Zm8oiYn-yl8apzM5ljTsdZ0jTy-hamKGpg&s"]
     },
     {
       name: "Uetliberg",
@@ -9270,7 +9270,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "hiking", "views", "nature", "panorama"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Uetliberg.jpg/500px-Uetliberg.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQGC5LbmbQnbct_B3tsJZgagNbPAAcxBquA&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -9283,7 +9283,7 @@ const FAMOUS_PLACES = {
       tags: ["swiss", "fondue", "raclette", "traditional", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fondue.jpg/500px-Fondue.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqdMA3dhvW98N1aHNuPa-JyZgnP-Qqplzw-w&s"]
     },
     {
       name: "Café Sprüngli",
@@ -9294,7 +9294,7 @@ const FAMOUS_PLACES = {
       tags: ["cafe", "pastries", "luxemburgerli", "coffee", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Spruengli.jpg/500px-Spruengli.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTWzwfql82tYnpUlN3Yc_L3jjb6d4RbJHkw&s"]
     },
     {
       name: "Bauschänzli",
@@ -9305,7 +9305,7 @@ const FAMOUS_PLACES = {
       tags: ["beer", "garden", "local", "brewery", "relaxed"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Bauschaenzli.jpg/500px-Bauschaenzli.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1n2_UcHPRqiYVsy28xETVZdNdX2e4NULHow&s"]
     },
 
     // PARKS & NATURE
@@ -9318,7 +9318,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "botanical", "plants", "greenhouses", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Zurich_Botanical_Garden.jpg/500px-Zurich_Botanical_Garden.jpg"]
+      photos: ["https://images.unsplash.com/photo-1720543876896-6fdc2d622691?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Lindenhof",
@@ -9329,7 +9329,7 @@ const FAMOUS_PLACES = {
       tags: ["plaza", "historic", "trees", "views", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Lindenhof.jpg/500px-Lindenhof.jpg"]
+      photos: ["https://images.unsplash.com/photo-1723761843632-2dbfd2f5d0c9?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -9346,7 +9346,7 @@ const FAMOUS_PLACES = {
       tags: ["fountain", "iconic", "water", "must-visit", "views"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Jet_d%27Eau_Geneva.jpg/500px-Jet_d%27Eau_Geneva.jpg"]
+      photos: ["https://images.unsplash.com/photo-1561387194-e3d99bc732fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Old Town (Vieille Ville)",
@@ -9357,7 +9357,7 @@ const FAMOUS_PLACES = {
       tags: ["historic", "medieval", "cathedral", "walks", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Geneva_Vieille_Ville.jpg/500px-Geneva_Vieille_Ville.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/f2/44/f3/beautiful-with-the-towers.jpg?w=900&h=500&s=1"]
     },
     {
       name: "Lake Geneva",
@@ -9368,7 +9368,7 @@ const FAMOUS_PLACES = {
       tags: ["lake", "alps", "promenade", "boats", "nature"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Lake_Geneva.jpg/500px-Lake_Geneva.jpg"]
+      photos: ["https://images.unsplash.com/photo-1633022326182-1b36700bc49a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Palais des Nations",
@@ -9379,7 +9379,7 @@ const FAMOUS_PLACES = {
       tags: ["un", "architecture", "diplomatic", "history", "tours"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Palais_des_Nations.jpg/500px-Palais_des_Nations.jpg"]
+      photos: ["https://images.unsplash.com/photo-1679589164488-ca6dc6746af9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "St. Pierre Cathedral",
@@ -9390,7 +9390,7 @@ const FAMOUS_PLACES = {
       tags: ["cathedral", "religion", "calvin", "historic", "architecture"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/St_Pierre_Geneva.jpg/500px-St_Pierre_Geneva.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILWzr-xz9o3BMVN25YS5k1_dMjgGrcyByvQ&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -9403,7 +9403,7 @@ const FAMOUS_PLACES = {
       tags: ["brasserie", "swiss", "french", "classic", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/w.wikipedia/commons/thumb/5/55/Geneva_Cafe.jpg/500px-Geneva_Cafe.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9_KOWVTY2zHVkOK_big6DknX7wUY5YWBGA&s"]
     },
     {
       name: "Micro chocolate",
@@ -9414,7 +9414,7 @@ const FAMOUS_PLACES = {
       tags: ["chocolate", "pralines", "artisan", "cafe", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Chocolate.jpg/500px-Chocolate.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSihnjO-WxjnVMRD3aohB03NEofklygwCxDHg&s"]
     },
     {
       name: "Les Armures",
@@ -9425,7 +9425,7 @@ const FAMOUS_PLACES = {
       tags: ["traditional", "fondue", "cheese", "local", "historic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Les_Armures.jpg/500px-Les_Armures.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/0d/4a/6d/hotel-les-armures.jpg?w=900&h=500&s=1"]
     },
 
     // PARKS & NATURE
@@ -9438,7 +9438,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "botanical", "plants", "nature", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Jardin_Botanique_Geneva.jpg/500px-Jardin_Botanique_Geneva.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQgDdK-VkaxbOKMM-e3SBoLg1O3AY5zEjQ7Q&s"]
     },
     {
       name: "English Garden",
@@ -9449,7 +9449,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "english", "relaxing", "nature", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/English_Garden_Geneva.jpg/500px-English_Garden_Geneva.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KUgXghE7fMgMPf-qjy0sk-kPvZB6J7_9Ag&s"]
     },
   ],
 
@@ -9466,7 +9466,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "historic", "gothic", "architecture", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Grand_Place_Brussels.jpg/500px-Grand_Place_Brussels.jpg"]
+      photos: ["https://images.unsplash.com/photo-1548092299-a9672f506ae8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Manneken Pis",
@@ -9477,7 +9477,7 @@ const FAMOUS_PLACES = {
       tags: ["statue", "iconic", "quirky", "must-visit", "humor"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Manneken_Pis.jpg/500px-Manneken_Pis.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTmMh2L6FBXmvGjjEnenlHTz_pOwAHr4utKg&s"]
     },
     {
       name: "Atomium",
@@ -9488,7 +9488,7 @@ const FAMOUS_PLACES = {
       tags: ["monument", "architecture", "views", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Atomium.jpg/500px-Atomium.jpg"]
+      photos: ["https://images.unsplash.com/photo-1705759885469-ed74f535408a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Royal Palace",
@@ -9499,7 +9499,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "royal", "architecture", "history", "gardens"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Royal_Palace_Brussels.jpg/500px-Royal_Palace_Brussels.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj2rsHFlIU0iehlPcWy17hJrCzY6sxpYdP-g&s"]
     },
     {
       name: "Mini-Europe",
@@ -9510,7 +9510,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "miniature", "europe", "family", "interactive"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mini_Europe.jpg/500px-Mini_Europe.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHL2nANxeTfMKqrpCeNt0uzFEWQiw6_mt1g&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -9523,7 +9523,7 @@ const FAMOUS_PLACES = {
       tags: ["frites", "iconic", "must-try", "street-food", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Belgian_Frites.jpg/500px-Belgian_Frites.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlB6edgLUZOCkyPagXdjY2u5y01iS_1Zp3w&s"]
     },
     {
       name: "Le Zinneke",
@@ -9534,7 +9534,7 @@ const FAMOUS_PLACES = {
       tags: ["brussels", "traditional", "local", "classic", "cozy"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Brussels_Food.jpg/500px-Brussels_Food.jpg"]
+      photos: ["https://images.unsplash.com/photo-1749653010926-eff039e6dfa5?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Wittamer",
@@ -9545,7 +9545,7 @@ const FAMOUS_PLACES = {
       tags: ["pastries", "chocolates", "cafe", "luxury", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Wittamer.jpg/500px-Wittamer.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHwMjEtZjtnDISqRF3Vdu-SB-JSjemv5Jgg&s"]
     },
 
     // PARKS & NATURE
@@ -9558,7 +9558,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "royal", "nature", "relaxing", "walks"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Parc_de_Bruxelles.jpg/500px-Parc_de_Bruxelles.jpg"]
+      photos: ["https://images.unsplash.com/photo-1624305043544-df6d1bf81ee2?q=80&w=2038&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Botanical Garden",
@@ -9569,7 +9569,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "botanical", "greenhouses", "nature", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Botanical_Garden_Brussels.jpg/500px-Botanical_Garden_Brussels.jpg"]
+      photos: ["https://images.unsplash.com/photo-1640721756540-37ec3c4f20d6?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -9586,7 +9586,7 @@ const FAMOUS_PLACES = {
       tags: ["castle", "historic", "royal", "views", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Edinburgh_Castle.jpg/500px-Edinburgh_Castle.jpg"]
+      photos: ["https://images.unsplash.com/photo-1557096002-7f215e6b5dcf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Royal Mile",
@@ -9597,7 +9597,7 @@ const FAMOUS_PLACES = {
       tags: ["street", "historic", "shopping", "architecture", "walks"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Royal_Mile.jpg/500px-Royal_Mile.jpg"]
+      photos: ["https://images.unsplash.com/photo-1739571282350-0daef8f80417?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Arthur's Seat",
@@ -9608,7 +9608,7 @@ const FAMOUS_PLACES = {
       tags: ["mountain", "hiking", "views", "nature", "panorama"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Arthur%27s_Seat.jpg/500px-Arthur%27s_Seat.jpg"]
+      photos: ["https://images.unsplash.com/photo-1567802942109-0a5d92ed35b8?q=80&w=2011&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Holyrood Palace",
@@ -9619,7 +9619,7 @@ const FAMOUS_PLACES = {
       tags: ["palace", "royal", "history", "architecture", "gardens"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Holyrood_Palace.jpg/500px-Holyrood_Palace.jpg"]
+      photos: ["https://images.unsplash.com/photo-1694697413477-b0ea369dbf4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Calton Hill",
@@ -9630,7 +9630,7 @@ const FAMOUS_PLACES = {
       tags: ["hill", "views", "monuments", "sunset", "panorama"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Calton_Hill.jpg/500px-Calton_Hill.jpg"]
+      photos: ["https://images.unsplash.com/photo-1571044880241-95d4c9aa06f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
 
     // RESTAURANTS & FOOD
@@ -9643,7 +9643,7 @@ const FAMOUS_PLACES = {
       tags: ["restaurant", "historic", "scottish", "atmospheric", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Witchery.jpg/500px-Witchery.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/c8/4f/43/the-turret-suite.jpg?w=900&h=-1&s=1"]
     },
     {
       name: "Mary's Milk Bar",
@@ -9654,7 +9654,7 @@ const FAMOUS_PLACES = {
       tags: ["gelato", "cafe", "ice-cream", "artisan", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Gelato.jpg/500px-Gelato.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS10mDHlfoWsRJyL4wJ-vL6ZfTYg3PXk5srmg&s"]
     },
     {
       name: "Oink",
@@ -9665,7 +9665,7 @@ const FAMOUS_PLACES = {
       tags: ["pork", "sandwich", "street-food", "local", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Oink.jpg/500px-Oink.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBJ2hayGwqtVUvO1nIRP3xdRzPzHZJFqNwXg&s"]
     },
 
     // PARKS & NATURE
@@ -9678,7 +9678,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "gardens", "memorials", "nature", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Princes_Street_Gardens.jpg/500px-Princes_Street_Gardens.jpg"]
+      photos: ["https://images.unsplash.com/photo-1604420599876-836a4ed3110b?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Royal Botanic Garden",
@@ -9689,7 +9689,7 @@ const FAMOUS_PLACES = {
       tags: ["garden", "botanical", "glasshouses", "nature", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Edinburgh_Botanical_Garden.jpg/500px-Edinburgh_Botanical_Garden.jpg"]
+      photos: ["https://images.unsplash.com/photo-1587221088422-8d3b9b5b1a4a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -9706,7 +9706,7 @@ const FAMOUS_PLACES = {
       tags: ["square", "historic", "architecture", "must-visit", "glockenspiel"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Marienplatz.jpg/500px-Marienplatz.jpg"]
+      photos: ["https://images.unsplash.com/photo-1577653993857-3718d1f1f997?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Neuschwanstein Castle",
@@ -9717,7 +9717,7 @@ const FAMOUS_PLACES = {
       tags: ["castle", "fairytale", "architecture", "iconic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Neuschwanstein_Castle.jpg/500px-Neuschwanstein_Castle.jpg"]
+      photos: ["https://images.unsplash.com/photo-1644959863762-cc1c8366f5b6?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "English Garden",
@@ -9728,7 +9728,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "beer-garden", "surfing", "nature", "relaxing"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/English_Garden_Munich.jpg/500px-English_Garden_Munich.jpg"]
+      photos: ["https://images.unsplash.com/photo-1609237756216-2d5448d96807?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Frauenkirche",
@@ -9739,7 +9739,7 @@ const FAMOUS_PLACES = {
       tags: ["church", "gothic", "architecture", "historic", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Frauenkirche_Munich.jpg/500px-Frauenkirche_Munich.jpg"]
+      photos: ["https://images.unsplash.com/photo-1622363021659-c72cbdfd1aa6?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "BMW Museum",
@@ -9750,7 +9750,7 @@ const FAMOUS_PLACES = {
       tags: ["museum", "cars", "bmw", "history", "interactive"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BMW_Museum.jpg/500px-BMW_Museum.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRymvYFtWqhFSGzPVnriTw1x5pa_PnWr51bRA&s"]
     },
 
     // RESTAURANTS & FOOD
@@ -9763,7 +9763,7 @@ const FAMOUS_PLACES = {
       tags: ["beer-hall", "traditional", "music", "must-visit", "atmosphere"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hofbrauhaus.jpg/500px-Hofbrauhaus.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR309z20SslnwF4MYfNNMGQQ_8tQxfY1nJ1nA&s"]
     },
     {
       name: "Viktualienmarkt",
@@ -9774,7 +9774,7 @@ const FAMOUS_PLACES = {
       tags: ["market", "food", "fresh", "local", "shopping"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Viktualienmarkt.jpg/500px-Viktualienmarkt.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_6OEjYHOTW1klrkSFq818YIZRFnAJtFEzg&s"]
     },
     {
       name: "Augustiner Bräustuben",
@@ -9785,7 +9785,7 @@ const FAMOUS_PLACES = {
       tags: ["brewery", "beer", "pretzels", "traditional", "local"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Augustiner.jpg/500px-Augustiner.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKHfQ1EHScWa8I9dzLyzj4cqANuQ0m-es8IA&s"]
     },
 
     // PARKS & NATURE
@@ -9798,7 +9798,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "nature", "teahouse", "surfing", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/English_Garden_Munich_2.jpg/500px-English_Garden_Munich_2.jpg"]
+      photos: ["https://images.unsplash.com/photo-1693810020362-59401182dbcc?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Olympiapark",
@@ -9809,7 +9809,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "olympic", "tower", "views", "recreation"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Olympiapark.jpg/500px-Olympiapark.jpg"]
+      photos: ["https://images.unsplash.com/photo-1679777751988-3d12898721f0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
   ],
 
@@ -9826,7 +9826,7 @@ const FAMOUS_PLACES = {
       tags: ["cathedral", "gothic", "iconic", "architecture", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Milan_Duomo.jpg/500px-Milan_Duomo.jpg"]
+      photos: ["https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Galleria Vittorio Emanuele II",
@@ -9837,7 +9837,7 @@ const FAMOUS_PLACES = {
       tags: ["shopping", "architecture", "glass-dome", "luxury", "iconic"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Galleria_Vittorio_Emanuele_II.jpg/500px-Galleria_Vittorio_E Emanuele_II.jpg"]
+      photos: ["https://images.unsplash.com/photo-1518797814703-ed31ee241ef8?q=80&w=1713&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Sforza Castle",
@@ -9848,7 +9848,7 @@ const FAMOUS_PLACES = {
       tags: ["castle", "renaissance", "museums", "architecture", "history"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sforza_Castle.jpg/500px-Sforza_Castle.jpg"]
+      photos: ["https://images.unsplash.com/photo-1668618196014-9de3500f12b1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "The Last Supper",
@@ -9859,7 +9859,7 @@ const FAMOUS_PLACES = {
       tags: ["painting", "da-vinci", "art", "museum", "must-visit"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Last_Supper.jpg/500px-Last_Supper.jpg"]
+      photos: ["https://images.unsplash.com/photo-1696767878239-74776bce06a5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Brera District",
@@ -9870,7 +9870,7 @@ const FAMOUS_PLACES = {
       tags: ["neighborhood", "art", "galleries", "bohemian", "nightlife"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Brera.jpg/500px-Brera.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/72/7f/81/caption.jpg?w=800&h=500&s=1"]
     },
 
     // RESTAURANTS & FOOD
@@ -9883,7 +9883,7 @@ const FAMOUS_PLACES = {
       tags: ["panzerotti", "street-food", "iconic", "must-try", "budget-friendly"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Panzerotti.jpg/500px-Panzerotti.jpg"]
+      photos: ["https://flawless.life/wp-content/uploads/2015/07/luini-forno.jpg"]
     },
     {
       name: "Pizzeria Spontini",
@@ -9894,7 +9894,7 @@ const FAMOUS_PLACES = {
       tags: ["pizza", "thick-crust", "local", "classic", "must-try"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pizzeria_Spontini.jpg/500px-Pizzeria_Spontini.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90E5zvxhvGpzoQUeOcPg12qUgmmrBIbjCiQ&s"]
     },
     {
       name: "Caffè Martini",
@@ -9905,7 +9905,7 @@ const FAMOUS_PLACES = {
       tags: ["cafe", "coffee", "historic", "pastries", "traditional"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Caffe_Martini.jpg/500px-Caffe_Martini.jpg"]
+      photos: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/3e/ad/96/la-veranda-cortile-maggiore.jpg?w=500&h=-1&s=1"]
     },
 
     // PARKS & NATURE
@@ -9918,7 +9918,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "nature", "relaxing", "walking", "peaceful"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Parco_Sempione.jpg/500px-Parco_Sempione.jpg"]
+      photos: ["https://images.unsplash.com/photo-1668618196037-d1f75cdb549d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"]
     },
     {
       name: "Porta Nuova Gardens",
@@ -9929,7 +9929,7 @@ const FAMOUS_PLACES = {
       tags: ["park", "modern", "gardens", "views", "urban"],
       sourceApi: "curated",
       isFamous: true,
-      photos: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Porta_Nuova.jpg/500px-Porta_Nuova.jpg"]
+      photos: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvi09EiwnZOZF-KRzMiFYKt2yvmf8LCfJQOQ&s"]
     },
   ],
   };

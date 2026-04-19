@@ -35,7 +35,7 @@ const Trip = () => {
     }, [id]);
 
     if (loading) return (
-        <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 px-4 py-8 md:flex-row">
+        <div className="flex min-h-screen flex-col items-center justify-center bg-transparent px-4 py-8 md:flex-row">
             <div className="flex flex-col items-center gap-4">
                 <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
                 <p className="text-gray-500 font-medium">Curating your perfect itinerary...</p>
@@ -44,8 +44,8 @@ const Trip = () => {
     );
 
     if (error || !tripData) return (
-        <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 px-4 py-8 md:flex-row">
-            <div className="w-full max-w-md rounded-2xl border border-gray-100 bg-white p-6 text-center shadow-sm sm:p-8">
+        <div className="flex min-h-screen flex-col items-center justify-center bg-transparent px-4 py-8 md:flex-row">
+            <div className="w-full max-w-md rounded-2xl border border-gray-100 bg-white/80 p-6 text-center shadow-sm backdrop-blur sm:p-8">
                 <HiOutlineInformationCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
                 <h2 className="text-xl font-bold text-gray-800 mb-2">Trip Not Found</h2>
                 <p className="text-gray-500 mb-6">We couldn't load your trip details. It might have been deleted or the link is incorrect.</p>
@@ -61,7 +61,7 @@ const Trip = () => {
     const backgroundImage = selectedCardImage 
 
     return (
-        <div className="bg-gray-50 min-h-screen">
+        <div className="min-h-screen bg-transparent">
             <div className='relative h-[48vh] w-full overflow-hidden sm:h-[52vh] lg:h-[60vh]'>
                 {/* Background Image with Gradient Overlay */}
                 <ImageWithFallback

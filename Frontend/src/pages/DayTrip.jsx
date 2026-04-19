@@ -53,7 +53,7 @@ const DayTrip = () => {
   const TripDate = new Date(startDate.getTime() + (dayNumber - 1) * 24 * 60 * 60 * 1000);
 
   return (
-    <div className='bg-gray-100 px-4 py-6 sm:px-6 lg:p-10'>
+    <div className='bg-transparent px-4 py-6 sm:px-6 lg:p-10'>
       <div className='flex flex-col'>
         <h2 className='flex flex-row items-center gap-2 text-sm font-semibold text-blue-700 sm:text-base'>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill shrink-0" viewBox="0 0 16 16">

@@ -4,7 +4,7 @@ import { FaHeart } from "react-icons/fa";
 const RecommendCard = (destination) => {
   const { image, alt, title, category, description, price } = destination;
   return (
-    <div className='flex flex-col rounded-4xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer'>
+    <div className='flex flex-col rounded-4xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer bg-white md:w-80'>
       <div className='w-full md:w-80 h-80 shrink-0'>
         <img src={destination.image || getRandomCityImageUrl(destination.destination, destination._id)} alt={destination.alt} className='w-full h-full object-cover rounded-t-4xl hover:scale-105 transition-all duration-300' />
       </div>
