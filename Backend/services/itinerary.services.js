@@ -32,6 +32,76 @@ const SLOT_CATEGORY_PREFERENCE = {
     night: ["food", "other"]
 };
 
+function normalizePlaceValue(value) {
+    return (value || "").toString().toLowerCase().trim().replace(/\s+/g, " ");
+}
+
+function getRoundedCoordinate(value) {
+    return typeof value === "number" && Number.isFinite(value) ? value.toFixed(4) : "";
+}
+
+function getPlaceCoordinates(place) {
+    const coordinates = place?.coordinates?.coordinates;
+    if (Array.isArray(coordinates) && coordinates.length >= 2) {
+        return { lng: coordinates[0], lat: coordinates[1] };
+    }
+
+    if (typeof place?.lng === "number" && typeof place?.lat === "number") {
+        return { lng: place.lng, lat: place.lat };
+    }
+
+    if (typeof place?.longitude === "number" && typeof place?.latitude === "number") {
+        return { lng: place.longitude, lat: place.latitude };
+    }
+
+    return null;
+}
+
+function getPlaceIdentityKey(place) {
+    if (!place) return "";
+
+    const namePart = normalizePlaceValue(place.name);
+    const fallbackId = normalizePlaceValue(place.placeId);
+
+    return namePart || fallbackId;
+}
+
+function getPlaceQuality(place) {
+    const baseScore = place?._score?.total || 0;
+    const photoBonus = hasPhotos(place) ? 5 : 0;
+    const descriptionBonus = Math.min((place?.description || "").length / 80, 5);
+    const ratingBonus = (place?.avgRating || 0) * 2;
+    const popularityBonus = (place?.popularityScore || 0) / 20;
+
+    return baseScore + photoBonus + descriptionBonus + ratingBonus + popularityBonus;
+}
+
+function dedupePlacesByIdentity(places = []) {
+    const uniquePlaces = new Map();
+
+    for (const place of places) {
+        const key = getPlaceIdentityKey(place);
+        if (!key) continue;
+
+        const existing = uniquePlaces.get(key);
+        if (!existing || getPlaceQuality(place) > getPlaceQuality(existing)) {
+            uniquePlaces.set(key, place);
+        }
+    }
+
+    return [...uniquePlaces.values()];
+}
+
+function isPlaceSelectable(place, usedIds, usedPlaceKeys) {
+    if (!place) return false;
+
+    const placeKey = getPlaceIdentityKey(place);
+    if (usedIds.has(place.placeId)) return false;
+    if (placeKey && usedPlaceKeys.has(placeKey)) return false;
+
+    return true;
+}
+
 function calcEndTime(startTime, durationHours) {
     const [startH, startM] = startTime.split(":").map(Number);
     const totalMinutes = startH * 60 + startM + Math.round(durationHours * 60);
@@ -205,7 +275,7 @@ async function loadPlacesByCategory(cityName, preference) {
         }).lean();
 
         if (rawPlaces.length > 0) {
-            const scored = scorePlaces(rawPlaces, preference);
+            const scored = dedupePlacesByIdentity(scorePlaces(rawPlaces, preference));
             placesByCategory[category] = scored;
         }
     }
@@ -220,7 +290,7 @@ async function loadAllScoredPlacesForCity(cityName, preference) {
 
     if (!places || places.length === 0) return [];
 
-    return scorePlaces(places, preference);
+    return dedupePlacesByIdentity(scorePlaces(places, preference));
 }
 
 async function findNearbyCitiesInState(stateName, excludeCities = []) {
@@ -241,8 +311,8 @@ async function getStateForCity(cityName) {
     return city?.state || null;
 }
 
-function getAvailablePlace(pool, usedIds, preferredCategories = null) {
-    const available = pool.filter((p) => !usedIds.has(p.placeId));
+function getAvailablePlace(pool, usedIds, usedPlaceKeys, preferredCategories = null) {
+    const available = pool.filter((p) => isPlaceSelectable(p, usedIds, usedPlaceKeys));
     if (available.length === 0) return null;
 
     let candidates = available;
@@ -263,9 +333,9 @@ function getAvailablePlace(pool, usedIds, preferredCategories = null) {
     return candidates[0];
 }
 
-function pickBestForCategory(pool, usedIds, category, slotName, preferPhotos = false, requirePhotos = false) {
+function pickBestForCategory(pool, usedIds, usedPlaceKeys, category, slotName, preferPhotos = false, requirePhotos = false) {
     const available = pool.filter((p) => 
-        !usedIds.has(p.placeId) && p.category === category
+        isPlaceSelectable(p, usedIds, usedPlaceKeys) && p.category === category
     );
     
     if (available.length === 0) return null;
@@ -292,7 +362,7 @@ function getCategoryForSlot(slotName, usedCategoriesInDay) {
     return null;
 }
 
-function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories, options = {}) {
+function buildOneDayWithAllCategories(pool, usedIds, usedPlaceKeys, slotOrder, targetCategories, options = {}) {
     const dayActivities = [];
     const daySlots = {};
     const usedCategoriesInDay = new Set();
@@ -309,7 +379,7 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
         const startTime = SLOTS_PER_DAY[slotName].start;
         
         let availableForSlot = pool.filter((p) => 
-            !usedIds.has(p.placeId) && allowedCategories.has(p.category)
+            isPlaceSelectable(p, usedIds, usedPlaceKeys) && allowedCategories.has(p.category)
         );
 
         if (availableForSlot.length === 0) {
@@ -345,6 +415,7 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
             chosenPlace = pickBestForCategory(
                 pool,
                 usedIds,
+                usedPlaceKeys,
                 preferredCategory,
                 slotName,
                 preferPhotos,
@@ -364,6 +435,10 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
 
         if (chosenPlace) {
             usedIds.add(chosenPlace.placeId);
+            const chosenKey = getPlaceIdentityKey(chosenPlace);
+            if (chosenKey) {
+                usedPlaceKeys.add(chosenKey);
+            }
             const activity = buildActivity(chosenPlace, slotName, startTime);
             dayActivities.push(activity);
             daySlots[slotName] = { label: slotName, startTime, activity };
@@ -392,7 +467,7 @@ function buildOneDayWithAllCategories(pool, usedIds, slotOrder, targetCategories
     };
 }
 
-function fillExtraSlots(pool, usedIds, dayActivities, slotOrder, neededPlaces, options = {}) {
+function fillExtraSlots(pool, usedIds, usedPlaceKeys, dayActivities, slotOrder, neededPlaces, options = {}) {
     const filledActivities = [...dayActivities];
     const usedSlots = new Set(filledActivities.map(a => a.slot));
     const availableSlots = slotOrder.filter(s => !usedSlots.has(s));
@@ -407,7 +482,7 @@ function fillExtraSlots(pool, usedIds, dayActivities, slotOrder, neededPlaces, o
         const startTime = SLOTS_PER_DAY[slotName].start;
         
         const available = pool.filter((p) => 
-            !usedIds.has(p.placeId) && (!allowedCategories || allowedCategories.has(p.category))
+            isPlaceSelectable(p, usedIds, usedPlaceKeys) && (!allowedCategories || allowedCategories.has(p.category))
         );
         if (available.length === 0) break;
 
@@ -426,6 +501,7 @@ function fillExtraSlots(pool, usedIds, dayActivities, slotOrder, neededPlaces, o
             chosen = pickBestForCategory(
                 pool,
                 usedIds,
+                usedPlaceKeys,
                 preferredCategory,
                 slotName,
                 preferPhotos,
@@ -444,6 +520,10 @@ function fillExtraSlots(pool, usedIds, dayActivities, slotOrder, neededPlaces, o
         }
         if (chosen) {
             usedIds.add(chosen.placeId);
+            const chosenKey = getPlaceIdentityKey(chosen);
+            if (chosenKey) {
+                usedPlaceKeys.add(chosenKey);
+            }
             const activity = buildActivity(chosen, slotName, startTime);
             filledActivities.push(activity);
             usedCategoriesInDay.add(chosen.category);
@@ -466,7 +546,7 @@ function getTargetCategories(userPreferences = [], mood = "") {
     return ALL_CATEGORIES;
 }
 
-function ensureMinFoodPlacesForTrip(pool, usedIds, activities, slotOrder) {
+function ensureMinFoodPlacesForTrip(pool, usedIds, usedPlaceKeys, activities, slotOrder) {
     const foodCount = activities.filter(a => a.category === "food").length;
     
     if (foodCount >= MIN_FOOD_PLACES_PER_TRIP) {
@@ -477,7 +557,7 @@ function ensureMinFoodPlacesForTrip(pool, usedIds, activities, slotOrder) {
     const neededFood = MIN_FOOD_PLACES_PER_TRIP - foodCount;
     
     const availableFood = pool.filter(p => 
-        !usedIds.has(p.placeId) && p.category === "food"
+        isPlaceSelectable(p, usedIds, usedPlaceKeys) && p.category === "food"
     );
     
     if (availableFood.length === 0) return activitiesCopy;
@@ -499,6 +579,10 @@ function ensureMinFoodPlacesForTrip(pool, usedIds, activities, slotOrder) {
         if (rankedFood.length > 0) {
             const newFoodPlace = rankedFood[0];
             usedIds.add(newFoodPlace.placeId);
+            const newFoodKey = getPlaceIdentityKey(newFoodPlace);
+            if (newFoodKey) {
+                usedPlaceKeys.add(newFoodKey);
+            }
             
             const newActivity = buildActivity(newFoodPlace, slotName, startTime);
             activitiesCopy[replaceIndex] = newActivity;
@@ -542,6 +626,7 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
     }
 
     const usedIds = new Set();
+    const usedPlaceKeys = new Set();
     const primaryState = await getStateForCity(destination);
     let currentCity = destination;
 
@@ -553,7 +638,7 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
     const targetCategories = getTargetCategories(userCategoryPreferences, mood);
     const slotOrder = SLOT_ORDER;
 
-    let currentPool = [...initialScoredPlaces];
+    let currentPool = dedupePlacesByIdentity([...initialScoredPlaces]);
 
     const placesByCategory = {};
     for (const category of ALL_CATEGORIES) {
@@ -577,16 +662,17 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
                 visitedPlaceIds: [...usedIds]
             });
 
+            currentPool = dedupePlacesByIdentity([...currentPool, ...nextCityPlaces]);
+
             for (const place of nextCityPlaces) {
                 if (!placesByCategory[place.category]) {
                     placesByCategory[place.category] = [];
                 }
-                if (!usedIds.has(place.placeId)) {
+                if (isPlaceSelectable(place, usedIds, usedPlaceKeys)) {
                     placesByCategory[place.category].push(place);
                 }
             }
 
-            currentPool = [...currentPool, ...nextCityPlaces];
             citiesUsed.push({ city: nextCityName, state: primaryState || "", fromDay: dayNum });
         }
 
@@ -602,6 +688,7 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
         const { slots, activities, categoriesUsed } = buildOneDayWithAllCategories(
             currentPool,
             usedIds,
+            usedPlaceKeys,
             slotOrder,
             dayCategories,
             { dayNumber: dayNum }
@@ -620,6 +707,7 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
         const filledActivities = fillExtraSlots(
             currentPool,
             usedIds,
+            usedPlaceKeys,
             activities,
             slotOrder,
             neededExtra,
@@ -645,6 +733,7 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
             categoryBreakdown[act.category] = (categoryBreakdown[act.category] || 0) + 1;
         }
 
+
         days.push({
             dayNumber: dayNum,
             city: citiesUsed[citiesUsed.length - 1]?.city || destination,
@@ -666,9 +755,8 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
             )
         });
     }
-
-    const allActivitiesFlat = days.flatMap(d => d.activities);
-    ensureMinFoodPlacesForTrip(currentPool, usedIds, allActivitiesFlat, slotOrder);
+    const allActivitiesFlat = days.flatMap((day) => day.activities);
+    ensureMinFoodPlacesForTrip(currentPool, usedIds, usedPlaceKeys, allActivitiesFlat, slotOrder);
 
     let foodCount = 0;
     for (const day of days) {
@@ -680,12 +768,16 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
                     foodCount++;
                 } else {
                     const availableNonFood = currentPool.filter(p => 
-                        !usedIds.has(p.placeId) && p.category !== "food"
+                        isPlaceSelectable(p, usedIds, usedPlaceKeys) && p.category !== "food"
                     );
                     if (availableNonFood.length > 0) {
                         const replacement = rankCandidatesForSlot(availableNonFood, activity.slot, false, false)[0];
                         if (replacement) {
                             usedIds.add(replacement.placeId);
+                            const replacementKey = getPlaceIdentityKey(replacement);
+                            if (replacementKey) {
+                                usedPlaceKeys.add(replacementKey);
+                            }
                             const newActivity = buildActivity(replacement, activity.slot, SLOTS_PER_DAY[activity.slot].start);
                             updatedActivities.push(newActivity);
                         } else {
@@ -702,7 +794,7 @@ async function buildItinerary(initialScoredPlaces, numberOfDays, preferences = {
         day.activities = updatedActivities;
     }
 
-    const totalPlaces = [...usedIds].length;
+    const totalPlaces = usedPlaceKeys.size || usedIds.size;
     const costEstimate = calculateTripCost(days);
 
     return {
