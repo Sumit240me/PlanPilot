@@ -5,6 +5,8 @@ import { HiOutlineMapPin, HiOutlineCurrencyRupee, HiOutlineCalendarDays, HiOutli
 import { TripContext } from '../context/TripContext.jsx'
 import { useNavigate } from 'react-router-dom'
 import ImageWithFallback from '../components/ImageWithFallback'
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Trip = () => {
     const navigate = useNavigate();
@@ -15,6 +17,17 @@ const Trip = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [tripStatus, setTripStatus] = useState(tripData?.status || 'planning');
+
+    const token = localStorage.getItem("planpilot_token");
+
+    const notify = (message, type) => {
+        toast[type](message, {
+          position: "top-right",
+          autoClose: 3000,
+          theme: "light",
+          transition: Bounce,
+        });
+      };
 
     useEffect(() => {
         const fetchTrip = async () => {
@@ -39,15 +52,16 @@ const Trip = () => {
     const handleUpdateStatus = async (tripId, newStatus) => {
         await updateTripStatus(tripId, newStatus);
         setTripStatus(newStatus);
+        notify("Trip status updated successfully!", "success");
     }
 
     const handleSaveTrip = async (tripData) => {
-        if(!user) {
-            alert("Please login to save the trip.");
+        if(!token) {
+            notify("Please login to save the trip.", "error");
             return;
         }
            const response = await saveTrip(tripData);
-           alert("Trip saved successfully!");   
+           notify("Trip saved successfully!", "success");
     }
 
     console.log("Trip Data:", tripData?.userId);
@@ -81,6 +95,7 @@ const Trip = () => {
 
     return (
         <div className="min-h-screen bg-transparent">
+            < ToastContainer />
             <div className='relative h-[48vh] w-full overflow-hidden sm:h-[52vh] lg:h-[60vh]'>
                 {/* Background Image with Gradient Overlay */}
                 <ImageWithFallback

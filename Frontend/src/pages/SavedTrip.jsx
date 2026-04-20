@@ -3,12 +3,24 @@ import { TripContext } from '../context/TripContext.jsx'
 import { useContext, useEffect, useRef, useState } from 'react'
 import { getAllImagesFromTrip } from '../utils/imageFallback.js'
 import { useNavigate } from 'react-router-dom'
+import Loading from '../components/Loading.jsx'
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SavedTrip = () => {
   const navigate = useNavigate();
   const { userTrips, getMyTrips } = useContext(TripContext);
   const [isLoadingTrips, setIsLoadingTrips] = useState(true);
   console.log("userTrips", userTrips);
+
+  const notify = (message, type) => {
+    toast[type](message, {
+      position: "top-right",
+      autoClose: 3000,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
 
   const token = localStorage.getItem("planpilot_token")
 
@@ -59,6 +71,7 @@ const SavedTrip = () => {
 
   return (
     <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
+      < ToastContainer />
       <div ref={revealRef} className='reveal-scale'>
         <div className='text-4xl md:text-6xl font-bold text-gray-700' >Saved Trips</div>
         <div>
@@ -68,7 +81,7 @@ const SavedTrip = () => {
 
       {!token ? <div ref={revealRef} className='text-lg font-semibold text-red-600 mt-10 reveal-scale' >Please Login to see your Saved Trips</div> :
         isLoadingTrips ? (
-          <div className='text-lg font-semibold text-gray-900 mt-12'>Loading your trips...</div>
+          <Loading />
         ) : <div>
           {activeTrips?.length > 0 && <div>
             <h1 className='mt-12 text-2xl font-bold text-blue-700'>ACTIVE</h1>
@@ -90,7 +103,7 @@ const SavedTrip = () => {
 
           {planningTrips?.length > 0 &&
             <div>
-              <h1  className='mt-12 text-2xl font-bold text-yellow-700'>PLANNING</h1>
+              <h1 className='mt-12 text-2xl font-bold text-yellow-700'>PLANNING</h1>
               <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
                 {planningTrips.map((data, index) => (
                   <SavedCard
@@ -108,67 +121,67 @@ const SavedTrip = () => {
           }
 
           {confirmedTrips.length > 0 &&
-          <div>
-            <h1 className='mt-12 text-2xl font-bold text-green-700'>CONFIRMED</h1>
-            <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
-              {confirmedTrips.map((data, index) => (
-                <SavedCard
-                  key={index}
-                  id={data._id}
-                  img={data?.image}
-                  name={data.tripTitle}
-                  location={data.destination}
-                  status={data.status}  
-                  fallbackImages={getAllImagesFromTrip(data)}
-                />
-              ))}
+            <div>
+              <h1 className='mt-12 text-2xl font-bold text-green-700'>CONFIRMED</h1>
+              <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+                {confirmedTrips.map((data, index) => (
+                  <SavedCard
+                    key={index}
+                    id={data._id}
+                    img={data?.image}
+                    name={data.tripTitle}
+                    location={data.destination}
+                    status={data.status}
+                    fallbackImages={getAllImagesFromTrip(data)}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
           }
-    
-          { completedTrips?.length > 0 &&
-          <div>
-            <h1 className='mt-12 text-2xl font-bold text-purple-700'>COMPLETED</h1>
-            <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
-              {completedTrips.map((data, index) => (
-                <SavedCard
-                  key={index}
-                  id={data._id}
-                  img={data?.image}
-                  name={data.tripTitle}
-                  location={data.destination}
-                  status={data.status}  
-                  fallbackImages={getAllImagesFromTrip(data)}
-                />
-              ))}
+
+          {completedTrips?.length > 0 &&
+            <div>
+              <h1 className='mt-12 text-2xl font-bold text-purple-700'>COMPLETED</h1>
+              <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+                {completedTrips.map((data, index) => (
+                  <SavedCard
+                    key={index}
+                    id={data._id}
+                    img={data?.image}
+                    name={data.tripTitle}
+                    location={data.destination}
+                    status={data.status}
+                    fallbackImages={getAllImagesFromTrip(data)}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
+          }
+
+          {cancelledTrips?.length > 0 &&
+            <div>
+              <h1 className='mt-12 text-2xl font-bold text-red-700'>CANCELLED</h1>
+              <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+                {cancelledTrips.map((data, index) => (
+                  <SavedCard
+                    key={index}
+                    id={data._id}
+                    img={data?.image}
+                    name={data.tripTitle}
+                    location={data.destination}
+                    status={data.status}
+                    fallbackImages={getAllImagesFromTrip(data)}
+                  />
+                ))}
+              </div>
+            </div>
+          }
+        </div>
       }
 
-         {cancelledTrips?.length > 0 &&
-          <div>
-            <h1 className='mt-12 text-2xl font-bold text-red-700'>CANCELLED</h1>
-            <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
-              {cancelledTrips.map((data, index) => (
-                <SavedCard
-                  key={index}
-                  id={data._id}
-                  img={data?.image}
-                  name={data.tripTitle}
-                  location={data.destination}
-                  status={data.status}  
-                  fallbackImages={getAllImagesFromTrip(data)}
-                />
-              ))}
-            </div>
-          </div>
-  }
-        </div>
-    }
+      {token && !isLoadingTrips && userTrips.length === 0 && <div ref={revealRef} className='text-lg font-semibold text-gray-900 mt-12 reveal-scale' >No saved trips yet. Start planning your next adventure!</div>}
 
-      { token && !isLoadingTrips && userTrips.length === 0 && <div ref={revealRef} className='text-lg font-semibold text-gray-900 mt-12 reveal-scale' >No saved trips yet. Start planning your next adventure!</div>}
-      
-      
+
 
       <div ref={revealRef} className='mt-16 sm:mt-20  reveal-scale'>
         <div className='flex flex-col md:flex-row gap-4 bg-gray-100 rounded-4xl items-center'>

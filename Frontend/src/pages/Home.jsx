@@ -4,6 +4,8 @@ import destinations from '../assets/card.js'
 import RecommendCard from '../components/RecommendCard.jsx'
 import { useNavigate } from 'react-router-dom'
 import { TripContext } from '../context/TripContext.jsx'
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   HiOutlineMapPin,
   HiOutlineSparkles,
@@ -21,14 +23,14 @@ import {
 
 const Home = () => {
 
-  //  destination,
-  //         mood,
-  //         budget,
-  //         companions,
-  //         startDate,
-  //         endDate,
-  //         extraNotes = "",
-
+const notify = (message, type) => {
+  toast[type](message, {
+    position: "top-right",
+    autoClose: 3000,
+    theme: "light",
+    transition: Bounce,
+  });
+};
   const { allCities, generateTrip, trip } = useContext(TripContext);
   const data = destinations.slice(0, 4);
   const navigate = useNavigate();
@@ -105,25 +107,27 @@ const Home = () => {
 
     // Basic validation
     if (!formData.destination || formData.destination === "Select Destination") {
-      alert("Please select a destination");
+      notify("Please select a destination", "error");
       return;
     }
 
-    if (formData.categories.length === 0) {
-      alert("Please select at least one category preference");
+    if (!formData.mood || formData.mood === "Select Mood" || !formData.companions || formData.companions === "Who's coming?" || !formData.budget || formData.budget === "Select Budget") {
+      notify("Please fill in all required fields", "error");
       return;
     }
 
     const result = await generateTrip(formData);
+     notify("Trip generated successfully!", "success");
     if (result && result.tripId) {
       navigate(`/trip/${result.tripId}`);
     } else {
-      alert("Failed to generate trip. Please try again.");
+      notify("Failed to generate trip. Please try again.", "error");
     }
   }
 
   return (
     <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
+      <ToastContainer />
       <div ref={revealRef} className='flex flex-col gap-10 md:flex-row md:justify-evenly reveal-scale'>
         <div className='w-full md:w-1/3'>
           <div className='flex flex-col '>
@@ -305,7 +309,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <button type='submit' className="w-full h-12 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group">
+              <button type='submit' className="w-full h-12 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group cursor-pointer">
                 Create Itinerary
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </button>

@@ -3,7 +3,9 @@ import { useParams } from 'react-router-dom';
 import { TripContext } from '../context/TripContext.jsx';
 import { HiOutlineMapPin } from 'react-icons/hi2';
 import StarRating from '../utils/StarRating.jsx';
-
+import Loading from '../components/Loading.jsx';
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Doreview = () => {
   const { getTripById, rateTrip } = useContext(TripContext);
@@ -16,6 +18,14 @@ const Doreview = () => {
   // const [activityRatings, setActivityRatings] = useState([
   //   tripdata?.days.map(day => ({}))
   // ]);
+  const notify = (message, type) => {
+      toast[type](message, {
+        position: "top-right",
+        autoClose: 3000,
+        theme: "light",
+        transition: Bounce,
+      });
+    };
 
   const { id } = useParams();
   useEffect(() => {
@@ -55,7 +65,7 @@ const Doreview = () => {
     console.log("Accommodation Rating:", accommodationRating);
     console.log("Overall Feedback:", overallFeedback);
     if(overallRating === 0) {
-      alert("Please provide an overall rating before submitting your review.");
+      notify("Please provide overall rating.", "error");
       return;
     }
     try {
@@ -65,7 +75,7 @@ const Doreview = () => {
       setActivityRating(0);
       setAccommodationRating(0);
       setOverallFeedback("");
-      alert("Thank you for submitting your review!");
+      notify("Thank you for submitting your review!", "success");
     } catch (error) {
       console.error("Error rating trip:", error);
     }
@@ -74,11 +84,12 @@ const Doreview = () => {
  // console.log("start", start());
   //console.log("end", end());
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   } else {
     return (
       <div>
         <div className='relative h-[48vh] w-full overflow-hidden sm:h-[52vh] lg:h-[60vh]'>
+          < ToastContainer />
           {/* Background Image with Gradient Overlay */}
           <img src={tripdata.image} alt={tripdata.destination} className='w-full h-full object-cover' />
           <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-gray-900/40 to-transparent"></div>

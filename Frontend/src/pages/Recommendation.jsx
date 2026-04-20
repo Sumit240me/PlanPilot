@@ -2,6 +2,7 @@ import React,{ useContext, useEffect, useState, useRef } from 'react'
 import Card from '../components/Card.jsx'
 import Bottombar from '../components/Bottombar.jsx'
 import { TripContext } from '../context/TripContext.jsx' 
+import Loading from '../components/Loading.jsx'
 import { getAllImagesFromTrip } from '../utils/imageFallback.js'
 const Recommendation = () => {
   const { allTrips,getAllTrips } = useContext(TripContext);
@@ -118,6 +119,7 @@ const Recommendation = () => {
 
       {/* Cards */}
         {/* // image, tripTitle,destination,grandTotal, tripIntro, id */}
+        {filteredTrips.length === 0 ? <Loading /> : 
       <div  className='mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4'>
         {filteredTrips.map((destination,index) => (
           <Card key={index} image={destination.image} tripTitle={destination.tripTitle} destination={destination.destination} grandTotal={destination.costEstimate?.grandTotal} tripIntro={destination.tripIntro} id={destination._id} fallbackImages={getAllImagesFromTrip(destination)} />
@@ -128,6 +130,7 @@ const Recommendation = () => {
           </div>
         )}
       </div>
+}
 
       <div className='mt-16 overflow-hidden rounded-4xl bg-gray-100 sm:mt-20'>
         <Bottombar />

@@ -1,11 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { HiOutlineBars3, HiOutlineXMark } from 'react-icons/hi2'
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const notify = (message, type) => {
+    toast[type](message, {
+      position: "top-right",
+      autoClose: 3000,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
 
   const token = localStorage.getItem('planpilot_token');
 
@@ -14,6 +25,7 @@ const Navbar = () => {
     setVisible(false);
     setMenuOpen(false);
     window.location.reload();
+    notify("You have been logged out.", "info");
   }
 
   useEffect(() => {
@@ -29,6 +41,7 @@ const Navbar = () => {
 
   return (
     <div className='sticky top-0 z-50 flex items-center justify-between gap-3 bg-white px-4 py-4 sm:px-6 sm:py-6'>
+      <ToastContainer />
       <NavLink to='/' className='shrink-0 text-xl font-bold sm:text-2xl text-blue-700'>PlanPilot </NavLink>
 
       <div className='hidden flex-1 justify-center md:flex'>

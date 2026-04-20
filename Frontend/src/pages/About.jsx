@@ -1,8 +1,12 @@
 import React from 'react'
-import { useEffect, useRef } from 'react';
-
+import { useEffect, useRef,useState } from 'react';
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const About = () => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const useReveal = () => {
     const refs = useRef(new Set());
@@ -27,11 +31,31 @@ const About = () => {
 
     return setRevealRef;
   };
-
   const revealRef = useReveal();
+
+  const notify = (message, type) => {
+    toast[type](message, {
+      position: "top-right",
+      autoClose: 3000,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
+
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    setFullName("");
+    setEmail("");
+    setMessage("");
+    notify("Message sent successfully!", "success");
+   
+  };
+
 
   return (
     <div className='px-4 sm:px-6 lg:px-10'>
+      < ToastContainer />
       <div ref={revealRef} className='flex flex-col md:flex-row gap-12 justify-between items-center reveal-scale'>
         <div className='w-full p-4 sm:p-8 md:w-1/2'>
           <h1 className=' text-2xl md:text-5xl font-bold text-gray-800' >Your Journey,</h1>
@@ -115,22 +139,22 @@ const About = () => {
           </div>
         </div>
         <div className='w-full md:w-2/3'>
-          <form action="#" className="grid grid-cols-1 gap-8">
+          <form onSubmit={handlesubmit} className="grid grid-cols-1 gap-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-1.5">
                 <label className="text-sm font-semibold text-on-surface-variant ml-1">Full Name</label>
-                <input className="mt-2 w-full bg-surface-container-low border-none rounded-md px-6 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/50 bg-gray-100" placeholder="John Doe" type="text" />
+                <input onChange={(e) => setFullName(e.target.value) } value={fullName} className="mt-2 w-full bg-surface-container-low border-none rounded-md px-6 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/50 bg-gray-100" placeholder="John Doe" type="text" required />
               </div>
               <div className="space-y-1.5">
                 <label className="text-sm font-semibold text-on-surface-variant ml-1">Email</label>
-                <input className="mt-2 w-full bg-surface-container-low border-none rounded-md px-6 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/50 bg-gray-100" placeholder="john@example.com" type="email" />
+                <input onChange={(e) => setEmail(e.target.value)} value={email} className="mt-2 w-full bg-surface-container-low border-none rounded-md px-6 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/50 bg-gray-100" placeholder="john@example.com" type="email" />
               </div>
             </div>
             <div className="space-y-1.5">
               <label className="text-sm font-semibold text-on-surface-variant ml-1">Message</label>
-              <textarea className="mt-2 w-full bg-surface-container-low border-none rounded-md px-6 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/50 bg-gray-100 " placeholder="How can we help your next adventure?" rows="5"></textarea>
+              <textarea onChange={(e) => setMessage(e.target.value)} value={message} className="mt-2 w-full bg-surface-container-low border-none rounded-md px-6 py-2 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-outline/50 bg-gray-100 " placeholder="How can we help your next adventure?" rows="5" required></textarea>
             </div>
-            <button className="bg-linear-to-br from-blue-600 to-blue-400 text-white font-bold py-2 rounded-4xl transition-all shadow-lg hover:shadow-primary/30" type="submit">Send Message</button>
+            <button type="submit" className="bg-linear-to-br from-blue-600 to-blue-400 text-white font-bold py-2 rounded-4xl transition-all shadow-lg hover:shadow-primary/30">Send Message</button>
           </form>
         </div>
       </div>
