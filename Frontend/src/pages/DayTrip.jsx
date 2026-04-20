@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { TripContext } from '../context/TripContext.jsx';
 import { HiOutlineCalendarDays } from 'react-icons/hi2';
 import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Tooltip, useMap } from "react-leaflet";
 import ImageWithFallback from '../components/ImageWithFallback'
 
 const RecenterMap = ({ center }) => {
@@ -23,6 +23,7 @@ const DayTrip = () => {
   const [tripData, setTripData] = useState({});
   const [trip, setTrip] = useState({});
   const [mapCenter, setMapCenter] = useState([23.2599, 77.4126]);
+  const [selectedLocation, setSelectedLocation] = useState(null);
 
   useEffect(() => {
     const fetchTrip = async () => {
@@ -31,8 +32,18 @@ const DayTrip = () => {
         setTrip(trip.trip);
         const dayData = trip.trip.days[dayNumber - 1];
         setTripData(dayData);
-        if (dayData && dayData.activities && dayData.activities.length > 0 && dayData.activities[0].coordinates) {
-          setMapCenter([dayData.activities[0].coordinates.lat, dayData.activities[0].coordinates.lng]);
+        const firstActivityWithCoordinates = dayData?.activities?.find((activity) => activity.coordinates);
+
+        if (firstActivityWithCoordinates) {
+          const { lat, lng } = firstActivityWithCoordinates.coordinates;
+          setMapCenter([lat, lng]);
+          setSelectedLocation({
+            lat,
+            lng,
+            name: firstActivityWithCoordinates.name,
+          });
+        } else {
+          setSelectedLocation(null);
         }
       }
     };
@@ -65,8 +76,15 @@ const DayTrip = () => {
 
     const revealRef = useReveal();
 
-  const handleViewLocation = (lat, lng) => {
+  const handleViewLocation = (activity) => {
+    if (!activity.coordinates) return;
+    const { lat, lng } = activity.coordinates;
     setMapCenter([lat, lng]);
+    setSelectedLocation({
+      lat,
+      lng,
+      name: activity.name,
+    });
   };
 
   const openInGoogleMaps = () => {
@@ -131,7 +149,7 @@ const DayTrip = () => {
                         {activity.slot.toUpperCase()} - {activity.arrivalTime.toUpperCase()} {activity.slot === 'morning' ? 'AM' : 'PM'}
                       </p>
                       <p
-                        onClick={() => handleViewLocation(activity.coordinates.lat, activity.coordinates.lng)}
+                        onClick={() => handleViewLocation(activity)}
                         className='flex cursor-pointer items-center gap-1 text-xs font-bold uppercase text-blue-700 hover:text-blue-600'
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -178,15 +196,13 @@ const DayTrip = () => {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
               />
 
-              {tripData.activities?.map((activity, idx) => (
-                activity.coordinates && (
-                  <Marker key={idx} position={[activity.coordinates.lat, activity.coordinates.lng]}>
-                    <Popup>
-                      <div className='font-bold text-blue-700'>{activity.name}</div>
-                    </Popup>
-                  </Marker>
-                )
-              ))}
+              {selectedLocation && (
+                <Marker position={[selectedLocation.lat, selectedLocation.lng]}>
+                  <Tooltip direction='top' offset={[0, -8]} permanent opacity={1}>
+                    <div className='font-bold text-blue-700'>{selectedLocation.name}</div>
+                  </Tooltip>
+                </Marker>
+              )}
 
               <RecenterMap center={mapCenter} />
             </MapContainer>
