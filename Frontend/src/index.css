@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
+
+@layer utilities {
+
+  .reveal-scale {
+    @apply opacity-0 scale-90 translate-y-6 transition-all duration-700 ease-out;
+    will-change: transform, opacity;
+  }
+
+  .reveal-scale.active {
+    @apply opacity-100 scale-100 translate-y-0;
+  }
+
+}
+
 body {
   font-family: 'Outfit', sans-serif;
   background-color: rgb(231, 255, 255);

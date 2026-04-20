@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import { TripContext } from '../context/TripContext.jsx';
 import { HiOutlineCalendarDays } from 'react-icons/hi2';
@@ -39,6 +39,32 @@ const DayTrip = () => {
     fetchTrip();
   }, [id, dayNumber]);
 
+  const useReveal = () => {
+      const refs = useRef(new Set());
+  
+      const setRevealRef = (el) => {
+        if (el) refs.current.add(el);
+      };
+  
+      useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.2 });
+  
+        refs.current.forEach((el) => observer.observe(el));
+  
+        return () => observer.disconnect();
+      }, []);
+  
+      return setRevealRef;
+    };
+
+    const revealRef = useReveal();
+
   const handleViewLocation = (lat, lng) => {
     setMapCenter([lat, lng]);
   };
@@ -54,7 +80,7 @@ const DayTrip = () => {
 
   return (
     <div className='bg-transparent px-4 py-6 sm:px-6 lg:p-10'>
-      <div className='flex flex-col'>
+      <div ref={revealRef} className='flex flex-col reveal-scale'>
         <h2 className='flex flex-row items-center gap-2 text-sm font-semibold text-blue-700 sm:text-base'>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill shrink-0" viewBox="0 0 16 16">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
@@ -78,7 +104,7 @@ const DayTrip = () => {
         </div>
       </div>
 
-      <div className="mt-10 flex flex-col gap-10 lg:flex-row lg:gap-15">
+      <div ref={revealRef} className="mt-10 flex flex-col gap-10 lg:flex-row lg:gap-15 reveal-scale">
         <div className='w-full lg:w-2/3'>
           <div className='relative ml-3 space-y-16 border-l-2 border-gray-200 pl-6 sm:ml-4 sm:pl-12'>
             {tripData.activities?.map((activity, index) => (
@@ -136,7 +162,7 @@ const DayTrip = () => {
           </div>
         </div>
 
-        <div className='mt-10 w-full lg:mt-0 lg:w-1/3 lg:sticky lg:top-32 lg:self-start'>
+        <div ref={revealRef} className='mt-10 w-full lg:mt-0 lg:w-1/3 lg:sticky lg:top-32 lg:self-start reveal-scale'>
           <div onClick={openInGoogleMaps} className='group relative z-0 h-65 overflow-hidden rounded-4xl border-4 border-white shadow-xl cursor-pointer sm:h-75 md:h-87.5 md:justify-end'>
             <div className='pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-black opacity-0 transition-opacity group-hover:opacity-10'>
               <span className='rounded-full bg-blue-600 px-3 py-1 text-xs font-bold text-white shadow-lg'>Open in Maps</span>

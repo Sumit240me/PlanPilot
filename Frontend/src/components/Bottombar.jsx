@@ -1,8 +1,36 @@
 import React from 'react'
+import { useEffect, useRef } from 'react';
 
 const Bottombar = () => {
+
+  const useReveal = () => {
+      const refs = useRef(new Set());
+  
+      const setRevealRef = (el) => {
+        if (el) refs.current.add(el);
+      };
+  
+      useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          });
+        }, { threshold: 0.2 });
+  
+        refs.current.forEach((el) => observer.observe(el));
+  
+        return () => observer.disconnect();
+      }, []);
+  
+      return setRevealRef;
+    };
+  
+    const revealRef = useReveal();
+
   return (
-    <div>
+    <div ref={revealRef} className='reveal-scale'>
           <div className='flex flex-col items-center justify-center p-6 sm:p-10'>
             <h1 className='text-center text-2xl font-bold text-gray-700 sm:text-4xl'>Can't decide where to go?</h1>
             <p className='mt-4 w-full text-center text-xs text-gray-500 sm:w-2/3 lg:w-1/2'>Let our AI-powered travel navigator build a custom itinerary based on your preferences, budget, and travel style. Design your dream vacation with just a few clicks.</p>

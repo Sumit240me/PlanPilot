@@ -34,7 +34,7 @@ function App() {
           <Route path='/trip/:id' element={<Trip />} />
           <Route path='/dayTrip/:id/:dayNumber' element={<DayTrip />} />
           <Route path='/about' element={<About />} />
-          <Route path='/review' element={<Doreview />} />
+          <Route path='/review/:id' element={<Doreview />} />
           <Route path='/profile' element={<Profile />} />
          
           </Route>

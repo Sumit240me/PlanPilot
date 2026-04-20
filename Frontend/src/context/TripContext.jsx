@@ -229,6 +229,83 @@ const TripContextProvider = (props) => {
         }
     }
 
+    const deleteTrip = async (tripId) => {
+        try {
+            const token = getAuthToken();
+            if(!token){
+                return null;
+            }
+            const response = await axios.delete(`${BASE_URL}/api/trips/`, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+                data: { tripId },
+            });
+            getMyTrips();
+        } catch (err) {
+            console.log(err);
+            return null;
+        }
+    }
+
+    const updateTripStatus = async (tripId, status) => {
+        try {
+            const token = getAuthToken();
+            if (!token) {
+                return null;
+            }
+            const response = await axios.put(`${BASE_URL}/api/trips/${tripId}/status`, { status }, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            getMyTrips();
+        } catch (error) {
+            console.error("Error updating trip status:", error);        
+            return null;
+        }
+    }
+
+    const saveTrip = async (tripData) => {
+        try {
+            const token = getAuthToken();
+            if (!token) {
+                return null;
+            }
+            
+            const response = await axios.post(`${BASE_URL}/api/trips/save`, tripData, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                }
+            });
+            getMyTrips();
+            return response.data;
+        } catch (error) {
+            console.error("Error saving trip:", error);
+            return null;
+        }
+    }
+
+    const  rateTrip = async (tripId, overallRating, overallFeedback) => {
+        try {
+            const token = getAuthToken();
+            if (!token) {
+                return null;
+            }
+            const response = await axios.put(`${BASE_URL}/api/trips/${tripId}/rate`, { overallRating, overallFeedback }, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                }
+            });
+            getMyTrips();
+            console.log("Rating response: ", response);
+            return response.data;
+        } catch (error) {
+            console.error("Error rating trip:", error);
+            return null;
+        }
+    }
+
     useEffect(() => {
         getAllCities();
         getAllTrips();
@@ -252,7 +329,12 @@ const TripContextProvider = (props) => {
         user,
         getUser,
         updateUser,
-        deleteUser
+        deleteUser,
+        deleteTrip,
+        updateTripStatus,
+        saveTrip,
+        rateTrip
+
     }
 
     return (

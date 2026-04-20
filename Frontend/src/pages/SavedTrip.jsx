@@ -1,50 +1,184 @@
 import SavedCard from '../components/SavedCard.jsx'
 import { TripContext } from '../context/TripContext.jsx'
-import { useContext ,useEffect} from 'react'
-import { getRandomCityImageUrl, getAllImagesFromTrip } from '../utils/imageFallback.js'
+import { useContext, useEffect, useRef, useState } from 'react'
+import { getAllImagesFromTrip } from '../utils/imageFallback.js'
 import { useNavigate } from 'react-router-dom'
 
 const SavedTrip = () => {
   const navigate = useNavigate();
   const { userTrips, getMyTrips } = useContext(TripContext);
-  console.log("userTrips",userTrips);
+  const [isLoadingTrips, setIsLoadingTrips] = useState(true);
+  console.log("userTrips", userTrips);
 
   const token = localStorage.getItem("planpilot_token")
 
   useEffect(() => {
-    getMyTrips();
-  },[]);
+    const loadTrips = async () => {
+      setIsLoadingTrips(true);
+      await getMyTrips();
+      setIsLoadingTrips(false);
+    };
+
+    loadTrips();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const normalizeStatus = (status) => (status || "").trim().toLowerCase();
+
+  const activeTrips = userTrips.filter((trip) => normalizeStatus(trip.status) === "active");
+  const planningTrips = userTrips.filter((trip) => normalizeStatus(trip.status) === "planning");
+  const confirmedTrips = userTrips.filter((trip) => normalizeStatus(trip.status) === "confirmed");
+  const completedTrips = userTrips.filter((trip) => normalizeStatus(trip.status) === "completed");
+  const cancelledTrips = userTrips.filter((trip) => normalizeStatus(trip.status) === "cancelled");
+
+
+  const useReveal = () => {
+    const refs = useRef(new Set());
+
+    const setRevealRef = (el) => {
+      if (el) refs.current.add(el);
+    };
+
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.2 });
+
+      refs.current.forEach((el) => observer.observe(el));
+
+      return () => observer.disconnect();
+    }, []);
+
+    return setRevealRef;
+  };
+  const revealRef = useReveal();
 
   return (
     <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
-      <div className='text-4xl md:text-6xl font-bold text-gray-700' >Saved Trips</div>
-      <div>
-        <p className='text-gray-500 text-sm leading-relaxed mt-5 md:w-1/2'>Your curated collection of future adventure and dream destinations, waiting to be explored.</p>
+      <div ref={revealRef} className='reveal-scale'>
+        <div className='text-4xl md:text-6xl font-bold text-gray-700' >Saved Trips</div>
+        <div>
+          <p className='text-gray-500 text-sm leading-relaxed mt-5 md:w-1/2'>Your curated collection of future adventure and dream destinations, waiting to be explored.</p>
+        </div>
       </div>
 
-     {!token ? <div className='text-lg font-semibold text-red-600 mt-10' >Please Login to see your Saved Trips</div> : <div></div>}
-      <div className='mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
-        {userTrips.map((data, index) => (
-          <SavedCard
-            key={index}
-            id={data._id}
-            img={data?.image}
-            name={data.tripTitle}
-            location={data.destination}
-            fallbackImages={getAllImagesFromTrip(data)}
-          />
-        ))}
-      </div>
+      {!token ? <div ref={revealRef} className='text-lg font-semibold text-red-600 mt-10 reveal-scale' >Please Login to see your Saved Trips</div> :
+        isLoadingTrips ? (
+          <div className='text-lg font-semibold text-gray-900 mt-12'>Loading your trips...</div>
+        ) : <div>
+          {activeTrips?.length > 0 && <div>
+            <h1 className='mt-12 text-2xl font-bold text-blue-700'>ACTIVE</h1>
+            <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+              {activeTrips.map((data, index) => (
+                <SavedCard
+                  key={index}
+                  id={data._id}
+                  img={data?.image}
+                  name={data.tripTitle}
+                  location={data.destination}
+                  status={data.status}
+                  fallbackImages={getAllImagesFromTrip(data)}
+                />
+              ))}
+            </div>
+          </div>
+          }
 
-      <div className='mt-16 sm:mt-20 md:mx-2'>
-        <div className='flex flex-col md:flex-row gap-4 bg-gray-100 rounded-4xl'>
+          {planningTrips?.length > 0 &&
+            <div>
+              <h1  className='mt-12 text-2xl font-bold text-yellow-700'>PLANNING</h1>
+              <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+                {planningTrips.map((data, index) => (
+                  <SavedCard
+                    key={index}
+                    id={data._id}
+                    img={data?.image}
+                    name={data.tripTitle}
+                    location={data.destination}
+                    status={data.status}
+                    fallbackImages={getAllImagesFromTrip(data)}
+                  />
+                ))}
+              </div>
+            </div>
+          }
+
+          {confirmedTrips.length > 0 &&
+          <div>
+            <h1 className='mt-12 text-2xl font-bold text-green-700'>CONFIRMED</h1>
+            <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+              {confirmedTrips.map((data, index) => (
+                <SavedCard
+                  key={index}
+                  id={data._id}
+                  img={data?.image}
+                  name={data.tripTitle}
+                  location={data.destination}
+                  status={data.status}  
+                  fallbackImages={getAllImagesFromTrip(data)}
+                />
+              ))}
+            </div>
+          </div>
+          }
+    
+          { completedTrips?.length > 0 &&
+          <div>
+            <h1 className='mt-12 text-2xl font-bold text-purple-700'>COMPLETED</h1>
+            <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+              {completedTrips.map((data, index) => (
+                <SavedCard
+                  key={index}
+                  id={data._id}
+                  img={data?.image}
+                  name={data.tripTitle}
+                  location={data.destination}
+                  status={data.status}  
+                  fallbackImages={getAllImagesFromTrip(data)}
+                />
+              ))}
+            </div>
+          </div>
+      }
+
+         {cancelledTrips?.length > 0 &&
+          <div>
+            <h1 className='mt-12 text-2xl font-bold text-red-700'>CANCELLED</h1>
+            <div className='mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4' >
+              {cancelledTrips.map((data, index) => (
+                <SavedCard
+                  key={index}
+                  id={data._id}
+                  img={data?.image}
+                  name={data.tripTitle}
+                  location={data.destination}
+                  status={data.status}  
+                  fallbackImages={getAllImagesFromTrip(data)}
+                />
+              ))}
+            </div>
+          </div>
+  }
+        </div>
+    }
+
+      { token && !isLoadingTrips && userTrips.length === 0 && <div ref={revealRef} className='text-lg font-semibold text-gray-900 mt-12 reveal-scale' >No saved trips yet. Start planning your next adventure!</div>}
+      
+      
+
+      <div ref={revealRef} className='mt-16 sm:mt-20  reveal-scale'>
+        <div className='flex flex-col md:flex-row gap-4 bg-gray-100 rounded-4xl items-center'>
           <div className='m-0 p-5 sm:p-8 md:p-4 md:pl-10'>
             <p className='text-xs font-bold text-blue-500'>RECOMMENDATION</p>
             <h1 className='text-2xl md:text-4xl font-bold text-gray-800 mt-2'>Need more inspiration?</h1>
             <p className='text-xs text-gray-500 mt-2'>Our AI navigator has curated a list of trending destinations based on previous intrests. Check them out to expand your bucket list.</p>
 
-            <p onClick={() => {navigate("/recommendation")}} className='mt-4 text-blue-500 font-bold flex justify-start items-center cursor-pointer'>Explore Trending Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" className="bi bi-arrow-right ml-1" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            <p onClick={() => { navigate("/recommendation") }} className='mt-4 text-blue-500 font-bold flex justify-start items-center cursor-pointer'>Explore Trending Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" className="bi bi-arrow-right ml-1" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
             </svg></p>
           </div>
 

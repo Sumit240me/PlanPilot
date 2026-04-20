@@ -1,9 +1,38 @@
 import React from 'react'
+import { useEffect, useRef } from 'react';
+
 
 const About = () => {
+
+  const useReveal = () => {
+    const refs = useRef(new Set());
+
+    const setRevealRef = (el) => {
+      if (el) refs.current.add(el);
+    };
+
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.2 });
+
+      refs.current.forEach((el) => observer.observe(el));
+
+      return () => observer.disconnect();
+    }, []);
+
+    return setRevealRef;
+  };
+
+  const revealRef = useReveal();
+
   return (
     <div className='px-4 sm:px-6 lg:px-10'>
-      <div className='flex flex-col md:flex-row gap-12 justify-between items-center'>
+      <div ref={revealRef} className='flex flex-col md:flex-row gap-12 justify-between items-center reveal-scale'>
         <div className='w-full p-4 sm:p-8 md:w-1/2'>
           <h1 className=' text-2xl md:text-5xl font-bold text-gray-800' >Your Journey,</h1>
           <h1 className='mt-2 bg-linear-to-r from-blue-600 to-blue-400 bg-clip-text text-2xl font-bold text-transparent md:text-5xl'>Guided by Intent.</h1>
@@ -18,7 +47,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='mt-20 flex flex-col items-center justify-center rounded-4xl bg-gray-100 p-6 sm:p-8 md:p-12'>
+      <div ref={revealRef} className='mt-20 flex flex-col items-center justify-center rounded-4xl bg-gray-100 p-6 sm:p-8 md:p-12 reveal-scale'>
         <h1 className='text-2xl font-semibold text-gray-800'>Our Mission</h1>
         <div className='mt-10 flex w-full flex-col items-center justify-center gap-10 md:max-w-5xl md:flex-row md:gap-20 md:px-6'>
           <div className='bg-white p-8 rounded-4xl'>
@@ -34,7 +63,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='mt-20'>
+      <div ref={revealRef} className='mt-20 reveal-scale'>
         <h1 className='text-2xl font-bold'>How It Works</h1>
         <p className='mt-4 text-sm text-gray-700'>Three steps to your next meaningful memory</p>
 
@@ -65,7 +94,7 @@ const About = () => {
       </div>
 
       {/* Founder Descriptions */}
-      <div className='mt-20 flex flex-col gap-6 rounded-4xl p-5 shadow-lg transition-all duration-300 hover:scale-105 sm:p-8 md:flex-row md:gap-20 md:p-10'>
+      <div ref={revealRef} className='mt-20 flex flex-col gap-6 rounded-4xl p-5 shadow-lg transition-all duration-300 hover:scale-105 sm:p-8 md:flex-row md:gap-20 md:p-10 reveal-scale'>
         <div className='w-full md:w-1/3'>
           <h1 className='text-4xl font-bold text-gray-800'>Get In Touch</h1>
           <p className='mt-4 text-sm text-gray-700'>Have questions or want to collaborate? Out team is always here to help guide your journey.</p>

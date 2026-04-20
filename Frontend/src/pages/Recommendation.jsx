@@ -1,4 +1,4 @@
-import React,{ useContext, useEffect, useState } from 'react'
+import React,{ useContext, useEffect, useState, useRef } from 'react'
 import Card from '../components/Card.jsx'
 import Bottombar from '../components/Bottombar.jsx'
 import { TripContext } from '../context/TripContext.jsx' 
@@ -6,7 +6,16 @@ import { getAllImagesFromTrip } from '../utils/imageFallback.js'
 const Recommendation = () => {
   const { allTrips,getAllTrips } = useContext(TripContext);
 
-  const trips = allTrips
+ const trips = allTrips.filter(
+  (trip, index, arr) =>
+    arr.findIndex(
+      (t) =>
+        (t.destination || "").trim().toLowerCase() ===
+        (trip.destination || "").trim().toLowerCase()
+    ) === index
+);
+
+// here we are checking the index of the first occurence if matches than 1st time else repetation
  
   const [filter, setFilter] = useState('all');
 
@@ -23,9 +32,35 @@ const Recommendation = () => {
    getAllTrips();
  },[]);
 
+   const useReveal = () => {
+       const refs = useRef(new Set());
+   
+       const setRevealRef = (el) => {
+         if (el) refs.current.add(el);
+       };
+   
+       useEffect(() => {
+         const observer = new IntersectionObserver((entries) => {
+           entries.forEach((entry) => {
+             if (!entry.isIntersecting) return;
+             entry.target.classList.add("active");
+             observer.unobserve(entry.target);
+           });
+         }, { threshold: 0.2 });
+   
+         refs.current.forEach((el) => observer.observe(el));
+   
+         return () => observer.disconnect();
+       }, []);
+   
+       return setRevealRef;
+     };
+   
+     const revealRef = useReveal();
+
   return (
     <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
-      <div>
+      <div ref={revealRef} className='reveal-scale'>
         <h2 className='font-bold text-blue-500'>CURATED FOR YOU</h2>
         <div className=' mt-2 text-4xl md:text-6xl font-bold'>
           <h1 className='text-gray-700'>Discover Your Next</h1>
@@ -42,7 +77,7 @@ const Recommendation = () => {
 
       {/* Navbar for cards */}
 
-      <div className="flex flex-wrap gap-3 mt-12">
+      <div ref={revealRef} className="flex flex-wrap gap-3 mt-12 reveal-scale">
         <button
           onClick={() => setFilter('all')}
           className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'all' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
@@ -83,7 +118,7 @@ const Recommendation = () => {
 
       {/* Cards */}
         {/* // image, tripTitle,destination,grandTotal, tripIntro, id */}
-      <div className='mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4'>
+      <div  className='mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4'>
         {filteredTrips.map((destination,index) => (
           <Card key={index} image={destination.image} tripTitle={destination.tripTitle} destination={destination.destination} grandTotal={destination.costEstimate?.grandTotal} tripIntro={destination.tripIntro} id={destination._id} fallbackImages={getAllImagesFromTrip(destination)} />
         ))}

@@ -1,12 +1,38 @@
-import React from 'react'
+import React,{ useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ImageWithFallback from './ImageWithFallback'
 
 const Card = ({ image, tripTitle, destination, grandTotal, tripIntro, id, fallbackImages }) => {
     const navigate = useNavigate();
 
+    const useReveal = () => {
+        const refs = useRef(new Set());
+    
+        const setRevealRef = (el) => {
+          if (el) refs.current.add(el);
+        };
+    
+        useEffect(() => {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target);
+            });
+          }, { threshold: 0.2 });
+    
+          refs.current.forEach((el) => observer.observe(el));
+    
+          return () => observer.disconnect();
+        }, []);
+    
+        return setRevealRef;
+      };
+    
+      const revealRef = useReveal();
+
     return (
-        <div className='bg-white rounded-4xl shadow-md overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer flex flex-col'>
+        <div ref={revealRef} className='bg-white rounded-4xl shadow-md overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer flex flex-col reveal-scale'>
             <ImageWithFallback 
                 src={image} 
                 alt={destination} 

@@ -8,12 +8,13 @@ import ImageWithFallback from '../components/ImageWithFallback'
 
 const Trip = () => {
     const navigate = useNavigate();
-    const { getTripById, userTrips } = useContext(TripContext);
+    const { getTripById, userTrips, updateTripStatus, user,saveTrip } = useContext(TripContext);
     const { id } = useParams();
     const location = useLocation();
     const [tripData, setTripData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [tripStatus, setTripStatus] = useState(tripData?.status || 'planning');
 
     useEffect(() => {
         const fetchTrip = async () => {
@@ -21,6 +22,7 @@ const Trip = () => {
                 const trip = await getTripById(id);
                 console.log(trip);
                 setTripData(trip.trip);
+                setTripStatus(trip.trip.status || 'planning');
                 setLoading(false);
             } catch (err) {
                 console.error("Error fetching trip:", err);
@@ -33,6 +35,23 @@ const Trip = () => {
             fetchTrip();
         }
     }, [id]);
+
+    const handleUpdateStatus = async (tripId, newStatus) => {
+        await updateTripStatus(tripId, newStatus);
+        setTripStatus(newStatus);
+    }
+
+    const handleSaveTrip = async (tripData) => {
+        if(!user) {
+            alert("Please login to save the trip.");
+            return;
+        }
+           const response = await saveTrip(tripData);
+           alert("Trip saved successfully!");   
+    }
+
+    console.log("Trip Data:", tripData?.userId);
+    console.log("User", user?.user?._id);
 
     if (loading) return (
         <div className="flex min-h-screen flex-col items-center justify-center bg-transparent px-4 py-8 md:flex-row">
@@ -58,7 +77,7 @@ const Trip = () => {
 
     const selectedCardImage = tripData?.image;
 
-    const backgroundImage = selectedCardImage 
+    const backgroundImage = selectedCardImage
 
     return (
         <div className="min-h-screen bg-transparent">
@@ -148,8 +167,8 @@ const Trip = () => {
                                                 {day.isTravelDay && (
                                                     <span className="bg-amber-50 text-amber-700 text-[0.6rem] font-bold px-2 py-1 rounded uppercase tracking-wider">Travel Day</span>
                                                 )}
-                                                <div 
-                                                    onClick={() => navigate(`/dayTrip/${id}/${day.dayNumber}`)} 
+                                                <div
+                                                    onClick={() => navigate(`/dayTrip/${id}/${day.dayNumber}`)}
                                                     className='flex items-center gap-0.5 text-blue-700 font-bold text-sm cursor-pointer hover:text-blue-700 transition-colors group/know'
                                                 >
                                                     View in Detail
@@ -181,7 +200,32 @@ const Trip = () => {
                 </div>
 
                 {/* Sidebar */}
-                <div className='w-full space-y-8 lg:w-1/3 lg:sticky lg:top-32 lg:self-start'>
+                <div className='w-full space-y-8 lg:w-1/3 lg:sticky lg:top-26 lg:self-start'>
+                    {tripData?.userId.toString() == user?.user?._id.toString() ?
+                        <div className='flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8 justify-between items-top'>
+                            <div className='flex justify-between items-center mb-4'>
+                                <label htmlFor="status" className="block text-lg font-semibold text-gray-700 mb-1">Update Trip Status</label>
+                                <select id="status" className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm cursor-pointer" defaultValue={tripData?.status}>
+                                    <option value="planning" >Planning</option>
+                                    <option value="confirmed">Confirmed</option>
+                                    <option value="active">Active</option>
+                                    <option value="completed">Completed</option>
+                                    <option value="cancelled">Cancelled</option>
+                                </select>
+                            </div>
+                            <div className='flex justify-between items-center'>
+                                <div className={`text-sm font-bold ${tripStatus === 'planning' ? 'text-yellow-500' : tripStatus === 'confirmed' ? 'text-green-500' : tripStatus === 'active' ? 'text-blue-500' : tripStatus === 'completed' ? 'text-purple-500' : 'text-red-500'}`}>
+                                    {tripStatus.toUpperCase()}
+                                </div>
+
+                                <button onClick={() => handleUpdateStatus(id, document.getElementById('status').value)} className=" bg-blue-500 text-white rounded-4xl hover:bg-blue-700 transition-colors cursor-pointer px-8 py-1 text-sm font-bold">
+                                    Update
+                                </button>
+                            </div>
+                        </div> : <div>
+                            <button onClick={() => handleSaveTrip(tripData)} className='bg-green-500 text-white rounded-4xl px-8 py-2 hover:bg-green-700 transition-colors cursor-pointer'>SAVE TRIP</button> 
+                        </div>
+                    }
                     {/* Cost Breakdown */}
                     <div className='rounded-3xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8'>
                         <h3 className='text-xl font-bold text-gray-800 mb-6 flex items-center gap-2'>

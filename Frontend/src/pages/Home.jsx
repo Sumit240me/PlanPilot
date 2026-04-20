@@ -1,5 +1,5 @@
 import React from 'react'
-import { useContext, useState } from 'react'
+import { useContext, useState, useRef, useEffect } from 'react'
 import destinations from '../assets/card.js'
 import RecommendCard from '../components/RecommendCard.jsx'
 import { useNavigate } from 'react-router-dom'
@@ -51,6 +51,32 @@ const Home = () => {
     { id: "other", label: "Scenic & Relaxation", icon: HiOutlineGlobeAlt, desc: "Beaches, views, shopping" }
   ]
 
+  const useReveal = () => {
+    const refs = useRef(new Set());
+
+    const setRevealRef = (el) => {
+      if (el) refs.current.add(el);
+    };
+
+    useEffect(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.2 });
+
+      refs.current.forEach((el) => observer.observe(el));
+
+      return () => observer.disconnect();
+    }, []);
+
+    return setRevealRef;
+  };
+
+  const revealRef = useReveal();
+
   const toggleCategory = (categoryId) => {
     setFormData(prev => {
       const newCategories = prev.categories.includes(categoryId)
@@ -98,7 +124,7 @@ const Home = () => {
 
   return (
     <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
-      <div className='flex flex-col gap-10 md:flex-row md:justify-evenly'>
+      <div ref={revealRef} className='flex flex-col gap-10 md:flex-row md:justify-evenly reveal-scale'>
         <div className='w-full md:w-1/3'>
           <div className='flex flex-col '>
             <h1 className='bg-linear-to-br from-gray-800 to-gray-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl'>Find your perfect trip</h1>
@@ -303,7 +329,7 @@ const Home = () => {
       </div>
 
       {/* Popular Journeys */}
-      <div className='mt-16 sm:mt-20'>
+      <div ref={revealRef} className='mt-16 sm:mt-20 reveal-scale'>
         <h1 className='text-xl font-bold text-gray-800'>Popular Journeys</h1>
         <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
           <p className='text-gray-500 text-sm mt-2'>Hand-picked destinations by our senoir travel experts</p>
@@ -321,7 +347,7 @@ const Home = () => {
 
       {/* Last card options */}
 
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-8 sm:py-24 lg:py-32">
+      <section ref={revealRef} className="mx-auto max-w-7xl px-4 py-16 sm:px-8 sm:py-24 lg:py-32 reveal-scale">
         <div className="grid items-center gap-8 sm:gap-16 lg:grid-cols-12">
           <div className="relative h-80 overflow-hidden rounded-xl sm:h-105 lg:col-span-7 lg:h-125">
             <img alt="Woman traveler on boat" className="w-full h-full object-cover" data-alt="A peaceful portrait of a woman looking out at a turquoise lake from a vintage wooden boat in a scenic mountain range" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1REI-CDvD_fiqs59HBb4ko67DeTKaOnCYe-oRXQAGlG4BWR8x7EhX8gBbzDkzSrzazzGKKdN0LWdXVpXwHMsHoYx6r1JLZ8vRp4WOLfyfrzig2jY_qHHXYbxPFHytNDkj-lAPxoGoDlHndyIPjN1Qg_lGp2o9oBRA26SzRYzFAWg72ojpsN77Gp5W-t6RkXJwJ8D00_7wUFa4H8UgfaDFRVLhBgm-IcdUiPs1VQbkZuFMyf1ugCwLOSO9b839dsjOL4Zufpm5ZPg" />

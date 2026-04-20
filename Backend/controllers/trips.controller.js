@@ -228,7 +228,7 @@ const getTripsByUser = async (req, res) => {
         const trips = await Trip
             .find({ userId: req.params.userId })
             .sort({ createdAt: -1 })
-            .select("destination startDate endDate numberOfDays mood status tripTitle image tripIntro costEstimate days")
+            .select("destination startDate endDate numberOfDays mood status tripTitle image tripIntro costEstimate days overallRating overallFeedback")
             .lean();
 
         return res.status(200).json({ count: trips.length, trips });
@@ -244,14 +244,15 @@ const getTripsByUser = async (req, res) => {
 
 const rateTrip = async (req, res) => {
     try {
-
+        const {tripId} = req.params;
+        console.log(`[rateTrip] Received rating request for trip ${tripId} from user ${req.user._id}`);
         const { overallRating, overallFeedback = "", activityRatings = [] } = req.body;
 
         if (!overallRating || overallRating < 1 || overallRating > 5) {
             return res.status(400).json({ message: "overallRating must be between 1 and 5" })
         }
 
-        const trip = await Trip.findById(req.params.tripId);
+        const trip = await Trip.findById(tripId);
 
         if (!trip) {
             return res.status(404).json({ message: "Trip not found" });
@@ -298,7 +299,7 @@ const rateTrip = async (req, res) => {
             await place.save();
         }
 
-        console.log(`[rateTrip] Trip ${req.params.tripId} rated ${overallRating}/5`);
+        console.log(`[rateTrip] Trip ${tripId} rated ${overallRating}/5`);
 
         return res.status(200).json({
             message: "Trip rated successfully",
@@ -358,11 +359,77 @@ const getAllTrips = async (req, res) => {
     }
 };
 
+const deleteTrip = async (req, res) => {
+    try {
+        const tripId = req.body.tripId;
+        const userId = req.user._id;
+
+        console.log(`[deleteTrip] Request to delete trip ${tripId} by user ${userId}`);
+
+        if (!userId) {
+            return res.status(401).json({ message: "Unauthorized" });
+        }
+
+        const trip = await Trip.findById(tripId);
+        //console.log("trip", trip);
+
+        if (!trip) {
+            return res.status(404).json({ message: "Trip not found" });
+        }
+
+        if (trip.userId.toString() !== userId.toString()) {
+            return res.status(403).json({ message: "Forbidden" });
+        }
+
+        const response = await Trip.findByIdAndDelete(tripId);
+        //console.log("delete response", response);
+
+        return res.status(200).json({ message: "Trip deleted successfully" });
+    } catch (error) {
+        console.error("[deleteTrip]", error.message);
+        return res.status(500).json({ message: "Server error", error: error.message });
+    }
+};
+
+const saveTrip = async (req, res) => {
+    try {
+        
+        const tripData = req.body;
+        const userId = req.user._id;
+
+        if (!tripData) {
+            return res.status(400).json({ message: "Trip data is required" });
+        }
+
+        if (!userId) {
+            return res.status(401).json({ message: "User not found" });
+        }
+
+        const trip = await Trip.create({
+            ...tripData,
+            userId,
+            _id: undefined, // Ensure a new _id is generated
+            status: "planning",
+           
+        });
+
+        //console.log(`tripsaved : ${trip}`);
+
+        return res.status(201).json({ message: "Trip saved successfully" });
+    } catch (error) {
+        console.error("[saveTrip]", error.message);
+        return res.status(500).json({ message: "Server error", error: error.message });
+    }
+}
+
 export {
     generateTrip,
     getTripById,
     getTripsByUser,
     rateTrip,
     updateTripStatus,
-    getAllTrips
+    getAllTrips,
+    deleteTrip,
+    saveTrip
 };
+    
