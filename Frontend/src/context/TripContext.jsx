@@ -6,7 +6,7 @@ import { getRandomCityImageUrl } from "../utils/imageFallback.js";
 
 export const TripContext = createContext();
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://plan-pilot-66o6.vercel.app";
 
 const getFirstPlaceImageFromTrip = (trip) => {
     if (!Array.isArray(trip?.days)) return null;
