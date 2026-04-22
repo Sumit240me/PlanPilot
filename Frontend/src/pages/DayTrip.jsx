@@ -100,7 +100,7 @@ const DayTrip = () => {
 
   return (
     <div className='bg-transparent px-4 py-6 sm:px-6 lg:p-10'>
-      <ToastContainer />
+
       <div ref={revealRef} className='flex flex-col reveal-scale'>
         <h2 className='flex flex-row items-center gap-2 text-sm font-semibold text-blue-700 sm:text-base'>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill shrink-0" viewBox="0 0 16 16">
