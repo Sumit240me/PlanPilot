@@ -26,16 +26,14 @@ PlanPilot is an intelligent AI-powered travel planning platform that generates p
 
 **Database**
 - MongoDB
-- PostgreSQL
 
 **Authentication**
-- JWT / NextAuth
+- JWT 
 
 **APIs**
-- Google Maps API
-- Weather API
-- AI APIs (Gemini/OpenAI)
-- Travel & Places APIs
+- Foursquare
+- OpenTripMap
+
 
 ---
 
