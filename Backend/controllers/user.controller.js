@@ -1,8 +1,6 @@
 import User from "../models/User.models.js";
 import Trip from "../models/Trip.models.js";
 import { sendTokenCookie } from "../middleware/auth.middleware.js";
-
-
 // Helper - build safe user object to send to client
 // Never include passwordHash or sensitive fields
 

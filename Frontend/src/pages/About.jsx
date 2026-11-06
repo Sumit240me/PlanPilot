@@ -59,11 +59,11 @@ const About = () => {
       <div ref={revealRef} className='flex flex-col md:flex-row gap-12 justify-between items-center reveal-scale'>
         <div className='w-full p-4 sm:p-8 md:w-1/2'>
           <h1 className=' text-2xl md:text-5xl font-bold text-gray-800' >Your Journey,</h1>
-          <h1 className='mt-2 bg-linear-to-r from-blue-600 to-blue-400 bg-clip-text text-2xl font-bold text-transparent md:text-5xl'>Guided by Intent.</h1>
+          <h1 className='mt-2 bg-linear-to-r from-blue-600 via-blue-400 to-amber-400 bg-clip-text text-2xl font-bold text-transparent md:text-5xl'>Guided by Intent.</h1>
 
           <p className='mt-6 text-sm text-gray-600'>We believe travel should be more than a checklist. It's about curated moments, seamless flows, and experiences designed with your intuition in mind.</p>
 
-          <button className='mt-6 rounded-full bg-linear-to-r from-blue-600 to-blue-400 px-4 py-2 text-white transition-all duration-300 hover:scale-105'>Explore Destination</button>
+          <button className='mt-6 rounded-full bg-linear-to-r from-blue-600 to-blue-400 px-4 py-2 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-200'>Explore Destination</button>
         </div>
 
         <div className='h-full w-full md:w-1/2 md:px-8'>

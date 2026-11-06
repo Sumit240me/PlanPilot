@@ -16,6 +16,15 @@ const app = express();
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(cookieParser());  
+app.use((req, res, next) => {
+    const startedAt = Date.now();
+
+    res.on("finish", () => {
+        console.log(`[request] ${req.method} ${req.originalUrl} ${res.statusCode} ${Date.now() - startedAt}ms`);
+    });
+
+    next();
+});
 
 app.use("/api/cities", citiesRouter);
 app.use("/api/places", placesRouter);

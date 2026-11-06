@@ -1,4 +1,7 @@
+import "dotenv/config";
 import { buildItinerary } from "../services/itinerary.services.js";
+import connectDB from "../db/db.js";
+import mongoose from "mongoose";
 
 // Dummy scored places — simulating what scoring.service.js returns
 const dummyScoredPlaces = [
@@ -181,9 +184,11 @@ const preferences = {
   destination: "Jaipur",
 };
 
+const runTests = async () => {
+await connectDB();
 // ── TEST 1: 3-day trip ──────────────────────────────────────────────────────
 console.log("=== TEST 1: 3-day Jaipur trip ===\n");
-const itinerary3Day = buildItinerary(dummyScoredPlaces, 3, preferences);
+const itinerary3Day = await buildItinerary(dummyScoredPlaces, 3, preferences);
 
 itinerary3Day.days.forEach((day) => {
   console.log(`\nDay ${day.dayNumber}: ${day.title}`);
@@ -208,7 +213,7 @@ console.log(`Note: ${itinerary3Day.costEstimate.note}`);
 
 // ── TEST 2: 1-day trip ──────────────────────────────────────────────────────
 console.log("\n\n=== TEST 2: 1-day trip ===\n");
-const itinerary1Day = buildItinerary(dummyScoredPlaces, 1, preferences);
+const itinerary1Day = await buildItinerary(dummyScoredPlaces, 1, preferences);
 
 itinerary1Day.days.forEach((day) => {
   console.log(`Day ${day.dayNumber}: ${day.title}`);
@@ -221,7 +226,7 @@ itinerary1Day.days.forEach((day) => {
 
 // ── TEST 3: Empty places array — should return gracefully ───────────────────
 console.log("\n\n=== TEST 3: Empty places — graceful fallback ===\n");
-const emptyResult = buildItinerary([], 3, preferences);
+const emptyResult = await buildItinerary([], 3, preferences);
 console.log("Error field:", emptyResult.error);
 console.log("Days array:", emptyResult.days);
 
@@ -249,4 +254,12 @@ console.log("Day has slots:     ", Boolean(day1.slots)                ? "PASS" :
 console.log("Day has activities:", Array.isArray(day1.activities)     ? "PASS" : "FAIL");
 console.log("Activity has name: ", Boolean(day1.activities[0]?.name)  ? "PASS" : "FAIL");
 console.log("Activity has times:", Boolean(day1.activities[0]?.arrivalTime) ? "PASS" : "FAIL");
-console.log("Activity has coords:", Boolean(day1.activities[0]?.coordinates) ? "PASS" : "FAIL"); 
+console.log("Activity has coords:", Boolean(day1.activities[0]?.coordinates) ? "PASS" : "FAIL");
+};
+
+runTests().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+}).finally(async () => {
+  await mongoose.disconnect();
+});

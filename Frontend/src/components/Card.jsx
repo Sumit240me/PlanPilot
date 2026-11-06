@@ -31,19 +31,33 @@ const Card = ({ image, tripTitle, destination, grandTotal, tripIntro, id, fallba
     
       const revealRef = useReveal();
 
+    const openTrip = () => navigate(`/trip/${id}`, { state: { tripImage: image } });
+
     return (
-        <div ref={revealRef} className='bg-white rounded-4xl shadow-md overflow-hidden hover:shadow-2xl transition-shadow cursor-pointer flex flex-col reveal-scale'>
+        <article
+            ref={revealRef}
+            role="link"
+            tabIndex="0"
+            onClick={openTrip}
+            onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openTrip();
+                }
+            }}
+            className='group flex cursor-pointer flex-col overflow-hidden rounded-4xl bg-white shadow-md transition-all hover:-translate-y-1 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 reveal-scale'
+        >
             <ImageWithFallback 
                 src={image} 
                 alt={destination} 
                 fallbackSeed={destination || 'travel'}
                 fallbackImages={fallbackImages}
-                className='w-full h-80 object-cover' 
+                className='h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105'
             />
             <div className='p-4 flex-1'>
                 <div className='flex justify-between items-center'>
                     <h2 className='text-lg font-bold text-gray-700'>{tripTitle}</h2>
-                    <p className='text-xs font-semibold text-primary uppercase tracking-wider mb-1 text-blue-500'>STARTS FROM</p>
+                    <p className='mb-1 text-xs font-semibold uppercase tracking-wider text-amber-600'>STARTS FROM</p>
                 </div>
                 <div className='flex flex-row justify-between items-center'>
                     <p className='text-xs text-gray-500 font-semibold flex items-center'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" className="bi bi-geo-alt-fill mr-1" viewBox="0 0 16 16">
@@ -53,10 +67,10 @@ const Card = ({ image, tripTitle, destination, grandTotal, tripIntro, id, fallba
                 </div>
                 <p className='text-gray-500 text-xs leading-relaxed mt-4'>{tripIntro}</p>
             </div>
-            <div className='mb-4 mx-4'>
-                <button onClick={() => navigate(`/trip/${id}`, { state: { tripImage: image } })} className='bg-gray-200 text-blue-500 w-full py-2 rounded-full font-semibold cursor-pointer hover:bg-gray-300 transition-colors'>View Details</button>
+            <div className='mx-4 mb-4 rounded-full bg-amber-50 py-2 text-center font-semibold text-amber-700 transition-colors group-hover:bg-blue-600 group-hover:text-white'>
+                View Details
             </div>
-        </div>
+        </article>
     )
 }
 

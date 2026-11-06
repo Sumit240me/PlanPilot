@@ -4,7 +4,7 @@ import { useContext, useEffect, useRef, useState } from 'react'
 import { getAllImagesFromTrip } from '../utils/imageFallback.js'
 import { useNavigate } from 'react-router-dom'
 import Loading from '../components/Loading.jsx'
-import { ToastContainer, toast, Bounce } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const SavedTrip = () => {
@@ -12,15 +12,6 @@ const SavedTrip = () => {
   const { userTrips, getMyTrips } = useContext(TripContext);
   const [isLoadingTrips, setIsLoadingTrips] = useState(true);
   console.log("userTrips", userTrips);
-
-  const notify = (message, type) => {
-    toast[type](message, {
-      position: "top-right",
-      autoClose: 3000,
-      theme: "light",
-      transition: Bounce,
-    });
-  };
 
   const token = localStorage.getItem("planpilot_token")
 

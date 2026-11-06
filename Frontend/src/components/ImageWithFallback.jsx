@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { HiOutlinePhoto } from 'react-icons/hi2';
 
 /**
@@ -13,28 +13,35 @@ const ImageWithFallback = ({
   src, 
   alt = 'Trip image', 
   className = '', 
-  fallbackSeed: _fallbackSeed,
   fallbackImages = [],
   ...props 
 }) => {
-  const [imgSrc, setImgSrc] = useState(src);
-  const [hasError, setHasError] = useState(!src);
-  const [fallbackIndex, setFallbackIndex] = useState(0);
-
-  useEffect(() => {
-    // Reset state when the primary source changes
-    setImgSrc(src);
-    setHasError(!src);
-    setFallbackIndex(0);
-  }, [src]);
+  const [fallbackState, setFallbackState] = useState({
+    source: src,
+    image: src,
+    index: 0,
+    hasError: !src,
+  });
+  const isCurrentSource = fallbackState.source === src;
+  const imgSrc = isCurrentSource ? fallbackState.image : src;
+  const hasError = isCurrentSource ? fallbackState.hasError : !src;
 
   const handleError = () => {
+    const fallbackIndex = isCurrentSource ? fallbackState.index : 0;
     if (fallbackImages && fallbackImages.length > fallbackIndex) {
-      setImgSrc(fallbackImages[fallbackIndex]);
-      setFallbackIndex(fallbackIndex + 1);
-      setHasError(false);
+      setFallbackState({
+        source: src,
+        image: fallbackImages[fallbackIndex],
+        index: fallbackIndex + 1,
+        hasError: false,
+      });
     } else {
-      setHasError(true);
+      setFallbackState({
+        source: src,
+        image: "",
+        index: fallbackIndex,
+        hasError: true,
+      });
     }
   };
 

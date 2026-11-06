@@ -1,6 +1,5 @@
 import React from 'react'
 import { useContext, useState, useRef, useEffect } from 'react'
-import destinations from '../assets/card.js'
 import RecommendCard from '../components/RecommendCard.jsx'
 import { useNavigate } from 'react-router-dom'
 import { TripContext } from '../context/TripContext.jsx'
@@ -31,8 +30,8 @@ const notify = (message, type) => {
     transition: Bounce,
   });
 };
-  const { allCities, generateTrip, trip } = useContext(TripContext);
-  const data = destinations.slice(0, 4);
+  const { allCities, allTrips, generateTrip } = useContext(TripContext);
+  const featuredTrips = allTrips.slice(0, 4);
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -45,6 +44,7 @@ const notify = (message, type) => {
     extraNotes: "",
     categories: ["heritage", "food", "adventure", "other"]
   })
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const categoryOptions = [
     { id: "heritage", label: "Heritage & Culture", icon: HiCollection, desc: "Monuments, forts, temples" },
@@ -104,6 +104,13 @@ const notify = (message, type) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
+
+    if (!localStorage.getItem("planpilot_token")) {
+      notify("Please sign in before creating an itinerary.", "error");
+      navigate("/signin");
+      return;
+    }
 
     // Basic validation
     if (!formData.destination || formData.destination === "Select Destination") {
@@ -116,42 +123,56 @@ const notify = (message, type) => {
       return;
     }
 
-    const result = await generateTrip(formData);
-     notify("Trip generated successfully!", "success");
-    if (result && result.tripId) {
-      navigate(`/trip/${result.tripId}`);
-    } else {
-      notify("Failed to generate trip. Please try again.", "error");
+    setIsSubmitting(true);
+    try {
+      const result = await generateTrip(formData);
+      if (result?.tripId) {
+        notify("Trip generated successfully!", "success");
+        navigate(`/trip/${result.tripId}`);
+      } else {
+        notify("We couldn't create your trip. Please try again.", "error");
+      }
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
   return (
     <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
       <ToastContainer />
-      <div ref={revealRef} className='flex flex-col gap-10 md:flex-row md:justify-evenly reveal-scale'>
-        <div className='w-full md:w-1/3'>
+      <div ref={revealRef} className='mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-center md:gap-10 reveal-scale'>
+        <div className='w-full md:w-5/12'>
           <div className='flex flex-col '>
-            <h1 className='bg-linear-to-br from-gray-800 to-gray-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl'>Find your perfect trip</h1>
-            <p className='text-gray-500 mt-5'>Experience the world through curated journeys designed for the serene traveler. Your next escape starts with a single choice.</p>
+            <span className="mb-4 inline-flex w-fit items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-amber-700">
+              <HiOutlineSparkles /> Travel, thoughtfully planned
+            </span>
+            <h1 className='bg-linear-to-br from-gray-900 via-blue-700 to-blue-500 bg-clip-text text-4xl font-bold leading-tight text-transparent md:text-5xl'>Find your perfect trip</h1>
+            <p className='mt-4 max-w-xl text-sm leading-relaxed text-gray-500'>Turn a few preferences into a day-by-day journey filled with places you will actually want to remember.</p>
           </div>
-          <div className='mt-8 flex flex-col gap-6 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:mt-10 sm:p-8'>
-            <div className="border-b border-gray-50 pb-4">
-              <h2 className="text-xl font-bold text-gray-800">Plan your escape</h2>
-              <p className="text-xs text-gray-400">Everything you need for your next journey</p>
+          <div className='mt-6 flex flex-col gap-5 rounded-3xl border border-amber-100 bg-white p-4 shadow-xl shadow-blue-100/40 sm:mt-8 sm:p-6'>
+            <div className="flex items-start justify-between border-b border-gray-100 pb-4">
+              <div>
+                <p className="mb-1 text-[0.65rem] font-bold uppercase tracking-widest text-amber-600">Step 1 of 1</p>
+                <h2 className="text-xl font-bold text-gray-800">Build your escape</h2>
+                <p className="mt-1 text-xs text-gray-400">Tell us what makes a perfect trip for you.</p>
+              </div>
+              <div className="rounded-full bg-amber-100 p-3 text-amber-700">
+                <HiOutlineSparkles className="text-xl" />
+              </div>
             </div>
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div className='flex flex-col gap-2'>
                   <label className='flex items-center gap-2 text-[0.65rem] font-bold text-gray-400 uppercase tracking-widest px-1'>
-                    <HiOutlineMapPin className="text-blue-500" /> DESTINATION
+                    <HiOutlineMapPin className="text-blue-500" /> WHERE TO?
                   </label>
                   <div className="relative">
                     <select
                       onChange={handleChange}
                       value={formData.destination}
                       name='destination'
-                      className='w-full rounded-lg h-12 pl-4 pr-10 text-gray-700 font-medium border border-gray-200 bg-white hover:border-blue-300 transition-all appearance-none focus:outline-none focus:ring-2 focus:ring-blue-50'>
+                      className='h-11 w-full rounded-lg border border-gray-200 bg-white pl-4 pr-10 text-sm font-medium text-gray-700 transition-all appearance-none hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-50'>
                       <option>Select Destination</option>
                       {allCities.map((city) => (
                         <option key={city._id} value={city.name}>
@@ -167,14 +188,14 @@ const notify = (message, type) => {
 
                 <div className='flex flex-col gap-2'>
                   <label className='flex items-center gap-2 text-[0.65rem] font-bold text-gray-400 uppercase tracking-widest px-1'>
-                    <HiOutlineSparkles className="text-blue-500" /> MOOD
+                    <HiOutlineSparkles className="text-blue-500" /> TRIP VIBE
                   </label>
                   <div className="relative">
                     <select
                       onChange={handleChange}
                       value={formData.mood}
                       name='mood'
-                      className='w-full rounded-lg h-12 pl-4 pr-10 text-gray-700 font-medium border border-gray-200 bg-white hover:border-blue-300 transition-all appearance-none focus:outline-none focus:ring-2 focus:ring-blue-50'>
+                      className='h-11 w-full rounded-lg border border-gray-200 bg-white pl-4 pr-10 text-sm font-medium text-gray-700 transition-all appearance-none hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-50'>
                       {/* "relaxing", "adventure", "cultural", "romantic", "luxury", "hidden gems" */}
                       <option>Select Mood</option>
                       <option>relaxing</option>
@@ -191,7 +212,7 @@ const notify = (message, type) => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div className='flex flex-col gap-2'>
                   <label className='flex items-center gap-2 text-[0.65rem] font-bold text-gray-400 uppercase tracking-widest px-1'>
                     <HiOutlineUsers className="text-blue-500" /> COMPANIONS
@@ -201,7 +222,7 @@ const notify = (message, type) => {
                       onChange={handleChange}
                       value={formData.companions}
                       name="companions"
-                      className='w-full rounded-lg h-12 pl-4 pr-10 text-gray-700 font-medium border border-gray-200 bg-white hover:border-blue-300 transition-all appearance-none focus:outline-none focus:ring-2 focus:ring-blue-50'>
+                      className='h-11 w-full rounded-lg border border-gray-200 bg-white pl-4 pr-10 text-sm font-medium text-gray-700 transition-all appearance-none hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-50'>
                       <option>Who's coming?</option>
                       {/* "solo", "couple", "family", "friends" */}
                       <option>solo</option>
@@ -224,7 +245,7 @@ const notify = (message, type) => {
                       onChange={handleChange}
                       value={formData.budget}
                       name='budget'
-                      className='w-full rounded-lg h-12 pl-4 pr-10 text-gray-700 font-medium border border-gray-200 bg-white hover:border-blue-300 transition-all appearance-none focus:outline-none focus:ring-2 focus:ring-blue-50'>
+                      className='h-11 w-full rounded-lg border border-gray-200 bg-white pl-4 pr-10 text-sm font-medium text-gray-700 transition-all appearance-none hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-50'>
                       <option>Select Budget</option>
                       {/* "budget", "mid-range", "luxury" */}
                       <option>budget</option>
@@ -309,24 +330,29 @@ const notify = (message, type) => {
                 </div>
               </div>
 
-              <button type='submit' className="w-full h-12 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group cursor-pointer">
-                Create Itinerary
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              <button type='submit' disabled={isSubmitting} className="flex h-13 w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-linear-to-r from-blue-600 to-indigo-600 font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:-translate-y-0.5 hover:from-blue-700 hover:to-indigo-700 disabled:cursor-wait disabled:opacity-70">
+                {isSubmitting ? "Creating your itinerary..." : "Create my itinerary"}
+                {!isSubmitting && <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>}
               </button>
+              <p className="text-center text-[0.65rem] text-gray-400">Sign in required · Your preferences stay private</p>
             </form>
           </div>
         </div>
 
-        <div className="relative h-90 w-full md:h-150 md:w-2/3">
-          <div className="absolute right-2 top-0 z-0 h-60 w-[85%] overflow-hidden rounded-xl shadow-2xl sm:right-6 sm:h-80 md:right-10 md:h-112.5 md:w-4/5 md:translate-x-12">
-            <img alt="Pristine white sand beach" className="w-full h-full object-cover" data-alt="Stunning aerial view of a turquoise tropical beach with white sand and palm tree shadows in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvus5PnzlF3WbYe_80CzOa_Ua3Fps0rkuRlcmcOOMOLsbLiXXPn5ZJ4ZSoDoeWgpTtTJAcEvmQl6b28LFn7tplv0hA1cGDM9r90hUx8lmFw0IZDtyxxOZgvFSo0k3fgjBcpT1ktaKZd0sBDMWgCE1H3ffnuvmcvLDYwqD33e4OIBlU2Ki8_ZnXa1Dn8XYjOfA8pj8-4d3mUOJOeeVAkQ_OfHjKKEyAoI4padoBBdhdSb7Kjp_x8_-0YVI6T1YS8IeDNm4Pm1uxDmI" />
-          </div>
-          <div className="absolute bottom-0 left-2 z-10 h-42.5 w-[70%] -translate-x-1 overflow-hidden rounded-xl border-4 border-white shadow-2xl sm:left-8 sm:h-55 md:left-20 md:h-75 md:w-3/5 md:-translate-x-8">
-            <img alt="Snowy mountain peaks" className="w-full h-full object-cover" data-alt="Majestic snow-capped mountain peaks reflecting the warm pink and orange hues of a sunset with misty valleys below" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoG0Y7otZHWmztQZHpm1Ffvzk9m1F31pow3tb7TIbAUFXwTuuTR7gozKHc6sdcpBUvvyJuvdq6kaeE3AVXTwF6nOA6m7lhZ-pyl6FFRDR2jq0UpWww9ikkaCHyyHBCJTF8enHgGIfAeJAX8ct1S3qGnx0Eb3bax0rIQyq2wqTefIlG2hq6Oilqef9Wjo8KSS1pQwCIbyToMpMZra7GdYYWEyC9HIFRhqtXhKneYPCj9Ji3JwTBcIp33FwZVXR5zlQi9NqTTSJHYzI" />
-          </div>
-          <div className="absolute right-4 top-1/2 z-20 flex h-24 w-24 items-center justify-center rounded-full bg-primary-container/20 backdrop-blur-xl sm:right-1/4 sm:h-32 sm:w-32">
-            <div className="text-primary font-headline font-bold text-center leading-tight">
-              500+<br /><span className="text-[0.6rem] uppercase tracking-widest opacity-80">Trips</span>
+        <div className="relative min-h-105 w-full overflow-hidden rounded-3xl bg-slate-950 shadow-2xl md:min-h-135 md:w-7/12">
+          <img alt="Travellers overlooking a mountain valley" className="absolute inset-0 h-full w-full object-cover opacity-80" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=85" />
+          <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/20 to-blue-950/20"></div>
+          <div className="absolute inset-x-0 bottom-0 p-5 text-white sm:p-8">
+            <span className="mb-4 inline-block rounded-full bg-amber-300/90 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-widest text-amber-950 backdrop-blur-md">Made for your kind of travel</span>
+            <h2 className="max-w-lg text-3xl font-bold leading-tight sm:text-4xl">Less scrolling.<br /><span className="text-amber-300">More living.</span></h2>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-white/75">Choose your destination and travel style. PlanPilot turns your ideas into a practical, personal itinerary in moments.</p>
+            <div className="mt-8 grid max-w-md grid-cols-3 gap-3">
+              {[["01", "Pick a place"], ["02", "Set your vibe"], ["03", "Start exploring"]].map(([number, label]) => (
+                <div key={number} className="rounded-2xl border border-white/15 bg-white/10 p-3 backdrop-blur-md">
+                  <p className="text-lg font-bold text-amber-300">{number}</p>
+                  <p className="mt-1 text-[0.65rem] font-semibold text-white/80">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -334,18 +360,28 @@ const notify = (message, type) => {
 
       {/* Popular Journeys */}
       <div ref={revealRef} className='mt-16 sm:mt-20 reveal-scale'>
-        <h1 className='text-xl font-bold text-gray-800'>Popular Journeys</h1>
+        <div className="flex items-center gap-3">
+          <span className="h-2 w-2 rounded-full bg-blue-500"></span>
+          <h1 className='text-xl font-bold text-gray-800'>Popular Journeys</h1>
+        </div>
         <div className='flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between'>
-          <p className='text-gray-500 text-sm mt-2'>Hand-picked destinations by our senoir travel experts</p>
+          <p className='mt-2 text-sm text-gray-500'>Real itineraries created by the PlanPilot community.</p>
           <button onClick={() => navigate('/recommendation')} className='text-blue-600 font-semibold text-sm cursor-pointer flex items-center'>View All<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" className="bi bi-arrow-right ml-1" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
           </svg></button>
         </div>
 
         <div className='mt-8 flex flex-col flex-nowrap gap-4 overflow-x-auto pb-2 no-scrollbar sm:gap-8 md:flex-row lg:gap-10'>
-          {data.map((destination) => (
-            <RecommendCard key={destination.id} {...destination} />
-          ))}
+          {featuredTrips.length > 0 ? featuredTrips.map((trip) => (
+            <RecommendCard key={trip._id} trip={trip} />
+          )) : (
+            <div className="w-full rounded-3xl border border-dashed border-blue-200 bg-blue-50/60 p-8 text-center">
+              <HiOutlineSparkles className="mx-auto mb-3 text-2xl text-blue-500" />
+              <h2 className="font-bold text-gray-800">Your next journey starts here</h2>
+              <p className="mx-auto mt-2 max-w-md text-sm text-gray-500">Create an itinerary above and it will appear here for other travellers to discover.</p>
+              <button onClick={() => navigate('/recommendation')} className="mt-5 rounded-full bg-blue-600 px-5 py-2 text-sm font-bold text-white transition hover:bg-blue-700">Browse recommendations</button>
+            </div>
+          )}
         </div>
       </div>
 

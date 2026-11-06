@@ -62,10 +62,10 @@ const Recommendation = () => {
   return (
     <div className='mt-16 px-4 pb-6 sm:mt-20 sm:px-6 lg:px-10'>
       <div ref={revealRef} className='reveal-scale'>
-        <h2 className='font-bold text-blue-500'>CURATED FOR YOU</h2>
+        <h2 className='font-bold text-amber-600'>CURATED FOR YOU</h2>
         <div className=' mt-2 text-4xl md:text-6xl font-bold'>
           <h1 className='text-gray-700'>Discover Your Next</h1>
-          <h1 className="bg-linear-to-br from-blue-600 to-blue-400 text-transparent bg-clip-text">
+          <h1 className="bg-linear-to-br from-blue-600 via-blue-500 to-amber-400 text-transparent bg-clip-text">
             Serene Escape
           </h1>
         </div>
@@ -81,37 +81,37 @@ const Recommendation = () => {
       <div ref={revealRef} className="flex flex-wrap gap-3 mt-12 reveal-scale">
         <button
           onClick={() => setFilter('all')}
-          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'all' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'all' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-amber-100'}`}
         >
           All Destinations
         </button>
         <button
           onClick={() => setFilter('relaxing')}
-          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'relaxing' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'relaxing' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-amber-100'}`}
         >
           Relaxing
         </button>
         <button
           onClick={() => setFilter('adventure')}
-          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'adventure' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'adventure' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-amber-100'}`}
         >
           Adventure
         </button>
         <button
           onClick={() => setFilter('cultural')}
-          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'cultural' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'cultural' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-amber-100'}`}
         >
           Cultural Heritage
         </button>
         <button
           onClick={() => setFilter('romantic')}
-          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'romantic' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'romantic' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-amber-100'}`}
         >
           Romantic
         </button>
         <button
           onClick={() => setFilter('luxury')}
-          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'luxury' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}
+          className={`px-6 py-2.5 rounded-full transition-colors font-medium cursor-pointer ${filter === 'luxury' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-amber-100'}`}
         >
           Luxury
         </button>

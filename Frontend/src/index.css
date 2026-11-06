@@ -17,7 +17,13 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background-color: rgb(231, 255, 255);
+  background: linear-gradient(135deg, #f8fbff 0%, #fffaf0 100%);
+  color: #172033;
+}
+
+::selection {
+  background: #fbbf24;
+  color: #172033;
 }
 
 .no-scrollbar::-webkit-scrollbar {

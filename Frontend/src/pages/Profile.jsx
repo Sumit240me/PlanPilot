@@ -49,6 +49,7 @@ const Profile = () => {
 
     useEffect(() => {
         if (data) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setFormData({
                 name: data.name || "",
                 homeCity: data.homeCity || "",

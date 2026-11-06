@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
-import axios from 'axios'
+import { useParams } from 'react-router-dom'
 import { HiOutlineMapPin, HiOutlineCurrencyRupee, HiOutlineCalendarDays, HiOutlineInformationCircle, HiChevronRight } from 'react-icons/hi2'
 import { TripContext } from '../context/TripContext.jsx'
 import { useNavigate } from 'react-router-dom'
@@ -10,9 +9,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Trip = () => {
     const navigate = useNavigate();
-    const { getTripById, userTrips, updateTripStatus, user,saveTrip } = useContext(TripContext);
+    const { getTripById, updateTripStatus, user, saveTrip } = useContext(TripContext);
     const { id } = useParams();
-    const location = useLocation();
     const [tripData, setTripData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -60,7 +58,7 @@ const Trip = () => {
             notify("Please login to save the trip.", "error");
             return;
         }
-           const response = await saveTrip(tripData);
+           await saveTrip(tripData);
            notify("Trip saved successfully!", "success");
     }
 

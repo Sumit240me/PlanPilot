@@ -33,7 +33,7 @@ const Navbar = () => {
   }, [token])
 
   const navLinkClassName = ({ isActive }) =>
-    `relative pb-1 ${isActive ? "text-blue-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-blue-500" : "text-gray-600 hover:text-gray-900"}`
+    `relative pb-1 ${isActive ? "text-blue-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-amber-400" : "text-gray-600 hover:text-gray-900"}`
 
   const handleNavClick = () => {
     setMenuOpen(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <div className='sticky top-0 z-50 flex items-center justify-between gap-3 bg-white px-4 py-4 sm:px-6 sm:py-6'>
       <ToastContainer />
-      <NavLink to='/' className='shrink-0 text-xl font-bold sm:text-2xl text-blue-700'>PlanPilot </NavLink>
+      <NavLink to='/' className='shrink-0 text-xl font-bold tracking-tight text-blue-700 sm:text-2xl'>Plan<span className="text-amber-500">Pilot</span></NavLink>
 
       <div className='hidden flex-1 justify-center md:flex'>
         <NavLink to='/' className={({ isActive }) => `${navLinkClassName({ isActive })} mr-6`}>Home</NavLink>
@@ -80,7 +80,7 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <NavLink to='/signin' className='flex w-full items-center justify-center rounded-2xl bg-blue-600 px-4 py-1 font-medium tracking-wide text-white transition-all shadow-md shadow-blue-200 hover:bg-blue-700 active:scale-[0.98]'>Login</NavLink>
+            <NavLink to='/signin' className='flex w-full items-center justify-center rounded-2xl bg-blue-600 px-4 py-1 font-medium tracking-wide text-white shadow-md shadow-blue-200 transition-all hover:bg-blue-700 active:scale-[0.98]'>Login</NavLink>
           )}
 
           {menuOpen && (

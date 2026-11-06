@@ -17,8 +17,7 @@ L.Icon.Default.mergeOptions({
 })
 
 createRoot(document.getElementById('root')).render(
-    <TripContextProvider>
-      <App />
-    </TripContextProvider>
-
+  <TripContextProvider>
+    <App />
+  </TripContextProvider>
 )

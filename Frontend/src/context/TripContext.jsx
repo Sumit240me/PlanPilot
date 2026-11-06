@@ -1,12 +1,11 @@
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useEffect } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { getRandomCityImageUrl } from "../utils/imageFallback.js";
 
 export const TripContext = createContext();
-
 const BASE_URL = "https://plan-pilot-66o6.vercel.app";
+//const BASE_URL = "http://localhost:3000";
 
 const getFirstPlaceImageFromTrip = (trip) => {
     if (!Array.isArray(trip?.days)) return null;
@@ -48,11 +47,13 @@ const TripContextProvider = (props) => {
             if (response.data.token) {
                 localStorage.setItem("planpilot_token", response.data.token)
             }
+
             return response;
         } catch (error) {
             console.log(error);
             return error;
         }
+
     }
 
     const getAllCities = async () => {
@@ -217,7 +218,7 @@ const TripContextProvider = (props) => {
             if(!token){
                 return null;
             }
-            const response = await axios.delete(`${BASE_URL}/api/user/me`, {
+            await axios.delete(`${BASE_URL}/api/user/me`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -235,7 +236,7 @@ const TripContextProvider = (props) => {
             if(!token){
                 return null;
             }
-            const response = await axios.delete(`${BASE_URL}/api/trips/`, {
+            await axios.delete(`${BASE_URL}/api/trips/`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -254,7 +255,7 @@ const TripContextProvider = (props) => {
             if (!token) {
                 return null;
             }
-            const response = await axios.put(`${BASE_URL}/api/trips/${tripId}/status`, { status }, {
+            await axios.put(`${BASE_URL}/api/trips/${tripId}/status`, { status }, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -307,6 +308,8 @@ const TripContextProvider = (props) => {
     }
 
     useEffect(() => {
+        // These initial requests populate state from the backend after mount.
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         getAllCities();
         getAllTrips();
         getMyTrips();
